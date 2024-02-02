@@ -1,0 +1,461 @@
+{
+  "sitemap": {
+    "baseUrl": "https://nrvllrgrs.github.io/toolkit.quest/"
+  },
+  "source_base_path": "/home/runner/work/toolkit.quest/toolkit.quest/Documentation~",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEditor.Quest.CategoryTypeEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEditor.Quest.CategoryTypeEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEditor.Quest.JournalEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEditor.Quest.JournalEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEditor.Quest.QuestTypeEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEditor.Quest.QuestTypeEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEditor.Quest.TaskTypeEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEditor.Quest.TaskTypeEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEditor.Quest.VisualScripting.Setup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEditor.Quest.VisualScripting.Setup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEditor.Quest.VisualScripting.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEditor.Quest.VisualScripting.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEditor.Quest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEditor.Quest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Quest.CategoryType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Quest.CategoryType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Quest.EventHooks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Quest.EventHooks.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Quest.Journal.FinishMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Quest.Journal.FinishMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Quest.Journal.Quest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Quest.Journal.Quest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Quest.Journal.QuestMap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Quest.Journal.QuestMap.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Quest.Journal.State.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Quest.Journal.State.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Quest.Journal.Task.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Quest.Journal.Task.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Quest.Journal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Quest.Journal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Quest.QuestEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Quest.QuestEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Quest.QuestType.Completion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Quest.QuestType.Completion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Quest.QuestType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Quest.QuestType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Quest.TaskType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Quest.TaskType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit-1.Owner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit-1.Owner.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Quest.VisualScripting.DecrementTask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Quest.VisualScripting.DecrementTask.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Quest.VisualScripting.FinishQuest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Quest.VisualScripting.FinishQuest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Quest.VisualScripting.FinishTask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Quest.VisualScripting.FinishTask.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Quest.VisualScripting.IncrementTask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Quest.VisualScripting.IncrementTask.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Quest.VisualScripting.OnQuestStateChanged.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Quest.VisualScripting.OnQuestStateChanged.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Quest.VisualScripting.OnQuestStateChangedMessageListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Quest.VisualScripting.OnQuestStateChangedMessageListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Quest.VisualScripting.OnQuestStateChangedMessageListener_Tracker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Quest.VisualScripting.OnQuestStateChangedMessageListener_Tracker.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Quest.VisualScripting.OnTaskCountChanged.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Quest.VisualScripting.OnTaskCountChanged.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Quest.VisualScripting.OnTaskCountChangedMessageListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Quest.VisualScripting.OnTaskCountChangedMessageListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Quest.VisualScripting.OnTaskCountChangedMessageListener_Tracker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Quest.VisualScripting.OnTaskCountChangedMessageListener_Tracker.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Quest.VisualScripting.OnTaskStateChanged.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Quest.VisualScripting.OnTaskStateChanged.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Quest.VisualScripting.OnTaskStateChangedMessageListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Quest.VisualScripting.OnTaskStateChangedMessageListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Quest.VisualScripting.OnTaskStateChangedMessageListener_Tracker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Quest.VisualScripting.OnTaskStateChangedMessageListener_Tracker.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Quest.VisualScripting.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Quest.VisualScripting.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Quest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Quest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "license/LICENSE.md",
+      "output": {
+        ".html": {
+          "relative_path": "license/LICENSE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "license/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "license/toc.html"
+        },
+        ".json": {
+          "relative_path": "license/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

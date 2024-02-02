@@ -1,0 +1,202 @@
+{
+  "api/ToolkitEditor.Quest.CategoryTypeEditor.html": {
+    "href": "api/ToolkitEditor.Quest.CategoryTypeEditor.html",
+    "title": "Class CategoryTypeEditor | Quest Toolkit | 1.0.0",
+    "keywords": "Class CategoryTypeEditor Namespace ToolkitEditor.Quest public class CategoryTypeEditor : Editor Inheritance object CategoryTypeEditor Fields m_color protected SerializedProperty m_color Field Value SerializedProperty m_icon protected SerializedProperty m_icon Field Value SerializedProperty m_id protected SerializedProperty m_id Field Value SerializedProperty m_name protected SerializedProperty m_name Field Value SerializedProperty Methods OnInspectorGUI() public override void OnInspectorGUI()"
+  },
+  "api/ToolkitEditor.Quest.JournalEditor.html": {
+    "href": "api/ToolkitEditor.Quest.JournalEditor.html",
+    "title": "Class JournalEditor | Quest Toolkit | 1.0.0",
+    "keywords": "Class JournalEditor Namespace ToolkitEditor.Quest public class JournalEditor : BaseToolkitEditor Inheritance object JournalEditor Fields m_activeQuests protected SerializedProperty m_activeQuests Field Value SerializedProperty m_finishedQuests protected SerializedProperty m_finishedQuests Field Value SerializedProperty m_journal protected Journal m_journal Field Value Journal m_onQuestStateChanged protected SerializedProperty m_onQuestStateChanged Field Value SerializedProperty m_onTaskCountChanged protected SerializedProperty m_onTaskCountChanged Field Value SerializedProperty m_onTaskStateChanged protected SerializedProperty m_onTaskStateChanged Field Value SerializedProperty Methods DrawEvents() protected override void DrawEvents() DrawProperties() protected override void DrawProperties()"
+  },
+  "api/ToolkitEditor.Quest.QuestTypeEditor.html": {
+    "href": "api/ToolkitEditor.Quest.QuestTypeEditor.html",
+    "title": "Class QuestTypeEditor | Quest Toolkit | 1.0.0",
+    "keywords": "Class QuestTypeEditor Namespace ToolkitEditor.Quest public class QuestTypeEditor : Editor Inheritance object QuestTypeEditor Fields m_autoClean protected SerializedProperty m_autoClean Field Value SerializedProperty m_category protected SerializedProperty m_category Field Value SerializedProperty m_completion protected SerializedProperty m_completion Field Value SerializedProperty m_description protected SerializedProperty m_description Field Value SerializedProperty m_id protected SerializedProperty m_id Field Value SerializedProperty m_order protected SerializedProperty m_order Field Value SerializedProperty m_questType protected QuestType m_questType Field Value QuestType m_questsOnAbandoned protected SerializedProperty m_questsOnAbandoned Field Value SerializedProperty m_questsOnCompleted protected SerializedProperty m_questsOnCompleted Field Value SerializedProperty m_questsOnFailed protected SerializedProperty m_questsOnFailed Field Value SerializedProperty m_rewards protected SerializedProperty m_rewards Field Value SerializedProperty m_script protected SerializedProperty m_script Field Value SerializedProperty m_tasks protected SerializedProperty m_tasks Field Value SerializedProperty m_title protected SerializedProperty m_title Field Value SerializedProperty Methods OnInspectorGUI() public override void OnInspectorGUI()"
+  },
+  "api/ToolkitEditor.Quest.TaskTypeEditor.html": {
+    "href": "api/ToolkitEditor.Quest.TaskTypeEditor.html",
+    "title": "Class TaskTypeEditor | Quest Toolkit | 1.0.0",
+    "keywords": "Class TaskTypeEditor Namespace ToolkitEditor.Quest public class TaskTypeEditor : Editor Inheritance object TaskTypeEditor Fields m_autoClean protected SerializedProperty m_autoClean Field Value SerializedProperty m_count protected SerializedProperty m_count Field Value SerializedProperty m_description protected SerializedProperty m_description Field Value SerializedProperty m_id protected SerializedProperty m_id Field Value SerializedProperty m_script protected SerializedProperty m_script Field Value SerializedProperty m_taskType protected TaskType m_taskType Field Value TaskType m_title protected SerializedProperty m_title Field Value SerializedProperty m_useCounter protected SerializedProperty m_useCounter Field Value SerializedProperty Methods GetEmbeddedHeight() public float GetEmbeddedHeight() Returns float OnEmbeddedGUI(Rect) public void OnEmbeddedGUI(Rect position) Parameters position Rect OnInspectorGUI() public override void OnInspectorGUI()"
+  },
+  "api/ToolkitEditor.Quest.VisualScripting.Setup.html": {
+    "href": "api/ToolkitEditor.Quest.VisualScripting.Setup.html",
+    "title": "Class Setup | Quest Toolkit | 1.0.0",
+    "keywords": "Class Setup Namespace ToolkitEditor.Quest.VisualScripting public static class Setup Inheritance object Setup Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString()"
+  },
+  "api/ToolkitEditor.Quest.VisualScripting.html": {
+    "href": "api/ToolkitEditor.Quest.VisualScripting.html",
+    "title": "Namespace ToolkitEditor.Quest.VisualScripting | Quest Toolkit | 1.0.0",
+    "keywords": "Namespace ToolkitEditor.Quest.VisualScripting Classes Setup"
+  },
+  "api/ToolkitEditor.Quest.html": {
+    "href": "api/ToolkitEditor.Quest.html",
+    "title": "Namespace ToolkitEditor.Quest | Quest Toolkit | 1.0.0",
+    "keywords": "Namespace ToolkitEditor.Quest Classes CategoryTypeEditor JournalEditor QuestTypeEditor TaskTypeEditor"
+  },
+  "api/ToolkitEngine.Quest.CategoryType.html": {
+    "href": "api/ToolkitEngine.Quest.CategoryType.html",
+    "title": "Class CategoryType | Quest Toolkit | 1.0.0",
+    "keywords": "Class CategoryType Namespace ToolkitEngine.Quest public class CategoryType : ScriptableObject Inheritance object CategoryType Properties color public Color color { get; } Property Value Color icon public Sprite icon { get; } Property Value Sprite id public string id { get; } Property Value string name public string name { get; } Property Value string"
+  },
+  "api/ToolkitEngine.Quest.EventHooks.html": {
+    "href": "api/ToolkitEngine.Quest.EventHooks.html",
+    "title": "Class EventHooks | Quest Toolkit | 1.0.0",
+    "keywords": "Class EventHooks Namespace ToolkitEngine.Quest public static class EventHooks Inheritance object EventHooks Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Fields OnQuestStateChanged public const string OnQuestStateChanged = \"OnQuestStateChanged\" Field Value string OnTaskCountChanged public const string OnTaskCountChanged = \"OnTaskCountChanged\" Field Value string OnTaskStateChanged public const string OnTaskStateChanged = \"OnTaskStateChanged\" Field Value string"
+  },
+  "api/ToolkitEngine.Quest.Journal.FinishMode.html": {
+    "href": "api/ToolkitEngine.Quest.Journal.FinishMode.html",
+    "title": "Enum Journal.FinishMode | Quest Toolkit | 1.0.0",
+    "keywords": "Enum Journal.FinishMode Namespace ToolkitEngine.Quest public enum Journal.FinishMode Fields Abandon = 2 Complete = 0 Fail = 1"
+  },
+  "api/ToolkitEngine.Quest.Journal.Quest.html": {
+    "href": "api/ToolkitEngine.Quest.Journal.Quest.html",
+    "title": "Class Journal.Quest | Quest Toolkit | 1.0.0",
+    "keywords": "Class Journal.Quest Namespace ToolkitEngine.Quest [Serializable] public class Journal.Quest Inheritance object Journal.Quest Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties activeTasks public Journal.Task[] activeTasks { get; } Property Value Task[] journal public Journal journal { get; } Property Value Journal questType public QuestType questType { get; } Property Value QuestType state public Journal.State state { get; } Property Value Journal.State"
+  },
+  "api/ToolkitEngine.Quest.Journal.QuestMap.html": {
+    "href": "api/ToolkitEngine.Quest.Journal.QuestMap.html",
+    "title": "Class Journal.QuestMap | Quest Toolkit | 1.0.0",
+    "keywords": "Class Journal.QuestMap Namespace ToolkitEngine.Quest [Serializable] public class Journal.QuestMap : SerializableDictionary<QuestType, Journal.Quest> Inheritance object Journal.QuestMap"
+  },
+  "api/ToolkitEngine.Quest.Journal.State.html": {
+    "href": "api/ToolkitEngine.Quest.Journal.State.html",
+    "title": "Enum Journal.State | Quest Toolkit | 1.0.0",
+    "keywords": "Enum Journal.State Namespace ToolkitEngine.Quest public enum Journal.State Fields Abandoned = 3 Active = 1 Completed = 2 Failed = 4 Inactive = 0"
+  },
+  "api/ToolkitEngine.Quest.Journal.Task.html": {
+    "href": "api/ToolkitEngine.Quest.Journal.Task.html",
+    "title": "Class Journal.Task | Quest Toolkit | 1.0.0",
+    "keywords": "Class Journal.Task Namespace ToolkitEngine.Quest [Serializable] public class Journal.Task Inheritance object Journal.Task Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties count public int count { get; set; } Property Value int journal public Journal journal { get; } Property Value Journal state public Journal.State state { get; } Property Value Journal.State taskType public TaskType taskType { get; } Property Value TaskType"
+  },
+  "api/ToolkitEngine.Quest.Journal.html": {
+    "href": "api/ToolkitEngine.Quest.Journal.html",
+    "title": "Class Journal | Quest Toolkit | 1.0.0",
+    "keywords": "Class Journal Namespace ToolkitEngine.Quest public class Journal : MonoBehaviour Inheritance object Journal Properties activeQuests public Journal.Quest[] activeQuests { get; } Property Value Quest[] finishedQuests public QuestType[] finishedQuests { get; } Property Value QuestType[] onQuestStateChanged public UnityEvent<QuestEventArgs> onQuestStateChanged { get; } Property Value UnityEvent<QuestEventArgs> onTaskCountChanged public UnityEvent<QuestEventArgs> onTaskCountChanged { get; } Property Value UnityEvent<QuestEventArgs> onTaskStateChanged public UnityEvent<QuestEventArgs> onTaskStateChanged { get; } Property Value UnityEvent<QuestEventArgs> Methods Activate(QuestType) public void Activate(QuestType questType) Parameters questType QuestType Activate(TaskType) public void Activate(TaskType taskType) Parameters taskType TaskType Decrement(TaskType) public void Decrement(TaskType taskType) Parameters taskType TaskType Finish(QuestType, FinishMode) public void Finish(QuestType questType, Journal.FinishMode finish) Parameters questType QuestType finish Journal.FinishMode Finish(TaskType, FinishMode) public void Finish(TaskType taskType, Journal.FinishMode finish) Parameters taskType TaskType finish Journal.FinishMode GetState(QuestType) public Journal.State GetState(QuestType questType) Parameters questType QuestType Returns Journal.State Increment(TaskType) public void Increment(TaskType taskType) Parameters taskType TaskType IsActive(QuestType) public bool IsActive(QuestType questType) Parameters questType QuestType Returns bool IsFinished(QuestType) public bool IsFinished(QuestType questType) Parameters questType QuestType Returns bool Modify(TaskType, int) public void Modify(TaskType taskType, int delta) Parameters taskType TaskType delta int"
+  },
+  "api/ToolkitEngine.Quest.QuestEventArgs.html": {
+    "href": "api/ToolkitEngine.Quest.QuestEventArgs.html",
+    "title": "Class QuestEventArgs | Quest Toolkit | 1.0.0",
+    "keywords": "Class QuestEventArgs Namespace ToolkitEngine.Quest public class QuestEventArgs : EventArgs Inheritance object EventArgs QuestEventArgs Inherited Members EventArgs.Empty object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors QuestEventArgs(Journal, Quest, State) public QuestEventArgs(Journal journal, Journal.Quest quest, Journal.State state) Parameters journal Journal quest Journal.Quest state Journal.State QuestEventArgs(Journal, Task, int) public QuestEventArgs(Journal journal, Journal.Task task, int delta) Parameters journal Journal task Journal.Task delta int QuestEventArgs(Journal, Task, State) public QuestEventArgs(Journal journal, Journal.Task task, Journal.State state) Parameters journal Journal task Journal.Task state Journal.State Properties delta public int delta { get; } Property Value int journal public Journal journal { get; } Property Value Journal quest public Journal.Quest quest { get; } Property Value Journal.Quest state public Journal.State state { get; } Property Value Journal.State task public Journal.Task task { get; } Property Value Journal.Task"
+  },
+  "api/ToolkitEngine.Quest.QuestType.Completion.html": {
+    "href": "api/ToolkitEngine.Quest.QuestType.Completion.html",
+    "title": "Enum QuestType.Completion | Quest Toolkit | 1.0.0",
+    "keywords": "Enum QuestType.Completion Namespace ToolkitEngine.Quest public enum QuestType.Completion Fields Any = 3 Custom = 0 Parallel = 2 Sequence = 1"
+  },
+  "api/ToolkitEngine.Quest.QuestType.html": {
+    "href": "api/ToolkitEngine.Quest.QuestType.html",
+    "title": "Class QuestType | Quest Toolkit | 1.0.0",
+    "keywords": "Class QuestType Namespace ToolkitEngine.Quest public class QuestType : ScriptableObject Inheritance object QuestType Properties autoClean public bool autoClean { get; } Property Value bool category public CategoryType category { get; } Property Value CategoryType completion public QuestType.Completion completion { get; } Property Value QuestType.Completion description public string description { get; } Property Value string id public string id { get; } Property Value string order public int order { get; } Property Value int script public ScriptGraphAsset script { get; } Property Value ScriptGraphAsset tasks public TaskType[] tasks { get; } Property Value TaskType[] title public string title { get; } Property Value string Methods Abandon(Journal) public void Abandon(Journal journal) Parameters journal Journal Complete(Journal) public void Complete(Journal journal) Parameters journal Journal Fail(Journal) public void Fail(Journal journal) Parameters journal Journal"
+  },
+  "api/ToolkitEngine.Quest.TaskType.html": {
+    "href": "api/ToolkitEngine.Quest.TaskType.html",
+    "title": "Class TaskType | Quest Toolkit | 1.0.0",
+    "keywords": "Class TaskType Namespace ToolkitEngine.Quest [Serializable] public class TaskType : ScriptableObject Inheritance object TaskType Properties autoClean public bool autoClean { get; } Property Value bool count public int count { get; } Property Value int description public string description { get; } Property Value string id public string id { get; } Property Value string questType public QuestType questType { get; } Property Value QuestType script public ScriptGraphAsset script { get; } Property Value ScriptGraphAsset title public string title { get; } Property Value string useCounter public bool useCounter { get; } Property Value bool"
+  },
+  "api/ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit-1.Owner.html": {
+    "href": "api/ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit-1.Owner.html",
+    "title": "Enum BaseQuestEventUnit<T>.Owner | Quest Toolkit | 1.0.0",
+    "keywords": "Enum BaseQuestEventUnit<T>.Owner Namespace ToolkitEngine.Quest.VisualScripting public enum BaseQuestEventUnit<T>.Owner Fields Default = 0 Quest = 1 Task = 2"
+  },
+  "api/ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit-1.html": {
+    "href": "api/ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit-1.html",
+    "title": "Class BaseQuestEventUnit<T> | Quest Toolkit | 1.0.0",
+    "keywords": "Class BaseQuestEventUnit<T> Namespace ToolkitEngine.Quest.VisualScripting public abstract class BaseQuestEventUnit<T> : BaseEventUnit<QuestEventArgs> where T : ScriptableObject Type Parameters T Inheritance object BaseQuestEventUnit<T> Derived OnQuestStateChanged OnTaskCountChanged OnTaskStateChanged Fields anyState public bool anyState Field Value bool filtered public bool filtered Field Value bool owner public BaseQuestEventUnit<T>.Owner owner Field Value BaseQuestEventUnit<T>.Owner Properties filter public ValueInput filter { get; } Property Value ValueInput state public ValueInput state { get; } Property Value ValueInput Methods Definition() protected override void Definition() IsFilterValid(T, QuestEventArgs) protected abstract bool IsFilterValid(T scriptableObject, QuestEventArgs args) Parameters scriptableObject T args QuestEventArgs Returns bool ShouldTrigger(Flow, QuestEventArgs) protected override bool ShouldTrigger(Flow flow, QuestEventArgs args) Parameters flow Flow args QuestEventArgs Returns bool StartListening(GraphStack) public override void StartListening(GraphStack stack) Parameters stack GraphStack"
+  },
+  "api/ToolkitEngine.Quest.VisualScripting.DecrementTask.html": {
+    "href": "api/ToolkitEngine.Quest.VisualScripting.DecrementTask.html",
+    "title": "Class DecrementTask | Quest Toolkit | 1.0.0",
+    "keywords": "Class DecrementTask Namespace ToolkitEngine.Quest.VisualScripting public class DecrementTask : Unit Inheritance object DecrementTask Properties inputTrigger public ControlInput inputTrigger { get; } Property Value ControlInput Methods Definition() protected override void Definition()"
+  },
+  "api/ToolkitEngine.Quest.VisualScripting.FinishQuest.html": {
+    "href": "api/ToolkitEngine.Quest.VisualScripting.FinishQuest.html",
+    "title": "Class FinishQuest | Quest Toolkit | 1.0.0",
+    "keywords": "Class FinishQuest Namespace ToolkitEngine.Quest.VisualScripting public class FinishQuest : Unit Inheritance object FinishQuest Fields finish public ValueInput finish Field Value ValueInput Properties inputTrigger public ControlInput inputTrigger { get; } Property Value ControlInput Methods Definition() protected override void Definition()"
+  },
+  "api/ToolkitEngine.Quest.VisualScripting.FinishTask.html": {
+    "href": "api/ToolkitEngine.Quest.VisualScripting.FinishTask.html",
+    "title": "Class FinishTask | Quest Toolkit | 1.0.0",
+    "keywords": "Class FinishTask Namespace ToolkitEngine.Quest.VisualScripting public class FinishTask : Unit Inheritance object FinishTask Fields finish public ValueInput finish Field Value ValueInput Properties inputTrigger public ControlInput inputTrigger { get; } Property Value ControlInput Methods Definition() protected override void Definition()"
+  },
+  "api/ToolkitEngine.Quest.VisualScripting.IncrementTask.html": {
+    "href": "api/ToolkitEngine.Quest.VisualScripting.IncrementTask.html",
+    "title": "Class IncrementTask | Quest Toolkit | 1.0.0",
+    "keywords": "Class IncrementTask Namespace ToolkitEngine.Quest.VisualScripting public class IncrementTask : Unit Inheritance object IncrementTask Properties inputTrigger public ControlInput inputTrigger { get; } Property Value ControlInput Methods Definition() protected override void Definition()"
+  },
+  "api/ToolkitEngine.Quest.VisualScripting.OnQuestStateChanged.html": {
+    "href": "api/ToolkitEngine.Quest.VisualScripting.OnQuestStateChanged.html",
+    "title": "Class OnQuestStateChanged | Quest Toolkit | 1.0.0",
+    "keywords": "Class OnQuestStateChanged Namespace ToolkitEngine.Quest.VisualScripting public class OnQuestStateChanged : BaseQuestEventUnit<QuestType> Inheritance object BaseQuestEventUnit<QuestType> OnQuestStateChanged Inherited Members BaseQuestEventUnit<QuestType>.owner BaseQuestEventUnit<QuestType>.anyState BaseQuestEventUnit<QuestType>.filtered BaseQuestEventUnit<QuestType>.state BaseQuestEventUnit<QuestType>.filter BaseQuestEventUnit<QuestType>.Definition() BaseQuestEventUnit<QuestType>.StartListening(GraphStack) BaseQuestEventUnit<QuestType>.ShouldTrigger(Flow, QuestEventArgs) Properties MessageListenerType public override Type MessageListenerType { get; } Property Value Type questType public ValueInput questType { get; } Property Value ValueInput Methods IsFilterValid(QuestType, QuestEventArgs) protected override bool IsFilterValid(QuestType scriptableObject, QuestEventArgs args) Parameters scriptableObject QuestType args QuestEventArgs Returns bool"
+  },
+  "api/ToolkitEngine.Quest.VisualScripting.OnQuestStateChangedMessageListener.html": {
+    "href": "api/ToolkitEngine.Quest.VisualScripting.OnQuestStateChangedMessageListener.html",
+    "title": "Class OnQuestStateChangedMessageListener | Quest Toolkit | 1.0.0",
+    "keywords": "Class OnQuestStateChangedMessageListener Namespace ToolkitEngine.Quest.VisualScripting public class OnQuestStateChangedMessageListener : MessageListener Inheritance object OnQuestStateChangedMessageListener"
+  },
+  "api/ToolkitEngine.Quest.VisualScripting.OnQuestStateChangedMessageListener_Tracker.html": {
+    "href": "api/ToolkitEngine.Quest.VisualScripting.OnQuestStateChangedMessageListener_Tracker.html",
+    "title": "Class OnQuestStateChangedMessageListener_Tracker | Quest Toolkit | 1.0.0",
+    "keywords": "Class OnQuestStateChangedMessageListener_Tracker Namespace ToolkitEngine.Quest.VisualScripting public class OnQuestStateChangedMessageListener_Tracker : MessageListener Inheritance object OnQuestStateChangedMessageListener_Tracker"
+  },
+  "api/ToolkitEngine.Quest.VisualScripting.OnTaskCountChanged.html": {
+    "href": "api/ToolkitEngine.Quest.VisualScripting.OnTaskCountChanged.html",
+    "title": "Class OnTaskCountChanged | Quest Toolkit | 1.0.0",
+    "keywords": "Class OnTaskCountChanged Namespace ToolkitEngine.Quest.VisualScripting public class OnTaskCountChanged : BaseQuestEventUnit<TaskType> Inheritance object BaseQuestEventUnit<TaskType> OnTaskCountChanged Inherited Members BaseQuestEventUnit<TaskType>.owner BaseQuestEventUnit<TaskType>.anyState BaseQuestEventUnit<TaskType>.filtered BaseQuestEventUnit<TaskType>.state BaseQuestEventUnit<TaskType>.filter BaseQuestEventUnit<TaskType>.Definition() BaseQuestEventUnit<TaskType>.StartListening(GraphStack) BaseQuestEventUnit<TaskType>.ShouldTrigger(Flow, QuestEventArgs) Properties MessageListenerType public override Type MessageListenerType { get; } Property Value Type taskType public ValueInput taskType { get; } Property Value ValueInput Methods IsFilterValid(TaskType, QuestEventArgs) protected override bool IsFilterValid(TaskType scriptableObject, QuestEventArgs args) Parameters scriptableObject TaskType args QuestEventArgs Returns bool"
+  },
+  "api/ToolkitEngine.Quest.VisualScripting.OnTaskCountChangedMessageListener.html": {
+    "href": "api/ToolkitEngine.Quest.VisualScripting.OnTaskCountChangedMessageListener.html",
+    "title": "Class OnTaskCountChangedMessageListener | Quest Toolkit | 1.0.0",
+    "keywords": "Class OnTaskCountChangedMessageListener Namespace ToolkitEngine.Quest.VisualScripting public class OnTaskCountChangedMessageListener : MessageListener Inheritance object OnTaskCountChangedMessageListener"
+  },
+  "api/ToolkitEngine.Quest.VisualScripting.OnTaskCountChangedMessageListener_Tracker.html": {
+    "href": "api/ToolkitEngine.Quest.VisualScripting.OnTaskCountChangedMessageListener_Tracker.html",
+    "title": "Class OnTaskCountChangedMessageListener_Tracker | Quest Toolkit | 1.0.0",
+    "keywords": "Class OnTaskCountChangedMessageListener_Tracker Namespace ToolkitEngine.Quest.VisualScripting public class OnTaskCountChangedMessageListener_Tracker : MessageListener Inheritance object OnTaskCountChangedMessageListener_Tracker"
+  },
+  "api/ToolkitEngine.Quest.VisualScripting.OnTaskStateChanged.html": {
+    "href": "api/ToolkitEngine.Quest.VisualScripting.OnTaskStateChanged.html",
+    "title": "Class OnTaskStateChanged | Quest Toolkit | 1.0.0",
+    "keywords": "Class OnTaskStateChanged Namespace ToolkitEngine.Quest.VisualScripting public class OnTaskStateChanged : BaseQuestEventUnit<TaskType> Inheritance object BaseQuestEventUnit<TaskType> OnTaskStateChanged Inherited Members BaseQuestEventUnit<TaskType>.owner BaseQuestEventUnit<TaskType>.anyState BaseQuestEventUnit<TaskType>.filtered BaseQuestEventUnit<TaskType>.state BaseQuestEventUnit<TaskType>.filter BaseQuestEventUnit<TaskType>.Definition() BaseQuestEventUnit<TaskType>.StartListening(GraphStack) BaseQuestEventUnit<TaskType>.ShouldTrigger(Flow, QuestEventArgs) Properties MessageListenerType public override Type MessageListenerType { get; } Property Value Type taskType public ValueInput taskType { get; } Property Value ValueInput Methods IsFilterValid(TaskType, QuestEventArgs) protected override bool IsFilterValid(TaskType scriptableObject, QuestEventArgs args) Parameters scriptableObject TaskType args QuestEventArgs Returns bool"
+  },
+  "api/ToolkitEngine.Quest.VisualScripting.OnTaskStateChangedMessageListener.html": {
+    "href": "api/ToolkitEngine.Quest.VisualScripting.OnTaskStateChangedMessageListener.html",
+    "title": "Class OnTaskStateChangedMessageListener | Quest Toolkit | 1.0.0",
+    "keywords": "Class OnTaskStateChangedMessageListener Namespace ToolkitEngine.Quest.VisualScripting public class OnTaskStateChangedMessageListener : MessageListener Inheritance object OnTaskStateChangedMessageListener"
+  },
+  "api/ToolkitEngine.Quest.VisualScripting.OnTaskStateChangedMessageListener_Tracker.html": {
+    "href": "api/ToolkitEngine.Quest.VisualScripting.OnTaskStateChangedMessageListener_Tracker.html",
+    "title": "Class OnTaskStateChangedMessageListener_Tracker | Quest Toolkit | 1.0.0",
+    "keywords": "Class OnTaskStateChangedMessageListener_Tracker Namespace ToolkitEngine.Quest.VisualScripting public class OnTaskStateChangedMessageListener_Tracker : MessageListener Inheritance object OnTaskStateChangedMessageListener_Tracker"
+  },
+  "api/ToolkitEngine.Quest.VisualScripting.html": {
+    "href": "api/ToolkitEngine.Quest.VisualScripting.html",
+    "title": "Namespace ToolkitEngine.Quest.VisualScripting | Quest Toolkit | 1.0.0",
+    "keywords": "Namespace ToolkitEngine.Quest.VisualScripting Classes BaseQuestEventUnit<T> DecrementTask FinishQuest FinishTask IncrementTask OnQuestStateChanged OnQuestStateChangedMessageListener OnQuestStateChangedMessageListener_Tracker OnTaskCountChanged OnTaskCountChangedMessageListener OnTaskCountChangedMessageListener_Tracker OnTaskStateChanged OnTaskStateChangedMessageListener OnTaskStateChangedMessageListener_Tracker Enums BaseQuestEventUnit<T>.Owner"
+  },
+  "api/ToolkitEngine.Quest.html": {
+    "href": "api/ToolkitEngine.Quest.html",
+    "title": "Namespace ToolkitEngine.Quest | Quest Toolkit | 1.0.0",
+    "keywords": "Namespace ToolkitEngine.Quest Classes CategoryType EventHooks Journal Journal.Quest Journal.QuestMap Journal.Task QuestEventArgs QuestType TaskType Enums Journal.FinishMode Journal.State QuestType.Completion"
+  },
+  "api/index.html": {
+    "href": "api/index.html",
+    "title": "| Quest Toolkit | 1.0.0",
+    "keywords": "This is the documentation for the Scripting APIs of this package."
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "| Quest Toolkit | 1.0.0",
+    "keywords": "This page redirects to the manual."
+  },
+  "license/LICENSE.html": {
+    "href": "license/LICENSE.html",
+    "title": "| Quest Toolkit | 1.0.0",
+    "keywords": "MIT License Copyright (c) 2024 nrvllrgrs Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+  },
+  "manual/index.html": {
+    "href": "manual/index.html",
+    "title": "toolkit.quest | Quest Toolkit | 1.0.0",
+    "keywords": "toolkit.quest"
+  }
+}
