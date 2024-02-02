@@ -1,0 +1,16 @@
+{
+	"name": "com.toolkit.quest",
+	"displayName": "Quest Toolkit",
+	"version": "1.0.0",
+	"unity": "2019.4",
+	"description": "Common components for quest functionality.",
+	"keywords": [
+		"toolkit"
+	],
+	"category": "Toolkit",
+	"dependencies": {},
+	"repository": {
+		"url": "https://github.com/nrvllrgrs/toolkit.quest",
+		"type": "git"
+	}
+}
