@@ -16,7 +16,6 @@ namespace ToolkitEditor.Quest
 		protected SerializedProperty m_title;
 		protected SerializedProperty m_description;
 		protected SerializedProperty m_script;
-		protected SerializedProperty m_autoClean;
 
 		protected SerializedProperty m_useCounter;
 		protected SerializedProperty m_count;
@@ -36,7 +35,6 @@ namespace ToolkitEditor.Quest
 			m_title = serializedObject.FindProperty(nameof(m_title));
 			m_description = serializedObject.FindProperty(nameof(m_description));
 			m_script = serializedObject.FindProperty(nameof(m_script));
-			m_autoClean = serializedObject.FindProperty(nameof(m_autoClean));
 
 			m_useCounter = serializedObject.FindProperty(nameof(m_useCounter));
 			m_count = serializedObject.FindProperty(nameof(m_count));
@@ -53,12 +51,6 @@ namespace ToolkitEditor.Quest
 			EditorGUILayout.PropertyField(m_title);
 			EditorGUILayout.PropertyField(m_description);
 			EditorGUILayoutUtility.ScriptableObjectField<ScriptGraphAsset>(m_script, m_taskType);
-			if (m_script.objectReferenceValue != null)
-			{
-				++EditorGUI.indentLevel;
-				EditorGUILayout.PropertyField(m_autoClean);
-				--EditorGUI.indentLevel;
-			}
 
 			EditorGUILayout.Space();
 
@@ -84,12 +76,6 @@ namespace ToolkitEditor.Quest
 			EditorGUIRectLayout.PropertyField(ref position, m_title);
 			EditorGUIRectLayout.PropertyField(ref position, m_description);
 			EditorGUIRectLayout.ScriptableObjectField<ScriptGraphAsset>(ref position, m_script, m_taskType);
-			if (m_script.objectReferenceValue != null)
-			{
-				++EditorGUI.indentLevel;
-				EditorGUIRectLayout.PropertyField(ref position, m_autoClean);
-				--EditorGUI.indentLevel;
-			}
 
 			EditorGUIRectLayout.Space(ref position);
 
@@ -113,12 +99,6 @@ namespace ToolkitEditor.Quest
 				+ EditorGUI.GetPropertyHeight(m_useCounter)
 				+ EditorGUIRectLayout.GetSpaceHeight()
 				+ (EditorGUIUtility.standardVerticalSpacing * 5);
-
-			if (m_script.objectReferenceValue != null)
-			{
-				height += EditorGUI.GetPropertyHeight(m_autoClean)
-					+ EditorGUIUtility.standardVerticalSpacing;
-			}
 
 			if (m_useCounter.boolValue)
 			{

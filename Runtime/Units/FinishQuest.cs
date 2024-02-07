@@ -41,7 +41,7 @@ namespace ToolkitEngine.Quest.VisualScripting
 					break;
 
 				case Journal.FinishMode.Abandon:
-					quest.state = Journal.State.Abandoned;
+					quest.state = Journal.State.Inactive;
 					break;
 			}
 

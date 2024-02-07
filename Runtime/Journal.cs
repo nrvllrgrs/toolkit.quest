@@ -54,7 +54,6 @@ namespace ToolkitEngine.Quest
 			Inactive,
 			Active,
 			Completed,
-			Abandoned,
 			Failed,
 		}
 
@@ -74,6 +73,9 @@ namespace ToolkitEngine.Quest
 
 		[SerializeField]
 		private Dictionary<QuestType, State> m_finishedQuests = new();
+
+		private HashSet<GameObject> m_trackersToDestroy = new();
+		private Coroutine m_cleanupThread = null;
 
 		#endregion
 
@@ -114,31 +116,46 @@ namespace ToolkitEngine.Quest
 
 			var quest = new Quest(questType, this);
 			quest.StateChanged += Quest_StateChanged;
+			quest.TaskStateChanged += Quest_TaskStateChanged;
+			quest.TaskCountChanged += Quest_TaskCountChanged;
+
+			// Add quest to dictionary for tracking
+			m_activeQuests.Add(questType, quest);
 			quest.state = State.Active;
 		}
 
 		private void Quest_StateChanged(object sender, QuestEventArgs e)
 		{
+			m_onQuestStateChanged?.Invoke(e);
+
 			if (e.state == State.Active)
-			{
-				// Add quest to dictionary for tracking
-				m_activeQuests.Add(e.quest.questType, e.quest);
-			}
-			else
-			{
-				if (m_activeQuests.ContainsKey(e.quest.questType))
-				{
-					var quest = m_activeQuests[e.quest.questType];
-					quest.StateChanged -= Quest_StateChanged;
+				return;
 
-					m_activeQuests.Remove(e.quest.questType);
-				}
+			if (m_activeQuests.ContainsKey(e.quest.questType))
+			{
+				var quest = m_activeQuests[e.quest.questType];
+				quest.StateChanged -= Quest_StateChanged;
+				quest.TaskStateChanged -= Quest_TaskStateChanged;
+				quest.TaskCountChanged -= Quest_TaskCountChanged;
 
-				if (e.state == State.Completed || e.state == State.Failed)
-				{
-					m_finishedQuests.Add(e.quest.questType, e.state);
-				}
+				m_activeQuests.Remove(e.quest.questType);
 			}
+
+			// Possible to complete / fail quests that are not active
+			if (e.state == State.Completed || e.state == State.Failed)
+			{
+				m_finishedQuests.Add(e.quest.questType, e.state);
+			}
+		}
+
+		private void Quest_TaskCountChanged(object sender, QuestEventArgs e)
+		{
+			m_onTaskStateChanged?.Invoke(e);
+		}
+
+		private void Quest_TaskStateChanged(object sender, QuestEventArgs e)
+		{
+			m_onTaskCountChanged?.Invoke(e);
 		}
 
 		public void Finish(QuestType questType, FinishMode finish)
@@ -157,18 +174,15 @@ namespace ToolkitEngine.Quest
 					break;
 
 				case FinishMode.Abandon:
-					quest.state = State.Abandoned;
+					quest.state = State.Inactive;
 					break;
 			}
 		}
 
-		private bool TryGetQuest(QuestType questType, out Quest quest)
+		internal bool TryGetQuest(QuestType questType, out Quest quest)
 		{
 			return m_activeQuests.TryGetValue(questType, out quest);
 		}
-
-		public bool IsActive(QuestType questType) => questType != null && m_activeQuests.ContainsKey(questType);
-		public bool IsFinished(QuestType questType) => questType != null && m_finishedQuests.ContainsKey(questType);
 
 		public State GetState(QuestType questType)
 		{
@@ -181,23 +195,8 @@ namespace ToolkitEngine.Quest
 			return State.Inactive;
 		}
 
-		private static GameObject CreateTracker<T>(Journal journal, string title, ScriptGraphAsset script, string variableName, T value)
-		{
-			if (script == null)
-				return null;
-
-			GameObject tracker = new GameObject(string.Format("{0} Tracker", title));
-			//obj.hideFlags |= HideFlags.HideAndDontSave;
-			tracker.transform.SetParent(journal.transform);
-
-			var machine = tracker.AddComponent<ScriptMachine>();
-			machine.enabled = false;
-			machine.nest.macro = script;
-			Variables.Object(tracker).Set(variableName, value);
-			machine.enabled = true;
-
-			return tracker;
-		}
+		public bool IsActive(QuestType questType) => questType != null && m_activeQuests.ContainsKey(questType);
+		public bool IsFinished(QuestType questType) => questType != null && m_finishedQuests.ContainsKey(questType);
 
 		#endregion
 
@@ -256,12 +255,12 @@ namespace ToolkitEngine.Quest
 					break;
 
 				case FinishMode.Abandon:
-					task.state = State.Abandoned;
+					task.state = State.Inactive;
 					break;
 			}
 		}
 
-		private bool TryGetTask(TaskType taskType, out Task task)
+		internal bool TryGetTask(TaskType taskType, out Task task)
 		{
 			if (taskType == null || !TryGetQuest(taskType.questType, out Quest quest))
 			{
@@ -270,6 +269,28 @@ namespace ToolkitEngine.Quest
 			}
 
 			return quest.TryGetTask(taskType, out task);
+		}
+
+		#endregion
+
+		#region Helper Methods
+
+		private static GameObject CreateTracker<T>(Journal journal, string title, ScriptGraphAsset script, string variableName, T value)
+		{
+			if (script == null)
+				return null;
+
+			GameObject tracker = new GameObject(string.Format("{0} Tracker", title));
+			//obj.hideFlags |= HideFlags.HideAndDontSave;
+			tracker.transform.SetParent(journal.transform);
+
+			var machine = tracker.AddComponent<ScriptMachine>();
+			machine.enabled = false;
+			machine.nest.macro = script;
+			Variables.Object(tracker).Set(variableName, value);
+			machine.enabled = true;
+
+			return tracker;
 		}
 
 		#endregion
@@ -291,6 +312,8 @@ namespace ToolkitEngine.Quest
 			#region Events
 
 			internal event EventHandler<QuestEventArgs> StateChanged;
+			internal event EventHandler<QuestEventArgs> TaskStateChanged;
+			internal event EventHandler<QuestEventArgs> TaskCountChanged;
 
 			#endregion
 
@@ -318,7 +341,6 @@ namespace ToolkitEngine.Quest
 
 					var args = new QuestEventArgs(journal, this, value);
 					StateChanged?.Invoke(this, args);
-					journal.onQuestStateChanged?.Invoke(args);
 
 					if (value == State.Active)
 					{
@@ -347,10 +369,7 @@ namespace ToolkitEngine.Quest
 					}
 					else
 					{
-						if (questType.autoClean)
-						{
-							Cleanup();
-						}
+						Cleanup();
 
 						var tasks = m_activeTasks.Values.ToArray();
 						foreach (var task in tasks)
@@ -388,18 +407,15 @@ namespace ToolkitEngine.Quest
 
 			private Task CreateTask(TaskType taskType)
 			{
-				var task = new Task(taskType, journal);
+				var task = new Task(taskType, this);
+				task.StateChanged += Task_StateChanged;
+				task.CountChanged += Task_CountChanged;
 
 				// Activate before listening to avoid early callback
 				m_activeTasks.Add(taskType, task);
 				task.Activate();
 
 				return task;
-			}
-
-			internal bool TryGetTask(TaskType taskType, out Task task)
-			{
-				return m_activeTasks.TryGetValue(taskType, out task);
 			}
 
 			internal void Cleanup()
@@ -415,8 +431,26 @@ namespace ToolkitEngine.Quest
 				if (task == null)
 					return;
 
+				task.StateChanged -= Task_StateChanged;
+				task.CountChanged -= Task_CountChanged;
 				m_activeTasks.Remove(task.taskType);
+
 				task.Cleanup();
+			}
+
+			private void Task_StateChanged(object sender, QuestEventArgs e)
+			{
+				TaskStateChanged?.Invoke(sender, e);
+			}
+
+			private void Task_CountChanged(object sender, QuestEventArgs e)
+			{
+				TaskCountChanged?.Invoke(sender, e);
+			}
+
+			internal bool TryGetTask(TaskType taskType, out Task task)
+			{
+				return m_activeTasks.TryGetValue(taskType, out task);
 			}
 
 			private void NextTask()
@@ -510,12 +544,14 @@ namespace ToolkitEngine.Quest
 			#region Events
 
 			internal event EventHandler<QuestEventArgs> StateChanged;
+			internal event EventHandler<QuestEventArgs> CountChanged;
 
 			#endregion
 
 			#region Properties
 
-			public Journal journal { get; private set; }
+			public Journal journal => quest?.journal;
+			public Quest quest { get; private set; }
 			public TaskType taskType { get; private set; }
 
 			public int count
@@ -533,7 +569,7 @@ namespace ToolkitEngine.Quest
 					m_count = value;
 
 					var args = new QuestEventArgs(journal, this, delta);
-					journal.onTaskCountChanged?.Invoke(args);
+					CountChanged?.Invoke(this, args);
 
 					if (count == taskType.count)
 					{
@@ -570,10 +606,10 @@ namespace ToolkitEngine.Quest
 
 			#region Constructors
 
-			internal Task(TaskType taskType, Journal journal)
+			internal Task(TaskType taskType, Quest quest)
 			{
 				this.taskType = taskType;
-				this.journal = journal;
+				this.quest = quest;
 			}
 
 			#endregion

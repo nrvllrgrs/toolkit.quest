@@ -15,12 +15,7 @@ namespace ToolkitEngine.Quest.VisualScripting
 
 		#region Properties
 
-		public override Type MessageListenerType
-		{
-			get => owner == Owner.Default
-				? typeof(OnTaskStateChangedMessageListener)
-				: typeof(OnTaskStateChangedMessageListener_Tracker);
-		}
+		public override Type MessageListenerType => typeof(OnTaskStateChangedMessageListener);
 
 		#endregion
 

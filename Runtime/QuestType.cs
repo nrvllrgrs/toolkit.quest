@@ -50,9 +50,6 @@ namespace ToolkitEngine.Quest
 		[SerializeField]
 		private ScriptGraphAsset m_script;
 
-		[SerializeField, Tooltip("Indicates whether script is automatically destroyed when finished.")]
-		private bool m_autoClean = true;
-
 		[SerializeField]
 		private List<QuestType> m_questsOnCompleted = new();
 
@@ -74,7 +71,6 @@ namespace ToolkitEngine.Quest
 		public TaskType[] tasks => m_tasks.ToArray();
 		public Completion completion => m_completion;
 		public ScriptGraphAsset script => m_script;
-		public bool autoClean => m_autoClean;
 
 #if UNITY_EDITOR
 		internal List<TaskType> taskList { get => m_tasks; set => m_tasks = value; }

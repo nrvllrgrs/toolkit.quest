@@ -21,9 +21,6 @@ namespace ToolkitEngine.Quest
 		[SerializeField]
 		private ScriptGraphAsset m_script;
 
-		[SerializeField, Tooltip("Indicates whether script is automatically destroyed when finished.")]
-		private bool m_autoClean = true;
-
 		[SerializeField]
 		private bool m_useCounter;
 
@@ -39,7 +36,6 @@ namespace ToolkitEngine.Quest
 		public string title => m_title;
 		public string description => m_description;
 		public ScriptGraphAsset script => m_script;
-		public bool autoClean => m_autoClean;
 		public bool useCounter => m_useCounter;
 		public int count => m_count;
 

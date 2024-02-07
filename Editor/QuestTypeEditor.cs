@@ -23,7 +23,6 @@ namespace ToolkitEditor.Quest
         protected SerializedProperty m_description;
 		protected SerializedProperty m_rewards;
 		protected SerializedProperty m_script;
-		protected SerializedProperty m_autoClean;
 
 		protected SerializedProperty m_tasks;
 		protected SerializedProperty m_completion;
@@ -51,7 +50,6 @@ namespace ToolkitEditor.Quest
             m_description = serializedObject.FindProperty(nameof(m_description));
 			m_rewards = serializedObject.FindProperty(nameof(m_rewards));
 			m_script = serializedObject.FindProperty(nameof(m_script));
-			m_autoClean = serializedObject.FindProperty(nameof(m_autoClean));
 
 			m_tasks = serializedObject.FindProperty(nameof(m_tasks));
 			m_completion = serializedObject.FindProperty(nameof(m_completion));
@@ -117,12 +115,6 @@ namespace ToolkitEditor.Quest
             EditorGUILayout.PropertyField(m_description);
 			EditorGUILayout.PropertyField(m_rewards);
 			EditorGUILayoutUtility.ScriptableObjectField<ScriptGraphAsset>(m_script, m_questType);
-			if (m_script.objectReferenceValue != null)
-			{
-				++EditorGUI.indentLevel;
-				EditorGUILayout.PropertyField(m_autoClean);
-				--EditorGUI.indentLevel;
-			}
 
 			EditorGUILayout.Separator();
 
