@@ -137,12 +137,6 @@ references:
   isSpec: "True"
   fullName: ToolkitEditor.Quest.QuestTypeEditor.OnInspectorGUI
   nameWithType: QuestTypeEditor.OnInspectorGUI
-- uid: ToolkitEditor.Quest.QuestTypeEditor.m_autoClean
-  name: m_autoClean
-  href: api/ToolkitEditor.Quest.QuestTypeEditor.html#ToolkitEditor_Quest_QuestTypeEditor_m_autoClean
-  commentId: F:ToolkitEditor.Quest.QuestTypeEditor.m_autoClean
-  fullName: ToolkitEditor.Quest.QuestTypeEditor.m_autoClean
-  nameWithType: QuestTypeEditor.m_autoClean
 - uid: ToolkitEditor.Quest.QuestTypeEditor.m_category
   name: m_category
   href: api/ToolkitEditor.Quest.QuestTypeEditor.html#ToolkitEditor_Quest_QuestTypeEditor_m_category
@@ -266,12 +260,6 @@ references:
   isSpec: "True"
   fullName: ToolkitEditor.Quest.TaskTypeEditor.OnInspectorGUI
   nameWithType: TaskTypeEditor.OnInspectorGUI
-- uid: ToolkitEditor.Quest.TaskTypeEditor.m_autoClean
-  name: m_autoClean
-  href: api/ToolkitEditor.Quest.TaskTypeEditor.html#ToolkitEditor_Quest_TaskTypeEditor_m_autoClean
-  commentId: F:ToolkitEditor.Quest.TaskTypeEditor.m_autoClean
-  fullName: ToolkitEditor.Quest.TaskTypeEditor.m_autoClean
-  nameWithType: TaskTypeEditor.m_autoClean
 - uid: ToolkitEditor.Quest.TaskTypeEditor.m_count
   name: m_count
   href: api/ToolkitEditor.Quest.TaskTypeEditor.html#ToolkitEditor_Quest_TaskTypeEditor_m_count
@@ -633,12 +621,6 @@ references:
   commentId: T:ToolkitEngine.Quest.Journal.State
   fullName: ToolkitEngine.Quest.Journal.State
   nameWithType: Journal.State
-- uid: ToolkitEngine.Quest.Journal.State.Abandoned
-  name: Abandoned
-  href: api/ToolkitEngine.Quest.Journal.State.html#ToolkitEngine_Quest_Journal_State_Abandoned
-  commentId: F:ToolkitEngine.Quest.Journal.State.Abandoned
-  fullName: ToolkitEngine.Quest.Journal.State.Abandoned
-  nameWithType: Journal.State.Abandoned
 - uid: ToolkitEngine.Quest.Journal.State.Active
   name: Active
   href: api/ToolkitEngine.Quest.Journal.State.html#ToolkitEngine_Quest_Journal_State_Active
@@ -695,6 +677,19 @@ references:
   isSpec: "True"
   fullName: ToolkitEngine.Quest.Journal.Task.journal
   nameWithType: Journal.Task.journal
+- uid: ToolkitEngine.Quest.Journal.Task.quest
+  name: quest
+  href: api/ToolkitEngine.Quest.Journal.Task.html#ToolkitEngine_Quest_Journal_Task_quest
+  commentId: P:ToolkitEngine.Quest.Journal.Task.quest
+  fullName: ToolkitEngine.Quest.Journal.Task.quest
+  nameWithType: Journal.Task.quest
+- uid: ToolkitEngine.Quest.Journal.Task.quest*
+  name: quest
+  href: api/ToolkitEngine.Quest.Journal.Task.html#ToolkitEngine_Quest_Journal_Task_quest_
+  commentId: Overload:ToolkitEngine.Quest.Journal.Task.quest
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.Journal.Task.quest
+  nameWithType: Journal.Task.quest
 - uid: ToolkitEngine.Quest.Journal.Task.state
   name: state
   href: api/ToolkitEngine.Quest.Journal.Task.html#ToolkitEngine_Quest_Journal_Task_state
@@ -969,19 +964,6 @@ references:
   isSpec: "True"
   fullName: ToolkitEngine.Quest.QuestType.Fail
   nameWithType: QuestType.Fail
-- uid: ToolkitEngine.Quest.QuestType.autoClean
-  name: autoClean
-  href: api/ToolkitEngine.Quest.QuestType.html#ToolkitEngine_Quest_QuestType_autoClean
-  commentId: P:ToolkitEngine.Quest.QuestType.autoClean
-  fullName: ToolkitEngine.Quest.QuestType.autoClean
-  nameWithType: QuestType.autoClean
-- uid: ToolkitEngine.Quest.QuestType.autoClean*
-  name: autoClean
-  href: api/ToolkitEngine.Quest.QuestType.html#ToolkitEngine_Quest_QuestType_autoClean_
-  commentId: Overload:ToolkitEngine.Quest.QuestType.autoClean
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.QuestType.autoClean
-  nameWithType: QuestType.autoClean
 - uid: ToolkitEngine.Quest.QuestType.category
   name: category
   href: api/ToolkitEngine.Quest.QuestType.html#ToolkitEngine_Quest_QuestType_category
@@ -1092,19 +1074,6 @@ references:
   commentId: T:ToolkitEngine.Quest.TaskType
   fullName: ToolkitEngine.Quest.TaskType
   nameWithType: TaskType
-- uid: ToolkitEngine.Quest.TaskType.autoClean
-  name: autoClean
-  href: api/ToolkitEngine.Quest.TaskType.html#ToolkitEngine_Quest_TaskType_autoClean
-  commentId: P:ToolkitEngine.Quest.TaskType.autoClean
-  fullName: ToolkitEngine.Quest.TaskType.autoClean
-  nameWithType: TaskType.autoClean
-- uid: ToolkitEngine.Quest.TaskType.autoClean*
-  name: autoClean
-  href: api/ToolkitEngine.Quest.TaskType.html#ToolkitEngine_Quest_TaskType_autoClean_
-  commentId: Overload:ToolkitEngine.Quest.TaskType.autoClean
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.TaskType.autoClean
-  nameWithType: TaskType.autoClean
 - uid: ToolkitEngine.Quest.TaskType.count
   name: count
   href: api/ToolkitEngine.Quest.TaskType.html#ToolkitEngine_Quest_TaskType_count
@@ -1245,39 +1214,6 @@ references:
   fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit(Of T).IsFilterValid
   nameWithType: BaseQuestEventUnit<T>.IsFilterValid
   nameWithType.vb: BaseQuestEventUnit(Of T).IsFilterValid
-- uid: ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit`1.Owner
-  name: BaseQuestEventUnit<T>.Owner
-  href: api/ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit-1.Owner.html
-  commentId: T:ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit`1.Owner
-  name.vb: BaseQuestEventUnit(Of T).Owner
-  fullName: ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit<T>.Owner
-  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit(Of T).Owner
-  nameWithType: BaseQuestEventUnit<T>.Owner
-  nameWithType.vb: BaseQuestEventUnit(Of T).Owner
-- uid: ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit`1.Owner.Default
-  name: Default
-  href: api/ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit-1.Owner.html#ToolkitEngine_Quest_VisualScripting_BaseQuestEventUnit_1_Owner_Default
-  commentId: F:ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit`1.Owner.Default
-  fullName: ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit<T>.Owner.Default
-  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit(Of T).Owner.Default
-  nameWithType: BaseQuestEventUnit<T>.Owner.Default
-  nameWithType.vb: BaseQuestEventUnit(Of T).Owner.Default
-- uid: ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit`1.Owner.Quest
-  name: Quest
-  href: api/ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit-1.Owner.html#ToolkitEngine_Quest_VisualScripting_BaseQuestEventUnit_1_Owner_Quest
-  commentId: F:ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit`1.Owner.Quest
-  fullName: ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit<T>.Owner.Quest
-  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit(Of T).Owner.Quest
-  nameWithType: BaseQuestEventUnit<T>.Owner.Quest
-  nameWithType.vb: BaseQuestEventUnit(Of T).Owner.Quest
-- uid: ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit`1.Owner.Task
-  name: Task
-  href: api/ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit-1.Owner.html#ToolkitEngine_Quest_VisualScripting_BaseQuestEventUnit_1_Owner_Task
-  commentId: F:ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit`1.Owner.Task
-  fullName: ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit<T>.Owner.Task
-  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit(Of T).Owner.Task
-  nameWithType: BaseQuestEventUnit<T>.Owner.Task
-  nameWithType.vb: BaseQuestEventUnit(Of T).Owner.Task
 - uid: ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit`1.ShouldTrigger(Flow,ToolkitEngine.Quest.QuestEventArgs)
   name: ShouldTrigger(Flow, QuestEventArgs)
   href: api/ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit-1.html#ToolkitEngine_Quest_VisualScripting_BaseQuestEventUnit_1_ShouldTrigger_Flow_ToolkitEngine_Quest_QuestEventArgs_
@@ -1295,23 +1231,6 @@ references:
   fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit(Of T).ShouldTrigger
   nameWithType: BaseQuestEventUnit<T>.ShouldTrigger
   nameWithType.vb: BaseQuestEventUnit(Of T).ShouldTrigger
-- uid: ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit`1.StartListening(GraphStack)
-  name: StartListening(GraphStack)
-  href: api/ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit-1.html#ToolkitEngine_Quest_VisualScripting_BaseQuestEventUnit_1_StartListening_GraphStack_
-  commentId: M:ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit`1.StartListening(GraphStack)
-  fullName: ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit<T>.StartListening(GraphStack)
-  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit(Of T).StartListening(GraphStack)
-  nameWithType: BaseQuestEventUnit<T>.StartListening(GraphStack)
-  nameWithType.vb: BaseQuestEventUnit(Of T).StartListening(GraphStack)
-- uid: ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit`1.StartListening*
-  name: StartListening
-  href: api/ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit-1.html#ToolkitEngine_Quest_VisualScripting_BaseQuestEventUnit_1_StartListening_
-  commentId: Overload:ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit`1.StartListening
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit<T>.StartListening
-  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit(Of T).StartListening
-  nameWithType: BaseQuestEventUnit<T>.StartListening
-  nameWithType.vb: BaseQuestEventUnit(Of T).StartListening
 - uid: ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit`1.anyState
   name: anyState
   href: api/ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit-1.html#ToolkitEngine_Quest_VisualScripting_BaseQuestEventUnit_1_anyState
@@ -1345,14 +1264,6 @@ references:
   fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit(Of T).filtered
   nameWithType: BaseQuestEventUnit<T>.filtered
   nameWithType.vb: BaseQuestEventUnit(Of T).filtered
-- uid: ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit`1.owner
-  name: owner
-  href: api/ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit-1.html#ToolkitEngine_Quest_VisualScripting_BaseQuestEventUnit_1_owner
-  commentId: F:ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit`1.owner
-  fullName: ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit<T>.owner
-  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit(Of T).owner
-  nameWithType: BaseQuestEventUnit<T>.owner
-  nameWithType.vb: BaseQuestEventUnit(Of T).owner
 - uid: ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit`1.state
   name: state
   href: api/ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit-1.html#ToolkitEngine_Quest_VisualScripting_BaseQuestEventUnit_1_state
@@ -1561,12 +1472,19 @@ references:
   commentId: T:ToolkitEngine.Quest.VisualScripting.OnQuestStateChangedMessageListener
   fullName: ToolkitEngine.Quest.VisualScripting.OnQuestStateChangedMessageListener
   nameWithType: OnQuestStateChangedMessageListener
-- uid: ToolkitEngine.Quest.VisualScripting.OnQuestStateChangedMessageListener_Tracker
-  name: OnQuestStateChangedMessageListener_Tracker
-  href: api/ToolkitEngine.Quest.VisualScripting.OnQuestStateChangedMessageListener_Tracker.html
-  commentId: T:ToolkitEngine.Quest.VisualScripting.OnQuestStateChangedMessageListener_Tracker
-  fullName: ToolkitEngine.Quest.VisualScripting.OnQuestStateChangedMessageListener_Tracker
-  nameWithType: OnQuestStateChangedMessageListener_Tracker
+- uid: ToolkitEngine.Quest.VisualScripting.OnQuestStateChangedMessageListener.Trigger(ToolkitEngine.Quest.QuestEventArgs)
+  name: Trigger(QuestEventArgs)
+  href: api/ToolkitEngine.Quest.VisualScripting.OnQuestStateChangedMessageListener.html#ToolkitEngine_Quest_VisualScripting_OnQuestStateChangedMessageListener_Trigger_ToolkitEngine_Quest_QuestEventArgs_
+  commentId: M:ToolkitEngine.Quest.VisualScripting.OnQuestStateChangedMessageListener.Trigger(ToolkitEngine.Quest.QuestEventArgs)
+  fullName: ToolkitEngine.Quest.VisualScripting.OnQuestStateChangedMessageListener.Trigger(ToolkitEngine.Quest.QuestEventArgs)
+  nameWithType: OnQuestStateChangedMessageListener.Trigger(QuestEventArgs)
+- uid: ToolkitEngine.Quest.VisualScripting.OnQuestStateChangedMessageListener.Trigger*
+  name: Trigger
+  href: api/ToolkitEngine.Quest.VisualScripting.OnQuestStateChangedMessageListener.html#ToolkitEngine_Quest_VisualScripting_OnQuestStateChangedMessageListener_Trigger_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.OnQuestStateChangedMessageListener.Trigger
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.VisualScripting.OnQuestStateChangedMessageListener.Trigger
+  nameWithType: OnQuestStateChangedMessageListener.Trigger
 - uid: ToolkitEngine.Quest.VisualScripting.OnTaskCountChanged
   name: OnTaskCountChanged
   href: api/ToolkitEngine.Quest.VisualScripting.OnTaskCountChanged.html
@@ -1618,12 +1536,19 @@ references:
   commentId: T:ToolkitEngine.Quest.VisualScripting.OnTaskCountChangedMessageListener
   fullName: ToolkitEngine.Quest.VisualScripting.OnTaskCountChangedMessageListener
   nameWithType: OnTaskCountChangedMessageListener
-- uid: ToolkitEngine.Quest.VisualScripting.OnTaskCountChangedMessageListener_Tracker
-  name: OnTaskCountChangedMessageListener_Tracker
-  href: api/ToolkitEngine.Quest.VisualScripting.OnTaskCountChangedMessageListener_Tracker.html
-  commentId: T:ToolkitEngine.Quest.VisualScripting.OnTaskCountChangedMessageListener_Tracker
-  fullName: ToolkitEngine.Quest.VisualScripting.OnTaskCountChangedMessageListener_Tracker
-  nameWithType: OnTaskCountChangedMessageListener_Tracker
+- uid: ToolkitEngine.Quest.VisualScripting.OnTaskCountChangedMessageListener.Trigger(ToolkitEngine.Quest.QuestEventArgs)
+  name: Trigger(QuestEventArgs)
+  href: api/ToolkitEngine.Quest.VisualScripting.OnTaskCountChangedMessageListener.html#ToolkitEngine_Quest_VisualScripting_OnTaskCountChangedMessageListener_Trigger_ToolkitEngine_Quest_QuestEventArgs_
+  commentId: M:ToolkitEngine.Quest.VisualScripting.OnTaskCountChangedMessageListener.Trigger(ToolkitEngine.Quest.QuestEventArgs)
+  fullName: ToolkitEngine.Quest.VisualScripting.OnTaskCountChangedMessageListener.Trigger(ToolkitEngine.Quest.QuestEventArgs)
+  nameWithType: OnTaskCountChangedMessageListener.Trigger(QuestEventArgs)
+- uid: ToolkitEngine.Quest.VisualScripting.OnTaskCountChangedMessageListener.Trigger*
+  name: Trigger
+  href: api/ToolkitEngine.Quest.VisualScripting.OnTaskCountChangedMessageListener.html#ToolkitEngine_Quest_VisualScripting_OnTaskCountChangedMessageListener_Trigger_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.OnTaskCountChangedMessageListener.Trigger
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.VisualScripting.OnTaskCountChangedMessageListener.Trigger
+  nameWithType: OnTaskCountChangedMessageListener.Trigger
 - uid: ToolkitEngine.Quest.VisualScripting.OnTaskStateChanged
   name: OnTaskStateChanged
   href: api/ToolkitEngine.Quest.VisualScripting.OnTaskStateChanged.html
@@ -1675,9 +1600,16 @@ references:
   commentId: T:ToolkitEngine.Quest.VisualScripting.OnTaskStateChangedMessageListener
   fullName: ToolkitEngine.Quest.VisualScripting.OnTaskStateChangedMessageListener
   nameWithType: OnTaskStateChangedMessageListener
-- uid: ToolkitEngine.Quest.VisualScripting.OnTaskStateChangedMessageListener_Tracker
-  name: OnTaskStateChangedMessageListener_Tracker
-  href: api/ToolkitEngine.Quest.VisualScripting.OnTaskStateChangedMessageListener_Tracker.html
-  commentId: T:ToolkitEngine.Quest.VisualScripting.OnTaskStateChangedMessageListener_Tracker
-  fullName: ToolkitEngine.Quest.VisualScripting.OnTaskStateChangedMessageListener_Tracker
-  nameWithType: OnTaskStateChangedMessageListener_Tracker
+- uid: ToolkitEngine.Quest.VisualScripting.OnTaskStateChangedMessageListener.Trigger(ToolkitEngine.Quest.QuestEventArgs)
+  name: Trigger(QuestEventArgs)
+  href: api/ToolkitEngine.Quest.VisualScripting.OnTaskStateChangedMessageListener.html#ToolkitEngine_Quest_VisualScripting_OnTaskStateChangedMessageListener_Trigger_ToolkitEngine_Quest_QuestEventArgs_
+  commentId: M:ToolkitEngine.Quest.VisualScripting.OnTaskStateChangedMessageListener.Trigger(ToolkitEngine.Quest.QuestEventArgs)
+  fullName: ToolkitEngine.Quest.VisualScripting.OnTaskStateChangedMessageListener.Trigger(ToolkitEngine.Quest.QuestEventArgs)
+  nameWithType: OnTaskStateChangedMessageListener.Trigger(QuestEventArgs)
+- uid: ToolkitEngine.Quest.VisualScripting.OnTaskStateChangedMessageListener.Trigger*
+  name: Trigger
+  href: api/ToolkitEngine.Quest.VisualScripting.OnTaskStateChangedMessageListener.html#ToolkitEngine_Quest_VisualScripting_OnTaskStateChangedMessageListener_Trigger_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.OnTaskStateChangedMessageListener.Trigger
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.VisualScripting.OnTaskStateChangedMessageListener.Trigger
+  nameWithType: OnTaskStateChangedMessageListener.Trigger
