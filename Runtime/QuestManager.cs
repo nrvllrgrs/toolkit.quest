@@ -102,7 +102,6 @@ namespace ToolkitEngine.Quest
 			}
 		}
 #endif
-
 		#endregion
 
 		#region Methods
