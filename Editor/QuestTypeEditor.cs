@@ -179,6 +179,7 @@ namespace ToolkitEditor.Quest
 			AssetDatabase.SaveAssets();
 			AssetDatabase.Refresh();
 
+			m_reorderableList.list = m_questType.taskList;
 			Repaint();
 		}
 

@@ -23,7 +23,7 @@ namespace ToolkitEngine.Quest.VisualScripting
 		{
 			// Get object
 			var obj = flow.stack.AsReference().component.gameObject;
-			var task = Variables.Object(obj).Get<Journal.Task>("task");
+			var task = Variables.Object(obj).Get<QuestManager.Task>("task");
 
 			// Decrement task
 			--task.count;

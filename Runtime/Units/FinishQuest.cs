@@ -1,51 +1,41 @@
-using Unity.VisualScripting;
+using static ToolkitEngine.Quest.QuestManager;
 
 namespace ToolkitEngine.Quest.VisualScripting
 {
-	[UnitCategory("Events/Quests"), TypeIcon(typeof(IStateTransition))]
-	public class FinishQuest : Unit
+	public class FinishQuest : BaseFinishUnit<QuestType, QuestManager.Quest>
 	{
-		#region Fields
+		#region Properties
 
-		[DoNotSerialize, PortLabelHidden]
-		public ControlInput inputTrigger { get; private set; }
-
-		[DoNotSerialize]
-		public ValueInput finish;
+		protected override string VariableName => QUEST_VAR_NAME;
 
 		#endregion
 
 		#region Methods
 
-		protected override void Definition()
+		protected override QuestManager.Quest GetRuntimeTarget(QuestType questType)
 		{
-			inputTrigger = ControlInput(nameof(inputTrigger), Trigger);
-			finish = ValueInput(nameof(finish), Journal.FinishMode.Complete);
+			return QuestManager.CastInstance.TryGetQuest(questType, out var quest)
+				? quest
+				: null;
 		}
 
-		private ControlOutput Trigger(Flow flow)
+		protected override void Finish(QuestManager.Quest runtime, FinishMode finishMode)
 		{
-			// Get object
-			var obj = flow.stack.AsReference().component.gameObject;
-			var quest = Variables.Object(obj).Get<Journal.Quest>("$quest");
-
-			// Finish task
-			switch (flow.GetValue<Journal.FinishMode>(finish))
+			// Finish quest
+			switch (finishMode)
 			{
-				case Journal.FinishMode.Complete:
-					quest.state = Journal.State.Completed;
+				case FinishMode.Complete:
+					runtime.state = State.Completed;
 					break;
 
-				case Journal.FinishMode.Fail:
-					quest.state = Journal.State.Failed;
+				case FinishMode.Fail:
+					runtime.state = State.Failed;
 					break;
 
-				case Journal.FinishMode.Abandon:
-					quest.state = Journal.State.Inactive;
+				case FinishMode.Abandon:
+					runtime.state = State.Inactive;
 					break;
 			}
-
-			return null;
 		}
 
 		#endregion

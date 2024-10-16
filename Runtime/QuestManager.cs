@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Events;
 
 namespace ToolkitEngine.Quest
 {
@@ -11,33 +10,29 @@ namespace ToolkitEngine.Quest
 	{
 		#region Properties
 
-		public Journal journal { get; private set; }
-		public Journal.Quest quest { get; private set; }
-		public Journal.Task task { get; private set; }
-		public Journal.State state { get; private set; }
+		public QuestManager.Quest quest { get; private set; }
+		public QuestManager.Task task { get; private set; }
+		public QuestManager.State state { get; private set; }
 		public int delta { get; private set; }
 
 		#endregion
 
 		#region Constructors
 
-		public QuestEventArgs(Journal journal, Journal.Quest quest, Journal.State state)
+		public QuestEventArgs(QuestManager.Quest quest, QuestManager.State state)
 		{
-			this.journal = journal;
 			this.quest = quest;
 			this.state = state;
 		}
 
-		public QuestEventArgs(Journal journal, Journal.Task task, Journal.State state)
+		public QuestEventArgs(QuestManager.Task task, QuestManager.State state)
 		{
-			this.journal = journal;
 			this.task = task;
 			this.state = state;
 		}
 
-		public QuestEventArgs(Journal journal, Journal.Task task, int delta)
+		public QuestEventArgs(QuestManager.Task task, int delta)
 		{
-			this.journal = journal;
 			this.task = task;
 			this.delta = delta;
 		}
@@ -45,7 +40,7 @@ namespace ToolkitEngine.Quest
 		#endregion
 	}
 
-	public class Journal : MonoBehaviour
+	public class QuestManager : ConfigurableSubsystem<QuestManager, QuestManagerConfig>
     {
 		#region Enumerators
 
@@ -68,27 +63,23 @@ namespace ToolkitEngine.Quest
 
 		#region Fields
 
-		[SerializeField]
 		private QuestMap m_activeQuests = new();
-
-		[SerializeField]
 		private Dictionary<QuestType, State> m_finishedQuests = new();
 
-		private HashSet<GameObject> m_trackersToDestroy = new();
-		private Coroutine m_cleanupThread = null;
+#if UNITY_EDITOR
+		private static GameObject s_container;
+#endif
+
+		public const string QUEST_VAR_NAME = "$quest";
+		public const string TASK_VAR_NAME = "$task";
 
 		#endregion
 
 		#region Events
 
-		[SerializeField]
-		private UnityEvent<QuestEventArgs> m_onQuestStateChanged;
-
-		[SerializeField]
-		private UnityEvent<QuestEventArgs> m_onTaskStateChanged;
-
-		[SerializeField]
-		private UnityEvent<QuestEventArgs> m_onTaskCountChanged;
+		public event EventHandler<QuestEventArgs> QuestStateChanged;
+		public event EventHandler<QuestEventArgs> TaskStateChanged;
+		public event EventHandler<QuestEventArgs> TaskCountChanged;
 
 		#endregion
 
@@ -96,13 +87,40 @@ namespace ToolkitEngine.Quest
 
 		public Quest[] activeQuests => m_activeQuests.Values.ToArray();
 		public QuestType[] finishedQuests => m_finishedQuests.Keys.ToArray();
-		public UnityEvent<QuestEventArgs> onQuestStateChanged => m_onQuestStateChanged;
-		public UnityEvent<QuestEventArgs> onTaskStateChanged => m_onTaskStateChanged;
-		public UnityEvent<QuestEventArgs> onTaskCountChanged => m_onTaskCountChanged;
+
+#if UNITY_EDITOR
+		private static Transform container
+		{
+			get
+			{
+				if (s_container == null)
+				{
+					s_container = new GameObject("Quests");
+					UnityEngine.Object.DontDestroyOnLoad(s_container);
+				}
+				return s_container.transform;
+			}
+		}
+#endif
 
 		#endregion
 
 		#region Methods
+
+		protected override void Initialize()
+		{
+			base.Initialize();
+
+			m_activeQuests = new();
+			m_finishedQuests = new();
+
+#if UNITY_EDITOR
+			if (Application.isPlaying)
+			{
+				s_container = null;
+			}
+#endif
+		}
 
 		public void Activate(QuestType questType)
 		{
@@ -114,7 +132,7 @@ namespace ToolkitEngine.Quest
 			if (m_finishedQuests.ContainsKey(questType))
 				return;
 
-			var quest = new Quest(questType, this);
+			var quest = new Quest(questType);
 			quest.StateChanged += Quest_StateChanged;
 			quest.TaskStateChanged += Quest_TaskStateChanged;
 			quest.TaskCountChanged += Quest_TaskCountChanged;
@@ -126,7 +144,7 @@ namespace ToolkitEngine.Quest
 
 		private void Quest_StateChanged(object sender, QuestEventArgs e)
 		{
-			m_onQuestStateChanged?.Invoke(e);
+			QuestStateChanged?.Invoke(sender, e);
 
 			if (e.state == State.Active)
 				return;
@@ -150,12 +168,12 @@ namespace ToolkitEngine.Quest
 
 		private void Quest_TaskCountChanged(object sender, QuestEventArgs e)
 		{
-			m_onTaskStateChanged?.Invoke(e);
+			TaskStateChanged?.Invoke(sender, e);
 		}
 
 		private void Quest_TaskStateChanged(object sender, QuestEventArgs e)
 		{
-			m_onTaskCountChanged?.Invoke(e);
+			TaskCountChanged?.Invoke(sender, e);
 		}
 
 		public void Finish(QuestType questType, FinishMode finish)
@@ -190,6 +208,20 @@ namespace ToolkitEngine.Quest
 				return State.Active;
 
 			if (m_finishedQuests.TryGetValue(questType, out State state))
+				return state;
+
+			return State.Inactive;
+		}
+
+		public State GetState(TaskType taskType)
+		{
+			if (m_activeQuests.TryGetValue(taskType.questType, out var quest)
+				&& quest.TryGetTask(taskType, out var task))
+			{
+				return task.state;
+			}
+
+			if (m_finishedQuests.TryGetValue(taskType.questType, out State state))
 				return state;
 
 			return State.Inactive;
@@ -275,14 +307,17 @@ namespace ToolkitEngine.Quest
 
 		#region Helper Methods
 
-		private static GameObject CreateTracker<T>(Journal journal, string title, ScriptGraphAsset script, string variableName, T value)
+		private static GameObject CreateTracker<T>(string title, ScriptGraphAsset script, string variableName, T value)
 		{
 			if (script == null)
 				return null;
 
 			GameObject tracker = new GameObject(string.Format("{0} Tracker", title));
-			//obj.hideFlags |= HideFlags.HideAndDontSave;
-			tracker.transform.SetParent(journal.transform);
+			UnityEngine.Object.DontDestroyOnLoad(tracker);
+
+#if UNITY_EDITOR
+			tracker.transform.SetParent(container);
+#endif
 
 			var machine = tracker.AddComponent<ScriptMachine>();
 			machine.enabled = false;
@@ -319,7 +354,6 @@ namespace ToolkitEngine.Quest
 
 			#region Properties
 
-			public Journal journal { get; private set; }
 			public QuestType questType { get; private set; }
 
 			public State state
@@ -334,12 +368,12 @@ namespace ToolkitEngine.Quest
 					// Tracker needs to exist before state updates
 					if (value == State.Active)
 					{
-						tracker = CreateTracker(journal, questType.title, questType.script, "$quest", this);
+						tracker = CreateTracker(questType.title, questType.script, QUEST_VAR_NAME, this);
 					}
 
 					m_state = value;
 
-					var args = new QuestEventArgs(journal, this, value);
+					var args = new QuestEventArgs(this, value);
 					StateChanged?.Invoke(this, args);
 
 					if (value == State.Active)
@@ -387,10 +421,9 @@ namespace ToolkitEngine.Quest
 
 			#region Constructors
 
-			internal Quest(QuestType questType, Journal journal)
+			internal Quest(QuestType questType)
 			{
 				this.questType = questType;
-				this.journal = journal;
 			}
 
 			#endregion
@@ -422,7 +455,7 @@ namespace ToolkitEngine.Quest
 			{
 				if (!GameObjectExt.IsNull(tracker))
 				{
-					Destroy(tracker);
+					UnityEngine.Object.Destroy(tracker);
 				}
 			}
 
@@ -550,7 +583,6 @@ namespace ToolkitEngine.Quest
 
 			#region Properties
 
-			public Journal journal => quest?.journal;
 			public Quest quest { get; private set; }
 			public TaskType taskType { get; private set; }
 
@@ -568,7 +600,7 @@ namespace ToolkitEngine.Quest
 					int delta = value - count;
 					m_count = value;
 
-					var args = new QuestEventArgs(journal, this, delta);
+					var args = new QuestEventArgs(this, delta);
 					CountChanged?.Invoke(this, args);
 
 					if (count == taskType.count)
@@ -589,9 +621,9 @@ namespace ToolkitEngine.Quest
 
 					m_state = value;
 
-					var args = new QuestEventArgs(journal, this, value);
+					var args = new QuestEventArgs(this, value);
 					StateChanged?.Invoke(this, args);
-					journal.onTaskStateChanged?.Invoke(args);
+					CastInstance.TaskStateChanged?.Invoke(this, args);
 
 					if (m_state != State.Active)
 					{
@@ -618,7 +650,7 @@ namespace ToolkitEngine.Quest
 
 			internal void Activate()
 			{
-				tracker = CreateTracker(journal, taskType.title, taskType.script, "$task", this);
+				tracker = CreateTracker(taskType.title, taskType.script, TASK_VAR_NAME, this);
 				state = State.Active;
 			}
 
@@ -626,7 +658,7 @@ namespace ToolkitEngine.Quest
 			{
 				if (!GameObjectExt.IsNull(tracker))
 				{
-					Destroy(tracker);
+					UnityEngine.Object.Destroy(tracker);
 					tracker = null;
 				}
 			}

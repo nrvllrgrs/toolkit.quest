@@ -6,13 +6,6 @@ namespace ToolkitEngine.Quest.VisualScripting
 	[UnitCategory("Events/Quests")]
 	public class OnTaskStateChanged : BaseQuestEventUnit<TaskType>
 	{
-		#region Fields
-
-		[DoNotSerialize]
-		public ValueInput taskType { get; private set; }
-
-		#endregion
-
 		#region Properties
 
 		public override Type MessageListenerType => typeof(OnTaskStateChangedMessageListener);

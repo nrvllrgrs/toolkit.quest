@@ -5,7 +5,7 @@ namespace ToolkitEngine.Quest.VisualScripting
 {
 	[UnitCategory("Events/Quests")]
     public abstract class BaseQuestEventUnit<T> : BaseEventUnit<QuestEventArgs>
-		where T : ScriptableObject
+		where T : BaseQuestType
     {
 		#region Fields
 
@@ -30,7 +30,7 @@ namespace ToolkitEngine.Quest.VisualScripting
 			base.Definition();
 			if (!anyState)
 			{
-				state = ValueInput(nameof(state), Journal.State.Completed);
+				state = ValueInput(nameof(state), QuestManager.State.Completed);
 			}
 
 			if (filtered)
@@ -41,7 +41,7 @@ namespace ToolkitEngine.Quest.VisualScripting
 
 		protected override bool ShouldTrigger(Flow flow, QuestEventArgs args)
 		{
-			return (anyState || Equals(flow.GetValue<Journal.State>(state), args.state))
+			return (anyState || Equals(flow.GetValue<QuestManager.State>(state), args.state))
 				&& (!filtered || IsFilterValid(flow.GetValue<T>(filter), args));
 		}
 

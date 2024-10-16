@@ -26,10 +26,10 @@ namespace ToolkitEditor.Quest.VisualScripting
 			{
 				typeof(QuestType),
 				typeof(TaskType),
-				typeof(Journal),
-				typeof(Journal.Quest),
-				typeof(Journal.Task),
-				typeof(Journal.State),
+				typeof(QuestManager),
+				typeof(QuestManager.Quest),
+				typeof(QuestManager.Task),
+				typeof(QuestManager.State),
 				typeof(QuestEventArgs),
 			};
 
