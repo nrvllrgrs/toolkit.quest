@@ -50,74 +50,6 @@ references:
   commentId: F:ToolkitEditor.Quest.CategoryTypeEditor.m_name
   fullName: ToolkitEditor.Quest.CategoryTypeEditor.m_name
   nameWithType: CategoryTypeEditor.m_name
-- uid: ToolkitEditor.Quest.JournalEditor
-  name: JournalEditor
-  href: api/ToolkitEditor.Quest.JournalEditor.html
-  commentId: T:ToolkitEditor.Quest.JournalEditor
-  fullName: ToolkitEditor.Quest.JournalEditor
-  nameWithType: JournalEditor
-- uid: ToolkitEditor.Quest.JournalEditor.DrawEvents
-  name: DrawEvents()
-  href: api/ToolkitEditor.Quest.JournalEditor.html#ToolkitEditor_Quest_JournalEditor_DrawEvents
-  commentId: M:ToolkitEditor.Quest.JournalEditor.DrawEvents
-  fullName: ToolkitEditor.Quest.JournalEditor.DrawEvents()
-  nameWithType: JournalEditor.DrawEvents()
-- uid: ToolkitEditor.Quest.JournalEditor.DrawEvents*
-  name: DrawEvents
-  href: api/ToolkitEditor.Quest.JournalEditor.html#ToolkitEditor_Quest_JournalEditor_DrawEvents_
-  commentId: Overload:ToolkitEditor.Quest.JournalEditor.DrawEvents
-  isSpec: "True"
-  fullName: ToolkitEditor.Quest.JournalEditor.DrawEvents
-  nameWithType: JournalEditor.DrawEvents
-- uid: ToolkitEditor.Quest.JournalEditor.DrawProperties
-  name: DrawProperties()
-  href: api/ToolkitEditor.Quest.JournalEditor.html#ToolkitEditor_Quest_JournalEditor_DrawProperties
-  commentId: M:ToolkitEditor.Quest.JournalEditor.DrawProperties
-  fullName: ToolkitEditor.Quest.JournalEditor.DrawProperties()
-  nameWithType: JournalEditor.DrawProperties()
-- uid: ToolkitEditor.Quest.JournalEditor.DrawProperties*
-  name: DrawProperties
-  href: api/ToolkitEditor.Quest.JournalEditor.html#ToolkitEditor_Quest_JournalEditor_DrawProperties_
-  commentId: Overload:ToolkitEditor.Quest.JournalEditor.DrawProperties
-  isSpec: "True"
-  fullName: ToolkitEditor.Quest.JournalEditor.DrawProperties
-  nameWithType: JournalEditor.DrawProperties
-- uid: ToolkitEditor.Quest.JournalEditor.m_activeQuests
-  name: m_activeQuests
-  href: api/ToolkitEditor.Quest.JournalEditor.html#ToolkitEditor_Quest_JournalEditor_m_activeQuests
-  commentId: F:ToolkitEditor.Quest.JournalEditor.m_activeQuests
-  fullName: ToolkitEditor.Quest.JournalEditor.m_activeQuests
-  nameWithType: JournalEditor.m_activeQuests
-- uid: ToolkitEditor.Quest.JournalEditor.m_finishedQuests
-  name: m_finishedQuests
-  href: api/ToolkitEditor.Quest.JournalEditor.html#ToolkitEditor_Quest_JournalEditor_m_finishedQuests
-  commentId: F:ToolkitEditor.Quest.JournalEditor.m_finishedQuests
-  fullName: ToolkitEditor.Quest.JournalEditor.m_finishedQuests
-  nameWithType: JournalEditor.m_finishedQuests
-- uid: ToolkitEditor.Quest.JournalEditor.m_journal
-  name: m_journal
-  href: api/ToolkitEditor.Quest.JournalEditor.html#ToolkitEditor_Quest_JournalEditor_m_journal
-  commentId: F:ToolkitEditor.Quest.JournalEditor.m_journal
-  fullName: ToolkitEditor.Quest.JournalEditor.m_journal
-  nameWithType: JournalEditor.m_journal
-- uid: ToolkitEditor.Quest.JournalEditor.m_onQuestStateChanged
-  name: m_onQuestStateChanged
-  href: api/ToolkitEditor.Quest.JournalEditor.html#ToolkitEditor_Quest_JournalEditor_m_onQuestStateChanged
-  commentId: F:ToolkitEditor.Quest.JournalEditor.m_onQuestStateChanged
-  fullName: ToolkitEditor.Quest.JournalEditor.m_onQuestStateChanged
-  nameWithType: JournalEditor.m_onQuestStateChanged
-- uid: ToolkitEditor.Quest.JournalEditor.m_onTaskCountChanged
-  name: m_onTaskCountChanged
-  href: api/ToolkitEditor.Quest.JournalEditor.html#ToolkitEditor_Quest_JournalEditor_m_onTaskCountChanged
-  commentId: F:ToolkitEditor.Quest.JournalEditor.m_onTaskCountChanged
-  fullName: ToolkitEditor.Quest.JournalEditor.m_onTaskCountChanged
-  nameWithType: JournalEditor.m_onTaskCountChanged
-- uid: ToolkitEditor.Quest.JournalEditor.m_onTaskStateChanged
-  name: m_onTaskStateChanged
-  href: api/ToolkitEditor.Quest.JournalEditor.html#ToolkitEditor_Quest_JournalEditor_m_onTaskStateChanged
-  commentId: F:ToolkitEditor.Quest.JournalEditor.m_onTaskStateChanged
-  fullName: ToolkitEditor.Quest.JournalEditor.m_onTaskStateChanged
-  nameWithType: JournalEditor.m_onTaskStateChanged
 - uid: ToolkitEditor.Quest.QuestTypeEditor
   name: QuestTypeEditor
   href: api/ToolkitEditor.Quest.QuestTypeEditor.html
@@ -320,6 +252,88 @@ references:
   commentId: N:ToolkitEngine.Quest
   fullName: ToolkitEngine.Quest
   nameWithType: ToolkitEngine.Quest
+- uid: ToolkitEngine.Quest.BaseQuestType
+  name: BaseQuestType
+  href: api/ToolkitEngine.Quest.BaseQuestType.html
+  commentId: T:ToolkitEngine.Quest.BaseQuestType
+  fullName: ToolkitEngine.Quest.BaseQuestType
+  nameWithType: BaseQuestType
+- uid: ToolkitEngine.Quest.BaseQuestType.description
+  name: description
+  href: api/ToolkitEngine.Quest.BaseQuestType.html#ToolkitEngine_Quest_BaseQuestType_description
+  commentId: P:ToolkitEngine.Quest.BaseQuestType.description
+  fullName: ToolkitEngine.Quest.BaseQuestType.description
+  nameWithType: BaseQuestType.description
+- uid: ToolkitEngine.Quest.BaseQuestType.description*
+  name: description
+  href: api/ToolkitEngine.Quest.BaseQuestType.html#ToolkitEngine_Quest_BaseQuestType_description_
+  commentId: Overload:ToolkitEngine.Quest.BaseQuestType.description
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.BaseQuestType.description
+  nameWithType: BaseQuestType.description
+- uid: ToolkitEngine.Quest.BaseQuestType.id
+  name: id
+  href: api/ToolkitEngine.Quest.BaseQuestType.html#ToolkitEngine_Quest_BaseQuestType_id
+  commentId: P:ToolkitEngine.Quest.BaseQuestType.id
+  fullName: ToolkitEngine.Quest.BaseQuestType.id
+  nameWithType: BaseQuestType.id
+- uid: ToolkitEngine.Quest.BaseQuestType.id*
+  name: id
+  href: api/ToolkitEngine.Quest.BaseQuestType.html#ToolkitEngine_Quest_BaseQuestType_id_
+  commentId: Overload:ToolkitEngine.Quest.BaseQuestType.id
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.BaseQuestType.id
+  nameWithType: BaseQuestType.id
+- uid: ToolkitEngine.Quest.BaseQuestType.m_description
+  name: m_description
+  href: api/ToolkitEngine.Quest.BaseQuestType.html#ToolkitEngine_Quest_BaseQuestType_m_description
+  commentId: F:ToolkitEngine.Quest.BaseQuestType.m_description
+  fullName: ToolkitEngine.Quest.BaseQuestType.m_description
+  nameWithType: BaseQuestType.m_description
+- uid: ToolkitEngine.Quest.BaseQuestType.m_id
+  name: m_id
+  href: api/ToolkitEngine.Quest.BaseQuestType.html#ToolkitEngine_Quest_BaseQuestType_m_id
+  commentId: F:ToolkitEngine.Quest.BaseQuestType.m_id
+  fullName: ToolkitEngine.Quest.BaseQuestType.m_id
+  nameWithType: BaseQuestType.m_id
+- uid: ToolkitEngine.Quest.BaseQuestType.m_script
+  name: m_script
+  href: api/ToolkitEngine.Quest.BaseQuestType.html#ToolkitEngine_Quest_BaseQuestType_m_script
+  commentId: F:ToolkitEngine.Quest.BaseQuestType.m_script
+  fullName: ToolkitEngine.Quest.BaseQuestType.m_script
+  nameWithType: BaseQuestType.m_script
+- uid: ToolkitEngine.Quest.BaseQuestType.m_title
+  name: m_title
+  href: api/ToolkitEngine.Quest.BaseQuestType.html#ToolkitEngine_Quest_BaseQuestType_m_title
+  commentId: F:ToolkitEngine.Quest.BaseQuestType.m_title
+  fullName: ToolkitEngine.Quest.BaseQuestType.m_title
+  nameWithType: BaseQuestType.m_title
+- uid: ToolkitEngine.Quest.BaseQuestType.script
+  name: script
+  href: api/ToolkitEngine.Quest.BaseQuestType.html#ToolkitEngine_Quest_BaseQuestType_script
+  commentId: P:ToolkitEngine.Quest.BaseQuestType.script
+  fullName: ToolkitEngine.Quest.BaseQuestType.script
+  nameWithType: BaseQuestType.script
+- uid: ToolkitEngine.Quest.BaseQuestType.script*
+  name: script
+  href: api/ToolkitEngine.Quest.BaseQuestType.html#ToolkitEngine_Quest_BaseQuestType_script_
+  commentId: Overload:ToolkitEngine.Quest.BaseQuestType.script
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.BaseQuestType.script
+  nameWithType: BaseQuestType.script
+- uid: ToolkitEngine.Quest.BaseQuestType.title
+  name: title
+  href: api/ToolkitEngine.Quest.BaseQuestType.html#ToolkitEngine_Quest_BaseQuestType_title
+  commentId: P:ToolkitEngine.Quest.BaseQuestType.title
+  fullName: ToolkitEngine.Quest.BaseQuestType.title
+  nameWithType: BaseQuestType.title
+- uid: ToolkitEngine.Quest.BaseQuestType.title*
+  name: title
+  href: api/ToolkitEngine.Quest.BaseQuestType.html#ToolkitEngine_Quest_BaseQuestType_title_
+  commentId: Overload:ToolkitEngine.Quest.BaseQuestType.title
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.BaseQuestType.title
+  nameWithType: BaseQuestType.title
 - uid: ToolkitEngine.Quest.CategoryType
   name: CategoryType
   href: api/ToolkitEngine.Quest.CategoryType.html
@@ -402,418 +416,39 @@ references:
   commentId: F:ToolkitEngine.Quest.EventHooks.OnTaskStateChanged
   fullName: ToolkitEngine.Quest.EventHooks.OnTaskStateChanged
   nameWithType: EventHooks.OnTaskStateChanged
-- uid: ToolkitEngine.Quest.Journal
-  name: Journal
-  href: api/ToolkitEngine.Quest.Journal.html
-  commentId: T:ToolkitEngine.Quest.Journal
-  fullName: ToolkitEngine.Quest.Journal
-  nameWithType: Journal
-- uid: ToolkitEngine.Quest.Journal.Activate(ToolkitEngine.Quest.QuestType)
-  name: Activate(QuestType)
-  href: api/ToolkitEngine.Quest.Journal.html#ToolkitEngine_Quest_Journal_Activate_ToolkitEngine_Quest_QuestType_
-  commentId: M:ToolkitEngine.Quest.Journal.Activate(ToolkitEngine.Quest.QuestType)
-  fullName: ToolkitEngine.Quest.Journal.Activate(ToolkitEngine.Quest.QuestType)
-  nameWithType: Journal.Activate(QuestType)
-- uid: ToolkitEngine.Quest.Journal.Activate(ToolkitEngine.Quest.TaskType)
-  name: Activate(TaskType)
-  href: api/ToolkitEngine.Quest.Journal.html#ToolkitEngine_Quest_Journal_Activate_ToolkitEngine_Quest_TaskType_
-  commentId: M:ToolkitEngine.Quest.Journal.Activate(ToolkitEngine.Quest.TaskType)
-  fullName: ToolkitEngine.Quest.Journal.Activate(ToolkitEngine.Quest.TaskType)
-  nameWithType: Journal.Activate(TaskType)
-- uid: ToolkitEngine.Quest.Journal.Activate*
-  name: Activate
-  href: api/ToolkitEngine.Quest.Journal.html#ToolkitEngine_Quest_Journal_Activate_
-  commentId: Overload:ToolkitEngine.Quest.Journal.Activate
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.Journal.Activate
-  nameWithType: Journal.Activate
-- uid: ToolkitEngine.Quest.Journal.Decrement(ToolkitEngine.Quest.TaskType)
-  name: Decrement(TaskType)
-  href: api/ToolkitEngine.Quest.Journal.html#ToolkitEngine_Quest_Journal_Decrement_ToolkitEngine_Quest_TaskType_
-  commentId: M:ToolkitEngine.Quest.Journal.Decrement(ToolkitEngine.Quest.TaskType)
-  fullName: ToolkitEngine.Quest.Journal.Decrement(ToolkitEngine.Quest.TaskType)
-  nameWithType: Journal.Decrement(TaskType)
-- uid: ToolkitEngine.Quest.Journal.Decrement*
-  name: Decrement
-  href: api/ToolkitEngine.Quest.Journal.html#ToolkitEngine_Quest_Journal_Decrement_
-  commentId: Overload:ToolkitEngine.Quest.Journal.Decrement
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.Journal.Decrement
-  nameWithType: Journal.Decrement
-- uid: ToolkitEngine.Quest.Journal.Finish(ToolkitEngine.Quest.QuestType,ToolkitEngine.Quest.Journal.FinishMode)
-  name: Finish(QuestType, FinishMode)
-  href: api/ToolkitEngine.Quest.Journal.html#ToolkitEngine_Quest_Journal_Finish_ToolkitEngine_Quest_QuestType_ToolkitEngine_Quest_Journal_FinishMode_
-  commentId: M:ToolkitEngine.Quest.Journal.Finish(ToolkitEngine.Quest.QuestType,ToolkitEngine.Quest.Journal.FinishMode)
-  fullName: ToolkitEngine.Quest.Journal.Finish(ToolkitEngine.Quest.QuestType, ToolkitEngine.Quest.Journal.FinishMode)
-  nameWithType: Journal.Finish(QuestType, Journal.FinishMode)
-- uid: ToolkitEngine.Quest.Journal.Finish(ToolkitEngine.Quest.TaskType,ToolkitEngine.Quest.Journal.FinishMode)
-  name: Finish(TaskType, FinishMode)
-  href: api/ToolkitEngine.Quest.Journal.html#ToolkitEngine_Quest_Journal_Finish_ToolkitEngine_Quest_TaskType_ToolkitEngine_Quest_Journal_FinishMode_
-  commentId: M:ToolkitEngine.Quest.Journal.Finish(ToolkitEngine.Quest.TaskType,ToolkitEngine.Quest.Journal.FinishMode)
-  fullName: ToolkitEngine.Quest.Journal.Finish(ToolkitEngine.Quest.TaskType, ToolkitEngine.Quest.Journal.FinishMode)
-  nameWithType: Journal.Finish(TaskType, Journal.FinishMode)
-- uid: ToolkitEngine.Quest.Journal.Finish*
-  name: Finish
-  href: api/ToolkitEngine.Quest.Journal.html#ToolkitEngine_Quest_Journal_Finish_
-  commentId: Overload:ToolkitEngine.Quest.Journal.Finish
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.Journal.Finish
-  nameWithType: Journal.Finish
-- uid: ToolkitEngine.Quest.Journal.FinishMode
-  name: Journal.FinishMode
-  href: api/ToolkitEngine.Quest.Journal.FinishMode.html
-  commentId: T:ToolkitEngine.Quest.Journal.FinishMode
-  fullName: ToolkitEngine.Quest.Journal.FinishMode
-  nameWithType: Journal.FinishMode
-- uid: ToolkitEngine.Quest.Journal.FinishMode.Abandon
-  name: Abandon
-  href: api/ToolkitEngine.Quest.Journal.FinishMode.html#ToolkitEngine_Quest_Journal_FinishMode_Abandon
-  commentId: F:ToolkitEngine.Quest.Journal.FinishMode.Abandon
-  fullName: ToolkitEngine.Quest.Journal.FinishMode.Abandon
-  nameWithType: Journal.FinishMode.Abandon
-- uid: ToolkitEngine.Quest.Journal.FinishMode.Complete
-  name: Complete
-  href: api/ToolkitEngine.Quest.Journal.FinishMode.html#ToolkitEngine_Quest_Journal_FinishMode_Complete
-  commentId: F:ToolkitEngine.Quest.Journal.FinishMode.Complete
-  fullName: ToolkitEngine.Quest.Journal.FinishMode.Complete
-  nameWithType: Journal.FinishMode.Complete
-- uid: ToolkitEngine.Quest.Journal.FinishMode.Fail
-  name: Fail
-  href: api/ToolkitEngine.Quest.Journal.FinishMode.html#ToolkitEngine_Quest_Journal_FinishMode_Fail
-  commentId: F:ToolkitEngine.Quest.Journal.FinishMode.Fail
-  fullName: ToolkitEngine.Quest.Journal.FinishMode.Fail
-  nameWithType: Journal.FinishMode.Fail
-- uid: ToolkitEngine.Quest.Journal.GetState(ToolkitEngine.Quest.QuestType)
-  name: GetState(QuestType)
-  href: api/ToolkitEngine.Quest.Journal.html#ToolkitEngine_Quest_Journal_GetState_ToolkitEngine_Quest_QuestType_
-  commentId: M:ToolkitEngine.Quest.Journal.GetState(ToolkitEngine.Quest.QuestType)
-  fullName: ToolkitEngine.Quest.Journal.GetState(ToolkitEngine.Quest.QuestType)
-  nameWithType: Journal.GetState(QuestType)
-- uid: ToolkitEngine.Quest.Journal.GetState*
-  name: GetState
-  href: api/ToolkitEngine.Quest.Journal.html#ToolkitEngine_Quest_Journal_GetState_
-  commentId: Overload:ToolkitEngine.Quest.Journal.GetState
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.Journal.GetState
-  nameWithType: Journal.GetState
-- uid: ToolkitEngine.Quest.Journal.Increment(ToolkitEngine.Quest.TaskType)
-  name: Increment(TaskType)
-  href: api/ToolkitEngine.Quest.Journal.html#ToolkitEngine_Quest_Journal_Increment_ToolkitEngine_Quest_TaskType_
-  commentId: M:ToolkitEngine.Quest.Journal.Increment(ToolkitEngine.Quest.TaskType)
-  fullName: ToolkitEngine.Quest.Journal.Increment(ToolkitEngine.Quest.TaskType)
-  nameWithType: Journal.Increment(TaskType)
-- uid: ToolkitEngine.Quest.Journal.Increment*
-  name: Increment
-  href: api/ToolkitEngine.Quest.Journal.html#ToolkitEngine_Quest_Journal_Increment_
-  commentId: Overload:ToolkitEngine.Quest.Journal.Increment
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.Journal.Increment
-  nameWithType: Journal.Increment
-- uid: ToolkitEngine.Quest.Journal.IsActive(ToolkitEngine.Quest.QuestType)
-  name: IsActive(QuestType)
-  href: api/ToolkitEngine.Quest.Journal.html#ToolkitEngine_Quest_Journal_IsActive_ToolkitEngine_Quest_QuestType_
-  commentId: M:ToolkitEngine.Quest.Journal.IsActive(ToolkitEngine.Quest.QuestType)
-  fullName: ToolkitEngine.Quest.Journal.IsActive(ToolkitEngine.Quest.QuestType)
-  nameWithType: Journal.IsActive(QuestType)
-- uid: ToolkitEngine.Quest.Journal.IsActive*
-  name: IsActive
-  href: api/ToolkitEngine.Quest.Journal.html#ToolkitEngine_Quest_Journal_IsActive_
-  commentId: Overload:ToolkitEngine.Quest.Journal.IsActive
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.Journal.IsActive
-  nameWithType: Journal.IsActive
-- uid: ToolkitEngine.Quest.Journal.IsFinished(ToolkitEngine.Quest.QuestType)
-  name: IsFinished(QuestType)
-  href: api/ToolkitEngine.Quest.Journal.html#ToolkitEngine_Quest_Journal_IsFinished_ToolkitEngine_Quest_QuestType_
-  commentId: M:ToolkitEngine.Quest.Journal.IsFinished(ToolkitEngine.Quest.QuestType)
-  fullName: ToolkitEngine.Quest.Journal.IsFinished(ToolkitEngine.Quest.QuestType)
-  nameWithType: Journal.IsFinished(QuestType)
-- uid: ToolkitEngine.Quest.Journal.IsFinished*
-  name: IsFinished
-  href: api/ToolkitEngine.Quest.Journal.html#ToolkitEngine_Quest_Journal_IsFinished_
-  commentId: Overload:ToolkitEngine.Quest.Journal.IsFinished
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.Journal.IsFinished
-  nameWithType: Journal.IsFinished
-- uid: ToolkitEngine.Quest.Journal.Modify(ToolkitEngine.Quest.TaskType,System.Int32)
-  name: Modify(TaskType, int)
-  href: api/ToolkitEngine.Quest.Journal.html#ToolkitEngine_Quest_Journal_Modify_ToolkitEngine_Quest_TaskType_System_Int32_
-  commentId: M:ToolkitEngine.Quest.Journal.Modify(ToolkitEngine.Quest.TaskType,System.Int32)
-  name.vb: Modify(TaskType, Integer)
-  fullName: ToolkitEngine.Quest.Journal.Modify(ToolkitEngine.Quest.TaskType, int)
-  fullName.vb: ToolkitEngine.Quest.Journal.Modify(ToolkitEngine.Quest.TaskType, Integer)
-  nameWithType: Journal.Modify(TaskType, int)
-  nameWithType.vb: Journal.Modify(TaskType, Integer)
-- uid: ToolkitEngine.Quest.Journal.Modify*
-  name: Modify
-  href: api/ToolkitEngine.Quest.Journal.html#ToolkitEngine_Quest_Journal_Modify_
-  commentId: Overload:ToolkitEngine.Quest.Journal.Modify
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.Journal.Modify
-  nameWithType: Journal.Modify
-- uid: ToolkitEngine.Quest.Journal.Quest
-  name: Journal.Quest
-  href: api/ToolkitEngine.Quest.Journal.Quest.html
-  commentId: T:ToolkitEngine.Quest.Journal.Quest
-  fullName: ToolkitEngine.Quest.Journal.Quest
-  nameWithType: Journal.Quest
-- uid: ToolkitEngine.Quest.Journal.Quest.activeTasks
-  name: activeTasks
-  href: api/ToolkitEngine.Quest.Journal.Quest.html#ToolkitEngine_Quest_Journal_Quest_activeTasks
-  commentId: P:ToolkitEngine.Quest.Journal.Quest.activeTasks
-  fullName: ToolkitEngine.Quest.Journal.Quest.activeTasks
-  nameWithType: Journal.Quest.activeTasks
-- uid: ToolkitEngine.Quest.Journal.Quest.activeTasks*
-  name: activeTasks
-  href: api/ToolkitEngine.Quest.Journal.Quest.html#ToolkitEngine_Quest_Journal_Quest_activeTasks_
-  commentId: Overload:ToolkitEngine.Quest.Journal.Quest.activeTasks
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.Journal.Quest.activeTasks
-  nameWithType: Journal.Quest.activeTasks
-- uid: ToolkitEngine.Quest.Journal.Quest.journal
-  name: journal
-  href: api/ToolkitEngine.Quest.Journal.Quest.html#ToolkitEngine_Quest_Journal_Quest_journal
-  commentId: P:ToolkitEngine.Quest.Journal.Quest.journal
-  fullName: ToolkitEngine.Quest.Journal.Quest.journal
-  nameWithType: Journal.Quest.journal
-- uid: ToolkitEngine.Quest.Journal.Quest.journal*
-  name: journal
-  href: api/ToolkitEngine.Quest.Journal.Quest.html#ToolkitEngine_Quest_Journal_Quest_journal_
-  commentId: Overload:ToolkitEngine.Quest.Journal.Quest.journal
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.Journal.Quest.journal
-  nameWithType: Journal.Quest.journal
-- uid: ToolkitEngine.Quest.Journal.Quest.questType
-  name: questType
-  href: api/ToolkitEngine.Quest.Journal.Quest.html#ToolkitEngine_Quest_Journal_Quest_questType
-  commentId: P:ToolkitEngine.Quest.Journal.Quest.questType
-  fullName: ToolkitEngine.Quest.Journal.Quest.questType
-  nameWithType: Journal.Quest.questType
-- uid: ToolkitEngine.Quest.Journal.Quest.questType*
-  name: questType
-  href: api/ToolkitEngine.Quest.Journal.Quest.html#ToolkitEngine_Quest_Journal_Quest_questType_
-  commentId: Overload:ToolkitEngine.Quest.Journal.Quest.questType
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.Journal.Quest.questType
-  nameWithType: Journal.Quest.questType
-- uid: ToolkitEngine.Quest.Journal.Quest.state
-  name: state
-  href: api/ToolkitEngine.Quest.Journal.Quest.html#ToolkitEngine_Quest_Journal_Quest_state
-  commentId: P:ToolkitEngine.Quest.Journal.Quest.state
-  fullName: ToolkitEngine.Quest.Journal.Quest.state
-  nameWithType: Journal.Quest.state
-- uid: ToolkitEngine.Quest.Journal.Quest.state*
-  name: state
-  href: api/ToolkitEngine.Quest.Journal.Quest.html#ToolkitEngine_Quest_Journal_Quest_state_
-  commentId: Overload:ToolkitEngine.Quest.Journal.Quest.state
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.Journal.Quest.state
-  nameWithType: Journal.Quest.state
-- uid: ToolkitEngine.Quest.Journal.QuestMap
-  name: Journal.QuestMap
-  href: api/ToolkitEngine.Quest.Journal.QuestMap.html
-  commentId: T:ToolkitEngine.Quest.Journal.QuestMap
-  fullName: ToolkitEngine.Quest.Journal.QuestMap
-  nameWithType: Journal.QuestMap
-- uid: ToolkitEngine.Quest.Journal.State
-  name: Journal.State
-  href: api/ToolkitEngine.Quest.Journal.State.html
-  commentId: T:ToolkitEngine.Quest.Journal.State
-  fullName: ToolkitEngine.Quest.Journal.State
-  nameWithType: Journal.State
-- uid: ToolkitEngine.Quest.Journal.State.Active
-  name: Active
-  href: api/ToolkitEngine.Quest.Journal.State.html#ToolkitEngine_Quest_Journal_State_Active
-  commentId: F:ToolkitEngine.Quest.Journal.State.Active
-  fullName: ToolkitEngine.Quest.Journal.State.Active
-  nameWithType: Journal.State.Active
-- uid: ToolkitEngine.Quest.Journal.State.Completed
-  name: Completed
-  href: api/ToolkitEngine.Quest.Journal.State.html#ToolkitEngine_Quest_Journal_State_Completed
-  commentId: F:ToolkitEngine.Quest.Journal.State.Completed
-  fullName: ToolkitEngine.Quest.Journal.State.Completed
-  nameWithType: Journal.State.Completed
-- uid: ToolkitEngine.Quest.Journal.State.Failed
-  name: Failed
-  href: api/ToolkitEngine.Quest.Journal.State.html#ToolkitEngine_Quest_Journal_State_Failed
-  commentId: F:ToolkitEngine.Quest.Journal.State.Failed
-  fullName: ToolkitEngine.Quest.Journal.State.Failed
-  nameWithType: Journal.State.Failed
-- uid: ToolkitEngine.Quest.Journal.State.Inactive
-  name: Inactive
-  href: api/ToolkitEngine.Quest.Journal.State.html#ToolkitEngine_Quest_Journal_State_Inactive
-  commentId: F:ToolkitEngine.Quest.Journal.State.Inactive
-  fullName: ToolkitEngine.Quest.Journal.State.Inactive
-  nameWithType: Journal.State.Inactive
-- uid: ToolkitEngine.Quest.Journal.Task
-  name: Journal.Task
-  href: api/ToolkitEngine.Quest.Journal.Task.html
-  commentId: T:ToolkitEngine.Quest.Journal.Task
-  fullName: ToolkitEngine.Quest.Journal.Task
-  nameWithType: Journal.Task
-- uid: ToolkitEngine.Quest.Journal.Task.count
-  name: count
-  href: api/ToolkitEngine.Quest.Journal.Task.html#ToolkitEngine_Quest_Journal_Task_count
-  commentId: P:ToolkitEngine.Quest.Journal.Task.count
-  fullName: ToolkitEngine.Quest.Journal.Task.count
-  nameWithType: Journal.Task.count
-- uid: ToolkitEngine.Quest.Journal.Task.count*
-  name: count
-  href: api/ToolkitEngine.Quest.Journal.Task.html#ToolkitEngine_Quest_Journal_Task_count_
-  commentId: Overload:ToolkitEngine.Quest.Journal.Task.count
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.Journal.Task.count
-  nameWithType: Journal.Task.count
-- uid: ToolkitEngine.Quest.Journal.Task.journal
-  name: journal
-  href: api/ToolkitEngine.Quest.Journal.Task.html#ToolkitEngine_Quest_Journal_Task_journal
-  commentId: P:ToolkitEngine.Quest.Journal.Task.journal
-  fullName: ToolkitEngine.Quest.Journal.Task.journal
-  nameWithType: Journal.Task.journal
-- uid: ToolkitEngine.Quest.Journal.Task.journal*
-  name: journal
-  href: api/ToolkitEngine.Quest.Journal.Task.html#ToolkitEngine_Quest_Journal_Task_journal_
-  commentId: Overload:ToolkitEngine.Quest.Journal.Task.journal
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.Journal.Task.journal
-  nameWithType: Journal.Task.journal
-- uid: ToolkitEngine.Quest.Journal.Task.quest
-  name: quest
-  href: api/ToolkitEngine.Quest.Journal.Task.html#ToolkitEngine_Quest_Journal_Task_quest
-  commentId: P:ToolkitEngine.Quest.Journal.Task.quest
-  fullName: ToolkitEngine.Quest.Journal.Task.quest
-  nameWithType: Journal.Task.quest
-- uid: ToolkitEngine.Quest.Journal.Task.quest*
-  name: quest
-  href: api/ToolkitEngine.Quest.Journal.Task.html#ToolkitEngine_Quest_Journal_Task_quest_
-  commentId: Overload:ToolkitEngine.Quest.Journal.Task.quest
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.Journal.Task.quest
-  nameWithType: Journal.Task.quest
-- uid: ToolkitEngine.Quest.Journal.Task.state
-  name: state
-  href: api/ToolkitEngine.Quest.Journal.Task.html#ToolkitEngine_Quest_Journal_Task_state
-  commentId: P:ToolkitEngine.Quest.Journal.Task.state
-  fullName: ToolkitEngine.Quest.Journal.Task.state
-  nameWithType: Journal.Task.state
-- uid: ToolkitEngine.Quest.Journal.Task.state*
-  name: state
-  href: api/ToolkitEngine.Quest.Journal.Task.html#ToolkitEngine_Quest_Journal_Task_state_
-  commentId: Overload:ToolkitEngine.Quest.Journal.Task.state
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.Journal.Task.state
-  nameWithType: Journal.Task.state
-- uid: ToolkitEngine.Quest.Journal.Task.taskType
-  name: taskType
-  href: api/ToolkitEngine.Quest.Journal.Task.html#ToolkitEngine_Quest_Journal_Task_taskType
-  commentId: P:ToolkitEngine.Quest.Journal.Task.taskType
-  fullName: ToolkitEngine.Quest.Journal.Task.taskType
-  nameWithType: Journal.Task.taskType
-- uid: ToolkitEngine.Quest.Journal.Task.taskType*
-  name: taskType
-  href: api/ToolkitEngine.Quest.Journal.Task.html#ToolkitEngine_Quest_Journal_Task_taskType_
-  commentId: Overload:ToolkitEngine.Quest.Journal.Task.taskType
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.Journal.Task.taskType
-  nameWithType: Journal.Task.taskType
-- uid: ToolkitEngine.Quest.Journal.activeQuests
-  name: activeQuests
-  href: api/ToolkitEngine.Quest.Journal.html#ToolkitEngine_Quest_Journal_activeQuests
-  commentId: P:ToolkitEngine.Quest.Journal.activeQuests
-  fullName: ToolkitEngine.Quest.Journal.activeQuests
-  nameWithType: Journal.activeQuests
-- uid: ToolkitEngine.Quest.Journal.activeQuests*
-  name: activeQuests
-  href: api/ToolkitEngine.Quest.Journal.html#ToolkitEngine_Quest_Journal_activeQuests_
-  commentId: Overload:ToolkitEngine.Quest.Journal.activeQuests
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.Journal.activeQuests
-  nameWithType: Journal.activeQuests
-- uid: ToolkitEngine.Quest.Journal.finishedQuests
-  name: finishedQuests
-  href: api/ToolkitEngine.Quest.Journal.html#ToolkitEngine_Quest_Journal_finishedQuests
-  commentId: P:ToolkitEngine.Quest.Journal.finishedQuests
-  fullName: ToolkitEngine.Quest.Journal.finishedQuests
-  nameWithType: Journal.finishedQuests
-- uid: ToolkitEngine.Quest.Journal.finishedQuests*
-  name: finishedQuests
-  href: api/ToolkitEngine.Quest.Journal.html#ToolkitEngine_Quest_Journal_finishedQuests_
-  commentId: Overload:ToolkitEngine.Quest.Journal.finishedQuests
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.Journal.finishedQuests
-  nameWithType: Journal.finishedQuests
-- uid: ToolkitEngine.Quest.Journal.onQuestStateChanged
-  name: onQuestStateChanged
-  href: api/ToolkitEngine.Quest.Journal.html#ToolkitEngine_Quest_Journal_onQuestStateChanged
-  commentId: P:ToolkitEngine.Quest.Journal.onQuestStateChanged
-  fullName: ToolkitEngine.Quest.Journal.onQuestStateChanged
-  nameWithType: Journal.onQuestStateChanged
-- uid: ToolkitEngine.Quest.Journal.onQuestStateChanged*
-  name: onQuestStateChanged
-  href: api/ToolkitEngine.Quest.Journal.html#ToolkitEngine_Quest_Journal_onQuestStateChanged_
-  commentId: Overload:ToolkitEngine.Quest.Journal.onQuestStateChanged
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.Journal.onQuestStateChanged
-  nameWithType: Journal.onQuestStateChanged
-- uid: ToolkitEngine.Quest.Journal.onTaskCountChanged
-  name: onTaskCountChanged
-  href: api/ToolkitEngine.Quest.Journal.html#ToolkitEngine_Quest_Journal_onTaskCountChanged
-  commentId: P:ToolkitEngine.Quest.Journal.onTaskCountChanged
-  fullName: ToolkitEngine.Quest.Journal.onTaskCountChanged
-  nameWithType: Journal.onTaskCountChanged
-- uid: ToolkitEngine.Quest.Journal.onTaskCountChanged*
-  name: onTaskCountChanged
-  href: api/ToolkitEngine.Quest.Journal.html#ToolkitEngine_Quest_Journal_onTaskCountChanged_
-  commentId: Overload:ToolkitEngine.Quest.Journal.onTaskCountChanged
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.Journal.onTaskCountChanged
-  nameWithType: Journal.onTaskCountChanged
-- uid: ToolkitEngine.Quest.Journal.onTaskStateChanged
-  name: onTaskStateChanged
-  href: api/ToolkitEngine.Quest.Journal.html#ToolkitEngine_Quest_Journal_onTaskStateChanged
-  commentId: P:ToolkitEngine.Quest.Journal.onTaskStateChanged
-  fullName: ToolkitEngine.Quest.Journal.onTaskStateChanged
-  nameWithType: Journal.onTaskStateChanged
-- uid: ToolkitEngine.Quest.Journal.onTaskStateChanged*
-  name: onTaskStateChanged
-  href: api/ToolkitEngine.Quest.Journal.html#ToolkitEngine_Quest_Journal_onTaskStateChanged_
-  commentId: Overload:ToolkitEngine.Quest.Journal.onTaskStateChanged
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.Journal.onTaskStateChanged
-  nameWithType: Journal.onTaskStateChanged
 - uid: ToolkitEngine.Quest.QuestEventArgs
   name: QuestEventArgs
   href: api/ToolkitEngine.Quest.QuestEventArgs.html
   commentId: T:ToolkitEngine.Quest.QuestEventArgs
   fullName: ToolkitEngine.Quest.QuestEventArgs
   nameWithType: QuestEventArgs
-- uid: ToolkitEngine.Quest.QuestEventArgs.#ctor(ToolkitEngine.Quest.Journal,ToolkitEngine.Quest.Journal.Quest,ToolkitEngine.Quest.Journal.State)
-  name: QuestEventArgs(Journal, Quest, State)
-  href: api/ToolkitEngine.Quest.QuestEventArgs.html#ToolkitEngine_Quest_QuestEventArgs__ctor_ToolkitEngine_Quest_Journal_ToolkitEngine_Quest_Journal_Quest_ToolkitEngine_Quest_Journal_State_
-  commentId: M:ToolkitEngine.Quest.QuestEventArgs.#ctor(ToolkitEngine.Quest.Journal,ToolkitEngine.Quest.Journal.Quest,ToolkitEngine.Quest.Journal.State)
-  name.vb: New(Journal, Quest, State)
-  fullName: ToolkitEngine.Quest.QuestEventArgs.QuestEventArgs(ToolkitEngine.Quest.Journal, ToolkitEngine.Quest.Journal.Quest, ToolkitEngine.Quest.Journal.State)
-  fullName.vb: ToolkitEngine.Quest.QuestEventArgs.New(ToolkitEngine.Quest.Journal, ToolkitEngine.Quest.Journal.Quest, ToolkitEngine.Quest.Journal.State)
-  nameWithType: QuestEventArgs.QuestEventArgs(Journal, Journal.Quest, Journal.State)
-  nameWithType.vb: QuestEventArgs.New(Journal, Journal.Quest, Journal.State)
-- uid: ToolkitEngine.Quest.QuestEventArgs.#ctor(ToolkitEngine.Quest.Journal,ToolkitEngine.Quest.Journal.Task,System.Int32)
-  name: QuestEventArgs(Journal, Task, int)
-  href: api/ToolkitEngine.Quest.QuestEventArgs.html#ToolkitEngine_Quest_QuestEventArgs__ctor_ToolkitEngine_Quest_Journal_ToolkitEngine_Quest_Journal_Task_System_Int32_
-  commentId: M:ToolkitEngine.Quest.QuestEventArgs.#ctor(ToolkitEngine.Quest.Journal,ToolkitEngine.Quest.Journal.Task,System.Int32)
-  name.vb: New(Journal, Task, Integer)
-  fullName: ToolkitEngine.Quest.QuestEventArgs.QuestEventArgs(ToolkitEngine.Quest.Journal, ToolkitEngine.Quest.Journal.Task, int)
-  fullName.vb: ToolkitEngine.Quest.QuestEventArgs.New(ToolkitEngine.Quest.Journal, ToolkitEngine.Quest.Journal.Task, Integer)
-  nameWithType: QuestEventArgs.QuestEventArgs(Journal, Journal.Task, int)
-  nameWithType.vb: QuestEventArgs.New(Journal, Journal.Task, Integer)
-- uid: ToolkitEngine.Quest.QuestEventArgs.#ctor(ToolkitEngine.Quest.Journal,ToolkitEngine.Quest.Journal.Task,ToolkitEngine.Quest.Journal.State)
-  name: QuestEventArgs(Journal, Task, State)
-  href: api/ToolkitEngine.Quest.QuestEventArgs.html#ToolkitEngine_Quest_QuestEventArgs__ctor_ToolkitEngine_Quest_Journal_ToolkitEngine_Quest_Journal_Task_ToolkitEngine_Quest_Journal_State_
-  commentId: M:ToolkitEngine.Quest.QuestEventArgs.#ctor(ToolkitEngine.Quest.Journal,ToolkitEngine.Quest.Journal.Task,ToolkitEngine.Quest.Journal.State)
-  name.vb: New(Journal, Task, State)
-  fullName: ToolkitEngine.Quest.QuestEventArgs.QuestEventArgs(ToolkitEngine.Quest.Journal, ToolkitEngine.Quest.Journal.Task, ToolkitEngine.Quest.Journal.State)
-  fullName.vb: ToolkitEngine.Quest.QuestEventArgs.New(ToolkitEngine.Quest.Journal, ToolkitEngine.Quest.Journal.Task, ToolkitEngine.Quest.Journal.State)
-  nameWithType: QuestEventArgs.QuestEventArgs(Journal, Journal.Task, Journal.State)
-  nameWithType.vb: QuestEventArgs.New(Journal, Journal.Task, Journal.State)
+- uid: ToolkitEngine.Quest.QuestEventArgs.#ctor(ToolkitEngine.Quest.QuestManager.Quest,ToolkitEngine.Quest.QuestManager.State)
+  name: QuestEventArgs(Quest, State)
+  href: api/ToolkitEngine.Quest.QuestEventArgs.html#ToolkitEngine_Quest_QuestEventArgs__ctor_ToolkitEngine_Quest_QuestManager_Quest_ToolkitEngine_Quest_QuestManager_State_
+  commentId: M:ToolkitEngine.Quest.QuestEventArgs.#ctor(ToolkitEngine.Quest.QuestManager.Quest,ToolkitEngine.Quest.QuestManager.State)
+  name.vb: New(Quest, State)
+  fullName: ToolkitEngine.Quest.QuestEventArgs.QuestEventArgs(ToolkitEngine.Quest.QuestManager.Quest, ToolkitEngine.Quest.QuestManager.State)
+  fullName.vb: ToolkitEngine.Quest.QuestEventArgs.New(ToolkitEngine.Quest.QuestManager.Quest, ToolkitEngine.Quest.QuestManager.State)
+  nameWithType: QuestEventArgs.QuestEventArgs(QuestManager.Quest, QuestManager.State)
+  nameWithType.vb: QuestEventArgs.New(QuestManager.Quest, QuestManager.State)
+- uid: ToolkitEngine.Quest.QuestEventArgs.#ctor(ToolkitEngine.Quest.QuestManager.Task,System.Int32)
+  name: QuestEventArgs(Task, int)
+  href: api/ToolkitEngine.Quest.QuestEventArgs.html#ToolkitEngine_Quest_QuestEventArgs__ctor_ToolkitEngine_Quest_QuestManager_Task_System_Int32_
+  commentId: M:ToolkitEngine.Quest.QuestEventArgs.#ctor(ToolkitEngine.Quest.QuestManager.Task,System.Int32)
+  name.vb: New(Task, Integer)
+  fullName: ToolkitEngine.Quest.QuestEventArgs.QuestEventArgs(ToolkitEngine.Quest.QuestManager.Task, int)
+  fullName.vb: ToolkitEngine.Quest.QuestEventArgs.New(ToolkitEngine.Quest.QuestManager.Task, Integer)
+  nameWithType: QuestEventArgs.QuestEventArgs(QuestManager.Task, int)
+  nameWithType.vb: QuestEventArgs.New(QuestManager.Task, Integer)
+- uid: ToolkitEngine.Quest.QuestEventArgs.#ctor(ToolkitEngine.Quest.QuestManager.Task,ToolkitEngine.Quest.QuestManager.State)
+  name: QuestEventArgs(Task, State)
+  href: api/ToolkitEngine.Quest.QuestEventArgs.html#ToolkitEngine_Quest_QuestEventArgs__ctor_ToolkitEngine_Quest_QuestManager_Task_ToolkitEngine_Quest_QuestManager_State_
+  commentId: M:ToolkitEngine.Quest.QuestEventArgs.#ctor(ToolkitEngine.Quest.QuestManager.Task,ToolkitEngine.Quest.QuestManager.State)
+  name.vb: New(Task, State)
+  fullName: ToolkitEngine.Quest.QuestEventArgs.QuestEventArgs(ToolkitEngine.Quest.QuestManager.Task, ToolkitEngine.Quest.QuestManager.State)
+  fullName.vb: ToolkitEngine.Quest.QuestEventArgs.New(ToolkitEngine.Quest.QuestManager.Task, ToolkitEngine.Quest.QuestManager.State)
+  nameWithType: QuestEventArgs.QuestEventArgs(QuestManager.Task, QuestManager.State)
+  nameWithType.vb: QuestEventArgs.New(QuestManager.Task, QuestManager.State)
 - uid: ToolkitEngine.Quest.QuestEventArgs.#ctor*
   name: QuestEventArgs
   href: api/ToolkitEngine.Quest.QuestEventArgs.html#ToolkitEngine_Quest_QuestEventArgs__ctor_
@@ -837,19 +472,6 @@ references:
   isSpec: "True"
   fullName: ToolkitEngine.Quest.QuestEventArgs.delta
   nameWithType: QuestEventArgs.delta
-- uid: ToolkitEngine.Quest.QuestEventArgs.journal
-  name: journal
-  href: api/ToolkitEngine.Quest.QuestEventArgs.html#ToolkitEngine_Quest_QuestEventArgs_journal
-  commentId: P:ToolkitEngine.Quest.QuestEventArgs.journal
-  fullName: ToolkitEngine.Quest.QuestEventArgs.journal
-  nameWithType: QuestEventArgs.journal
-- uid: ToolkitEngine.Quest.QuestEventArgs.journal*
-  name: journal
-  href: api/ToolkitEngine.Quest.QuestEventArgs.html#ToolkitEngine_Quest_QuestEventArgs_journal_
-  commentId: Overload:ToolkitEngine.Quest.QuestEventArgs.journal
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.QuestEventArgs.journal
-  nameWithType: QuestEventArgs.journal
 - uid: ToolkitEngine.Quest.QuestEventArgs.quest
   name: quest
   href: api/ToolkitEngine.Quest.QuestEventArgs.html#ToolkitEngine_Quest_QuestEventArgs_quest
@@ -889,18 +511,406 @@ references:
   isSpec: "True"
   fullName: ToolkitEngine.Quest.QuestEventArgs.task
   nameWithType: QuestEventArgs.task
+- uid: ToolkitEngine.Quest.QuestLayer
+  name: QuestLayer
+  href: api/ToolkitEngine.Quest.QuestLayer.html
+  commentId: T:ToolkitEngine.Quest.QuestLayer
+  fullName: ToolkitEngine.Quest.QuestLayer
+  nameWithType: QuestLayer
+- uid: ToolkitEngine.Quest.QuestManager
+  name: QuestManager
+  href: api/ToolkitEngine.Quest.QuestManager.html
+  commentId: T:ToolkitEngine.Quest.QuestManager
+  fullName: ToolkitEngine.Quest.QuestManager
+  nameWithType: QuestManager
+- uid: ToolkitEngine.Quest.QuestManager.Activate(ToolkitEngine.Quest.QuestType)
+  name: Activate(QuestType)
+  href: api/ToolkitEngine.Quest.QuestManager.html#ToolkitEngine_Quest_QuestManager_Activate_ToolkitEngine_Quest_QuestType_
+  commentId: M:ToolkitEngine.Quest.QuestManager.Activate(ToolkitEngine.Quest.QuestType)
+  fullName: ToolkitEngine.Quest.QuestManager.Activate(ToolkitEngine.Quest.QuestType)
+  nameWithType: QuestManager.Activate(QuestType)
+- uid: ToolkitEngine.Quest.QuestManager.Activate(ToolkitEngine.Quest.TaskType)
+  name: Activate(TaskType)
+  href: api/ToolkitEngine.Quest.QuestManager.html#ToolkitEngine_Quest_QuestManager_Activate_ToolkitEngine_Quest_TaskType_
+  commentId: M:ToolkitEngine.Quest.QuestManager.Activate(ToolkitEngine.Quest.TaskType)
+  fullName: ToolkitEngine.Quest.QuestManager.Activate(ToolkitEngine.Quest.TaskType)
+  nameWithType: QuestManager.Activate(TaskType)
+- uid: ToolkitEngine.Quest.QuestManager.Activate*
+  name: Activate
+  href: api/ToolkitEngine.Quest.QuestManager.html#ToolkitEngine_Quest_QuestManager_Activate_
+  commentId: Overload:ToolkitEngine.Quest.QuestManager.Activate
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.QuestManager.Activate
+  nameWithType: QuestManager.Activate
+- uid: ToolkitEngine.Quest.QuestManager.Decrement(ToolkitEngine.Quest.TaskType)
+  name: Decrement(TaskType)
+  href: api/ToolkitEngine.Quest.QuestManager.html#ToolkitEngine_Quest_QuestManager_Decrement_ToolkitEngine_Quest_TaskType_
+  commentId: M:ToolkitEngine.Quest.QuestManager.Decrement(ToolkitEngine.Quest.TaskType)
+  fullName: ToolkitEngine.Quest.QuestManager.Decrement(ToolkitEngine.Quest.TaskType)
+  nameWithType: QuestManager.Decrement(TaskType)
+- uid: ToolkitEngine.Quest.QuestManager.Decrement*
+  name: Decrement
+  href: api/ToolkitEngine.Quest.QuestManager.html#ToolkitEngine_Quest_QuestManager_Decrement_
+  commentId: Overload:ToolkitEngine.Quest.QuestManager.Decrement
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.QuestManager.Decrement
+  nameWithType: QuestManager.Decrement
+- uid: ToolkitEngine.Quest.QuestManager.Finish(ToolkitEngine.Quest.QuestType,ToolkitEngine.Quest.QuestManager.FinishMode)
+  name: Finish(QuestType, FinishMode)
+  href: api/ToolkitEngine.Quest.QuestManager.html#ToolkitEngine_Quest_QuestManager_Finish_ToolkitEngine_Quest_QuestType_ToolkitEngine_Quest_QuestManager_FinishMode_
+  commentId: M:ToolkitEngine.Quest.QuestManager.Finish(ToolkitEngine.Quest.QuestType,ToolkitEngine.Quest.QuestManager.FinishMode)
+  fullName: ToolkitEngine.Quest.QuestManager.Finish(ToolkitEngine.Quest.QuestType, ToolkitEngine.Quest.QuestManager.FinishMode)
+  nameWithType: QuestManager.Finish(QuestType, QuestManager.FinishMode)
+- uid: ToolkitEngine.Quest.QuestManager.Finish(ToolkitEngine.Quest.TaskType,ToolkitEngine.Quest.QuestManager.FinishMode)
+  name: Finish(TaskType, FinishMode)
+  href: api/ToolkitEngine.Quest.QuestManager.html#ToolkitEngine_Quest_QuestManager_Finish_ToolkitEngine_Quest_TaskType_ToolkitEngine_Quest_QuestManager_FinishMode_
+  commentId: M:ToolkitEngine.Quest.QuestManager.Finish(ToolkitEngine.Quest.TaskType,ToolkitEngine.Quest.QuestManager.FinishMode)
+  fullName: ToolkitEngine.Quest.QuestManager.Finish(ToolkitEngine.Quest.TaskType, ToolkitEngine.Quest.QuestManager.FinishMode)
+  nameWithType: QuestManager.Finish(TaskType, QuestManager.FinishMode)
+- uid: ToolkitEngine.Quest.QuestManager.Finish*
+  name: Finish
+  href: api/ToolkitEngine.Quest.QuestManager.html#ToolkitEngine_Quest_QuestManager_Finish_
+  commentId: Overload:ToolkitEngine.Quest.QuestManager.Finish
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.QuestManager.Finish
+  nameWithType: QuestManager.Finish
+- uid: ToolkitEngine.Quest.QuestManager.FinishMode
+  name: QuestManager.FinishMode
+  href: api/ToolkitEngine.Quest.QuestManager.FinishMode.html
+  commentId: T:ToolkitEngine.Quest.QuestManager.FinishMode
+  fullName: ToolkitEngine.Quest.QuestManager.FinishMode
+  nameWithType: QuestManager.FinishMode
+- uid: ToolkitEngine.Quest.QuestManager.FinishMode.Abandon
+  name: Abandon
+  href: api/ToolkitEngine.Quest.QuestManager.FinishMode.html#ToolkitEngine_Quest_QuestManager_FinishMode_Abandon
+  commentId: F:ToolkitEngine.Quest.QuestManager.FinishMode.Abandon
+  fullName: ToolkitEngine.Quest.QuestManager.FinishMode.Abandon
+  nameWithType: QuestManager.FinishMode.Abandon
+- uid: ToolkitEngine.Quest.QuestManager.FinishMode.Complete
+  name: Complete
+  href: api/ToolkitEngine.Quest.QuestManager.FinishMode.html#ToolkitEngine_Quest_QuestManager_FinishMode_Complete
+  commentId: F:ToolkitEngine.Quest.QuestManager.FinishMode.Complete
+  fullName: ToolkitEngine.Quest.QuestManager.FinishMode.Complete
+  nameWithType: QuestManager.FinishMode.Complete
+- uid: ToolkitEngine.Quest.QuestManager.FinishMode.Fail
+  name: Fail
+  href: api/ToolkitEngine.Quest.QuestManager.FinishMode.html#ToolkitEngine_Quest_QuestManager_FinishMode_Fail
+  commentId: F:ToolkitEngine.Quest.QuestManager.FinishMode.Fail
+  fullName: ToolkitEngine.Quest.QuestManager.FinishMode.Fail
+  nameWithType: QuestManager.FinishMode.Fail
+- uid: ToolkitEngine.Quest.QuestManager.GetState(ToolkitEngine.Quest.QuestType)
+  name: GetState(QuestType)
+  href: api/ToolkitEngine.Quest.QuestManager.html#ToolkitEngine_Quest_QuestManager_GetState_ToolkitEngine_Quest_QuestType_
+  commentId: M:ToolkitEngine.Quest.QuestManager.GetState(ToolkitEngine.Quest.QuestType)
+  fullName: ToolkitEngine.Quest.QuestManager.GetState(ToolkitEngine.Quest.QuestType)
+  nameWithType: QuestManager.GetState(QuestType)
+- uid: ToolkitEngine.Quest.QuestManager.GetState(ToolkitEngine.Quest.TaskType)
+  name: GetState(TaskType)
+  href: api/ToolkitEngine.Quest.QuestManager.html#ToolkitEngine_Quest_QuestManager_GetState_ToolkitEngine_Quest_TaskType_
+  commentId: M:ToolkitEngine.Quest.QuestManager.GetState(ToolkitEngine.Quest.TaskType)
+  fullName: ToolkitEngine.Quest.QuestManager.GetState(ToolkitEngine.Quest.TaskType)
+  nameWithType: QuestManager.GetState(TaskType)
+- uid: ToolkitEngine.Quest.QuestManager.GetState*
+  name: GetState
+  href: api/ToolkitEngine.Quest.QuestManager.html#ToolkitEngine_Quest_QuestManager_GetState_
+  commentId: Overload:ToolkitEngine.Quest.QuestManager.GetState
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.QuestManager.GetState
+  nameWithType: QuestManager.GetState
+- uid: ToolkitEngine.Quest.QuestManager.Increment(ToolkitEngine.Quest.TaskType)
+  name: Increment(TaskType)
+  href: api/ToolkitEngine.Quest.QuestManager.html#ToolkitEngine_Quest_QuestManager_Increment_ToolkitEngine_Quest_TaskType_
+  commentId: M:ToolkitEngine.Quest.QuestManager.Increment(ToolkitEngine.Quest.TaskType)
+  fullName: ToolkitEngine.Quest.QuestManager.Increment(ToolkitEngine.Quest.TaskType)
+  nameWithType: QuestManager.Increment(TaskType)
+- uid: ToolkitEngine.Quest.QuestManager.Increment*
+  name: Increment
+  href: api/ToolkitEngine.Quest.QuestManager.html#ToolkitEngine_Quest_QuestManager_Increment_
+  commentId: Overload:ToolkitEngine.Quest.QuestManager.Increment
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.QuestManager.Increment
+  nameWithType: QuestManager.Increment
+- uid: ToolkitEngine.Quest.QuestManager.Initialize
+  name: Initialize()
+  href: api/ToolkitEngine.Quest.QuestManager.html#ToolkitEngine_Quest_QuestManager_Initialize
+  commentId: M:ToolkitEngine.Quest.QuestManager.Initialize
+  fullName: ToolkitEngine.Quest.QuestManager.Initialize()
+  nameWithType: QuestManager.Initialize()
+- uid: ToolkitEngine.Quest.QuestManager.Initialize*
+  name: Initialize
+  href: api/ToolkitEngine.Quest.QuestManager.html#ToolkitEngine_Quest_QuestManager_Initialize_
+  commentId: Overload:ToolkitEngine.Quest.QuestManager.Initialize
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.QuestManager.Initialize
+  nameWithType: QuestManager.Initialize
+- uid: ToolkitEngine.Quest.QuestManager.IsActive(ToolkitEngine.Quest.QuestType)
+  name: IsActive(QuestType)
+  href: api/ToolkitEngine.Quest.QuestManager.html#ToolkitEngine_Quest_QuestManager_IsActive_ToolkitEngine_Quest_QuestType_
+  commentId: M:ToolkitEngine.Quest.QuestManager.IsActive(ToolkitEngine.Quest.QuestType)
+  fullName: ToolkitEngine.Quest.QuestManager.IsActive(ToolkitEngine.Quest.QuestType)
+  nameWithType: QuestManager.IsActive(QuestType)
+- uid: ToolkitEngine.Quest.QuestManager.IsActive*
+  name: IsActive
+  href: api/ToolkitEngine.Quest.QuestManager.html#ToolkitEngine_Quest_QuestManager_IsActive_
+  commentId: Overload:ToolkitEngine.Quest.QuestManager.IsActive
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.QuestManager.IsActive
+  nameWithType: QuestManager.IsActive
+- uid: ToolkitEngine.Quest.QuestManager.IsFinished(ToolkitEngine.Quest.QuestType)
+  name: IsFinished(QuestType)
+  href: api/ToolkitEngine.Quest.QuestManager.html#ToolkitEngine_Quest_QuestManager_IsFinished_ToolkitEngine_Quest_QuestType_
+  commentId: M:ToolkitEngine.Quest.QuestManager.IsFinished(ToolkitEngine.Quest.QuestType)
+  fullName: ToolkitEngine.Quest.QuestManager.IsFinished(ToolkitEngine.Quest.QuestType)
+  nameWithType: QuestManager.IsFinished(QuestType)
+- uid: ToolkitEngine.Quest.QuestManager.IsFinished*
+  name: IsFinished
+  href: api/ToolkitEngine.Quest.QuestManager.html#ToolkitEngine_Quest_QuestManager_IsFinished_
+  commentId: Overload:ToolkitEngine.Quest.QuestManager.IsFinished
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.QuestManager.IsFinished
+  nameWithType: QuestManager.IsFinished
+- uid: ToolkitEngine.Quest.QuestManager.Modify(ToolkitEngine.Quest.TaskType,System.Int32)
+  name: Modify(TaskType, int)
+  href: api/ToolkitEngine.Quest.QuestManager.html#ToolkitEngine_Quest_QuestManager_Modify_ToolkitEngine_Quest_TaskType_System_Int32_
+  commentId: M:ToolkitEngine.Quest.QuestManager.Modify(ToolkitEngine.Quest.TaskType,System.Int32)
+  name.vb: Modify(TaskType, Integer)
+  fullName: ToolkitEngine.Quest.QuestManager.Modify(ToolkitEngine.Quest.TaskType, int)
+  fullName.vb: ToolkitEngine.Quest.QuestManager.Modify(ToolkitEngine.Quest.TaskType, Integer)
+  nameWithType: QuestManager.Modify(TaskType, int)
+  nameWithType.vb: QuestManager.Modify(TaskType, Integer)
+- uid: ToolkitEngine.Quest.QuestManager.Modify*
+  name: Modify
+  href: api/ToolkitEngine.Quest.QuestManager.html#ToolkitEngine_Quest_QuestManager_Modify_
+  commentId: Overload:ToolkitEngine.Quest.QuestManager.Modify
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.QuestManager.Modify
+  nameWithType: QuestManager.Modify
+- uid: ToolkitEngine.Quest.QuestManager.QUEST_VAR_NAME
+  name: QUEST_VAR_NAME
+  href: api/ToolkitEngine.Quest.QuestManager.html#ToolkitEngine_Quest_QuestManager_QUEST_VAR_NAME
+  commentId: F:ToolkitEngine.Quest.QuestManager.QUEST_VAR_NAME
+  fullName: ToolkitEngine.Quest.QuestManager.QUEST_VAR_NAME
+  nameWithType: QuestManager.QUEST_VAR_NAME
+- uid: ToolkitEngine.Quest.QuestManager.Quest
+  name: QuestManager.Quest
+  href: api/ToolkitEngine.Quest.QuestManager.Quest.html
+  commentId: T:ToolkitEngine.Quest.QuestManager.Quest
+  fullName: ToolkitEngine.Quest.QuestManager.Quest
+  nameWithType: QuestManager.Quest
+- uid: ToolkitEngine.Quest.QuestManager.Quest.activeTasks
+  name: activeTasks
+  href: api/ToolkitEngine.Quest.QuestManager.Quest.html#ToolkitEngine_Quest_QuestManager_Quest_activeTasks
+  commentId: P:ToolkitEngine.Quest.QuestManager.Quest.activeTasks
+  fullName: ToolkitEngine.Quest.QuestManager.Quest.activeTasks
+  nameWithType: QuestManager.Quest.activeTasks
+- uid: ToolkitEngine.Quest.QuestManager.Quest.activeTasks*
+  name: activeTasks
+  href: api/ToolkitEngine.Quest.QuestManager.Quest.html#ToolkitEngine_Quest_QuestManager_Quest_activeTasks_
+  commentId: Overload:ToolkitEngine.Quest.QuestManager.Quest.activeTasks
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.QuestManager.Quest.activeTasks
+  nameWithType: QuestManager.Quest.activeTasks
+- uid: ToolkitEngine.Quest.QuestManager.Quest.questType
+  name: questType
+  href: api/ToolkitEngine.Quest.QuestManager.Quest.html#ToolkitEngine_Quest_QuestManager_Quest_questType
+  commentId: P:ToolkitEngine.Quest.QuestManager.Quest.questType
+  fullName: ToolkitEngine.Quest.QuestManager.Quest.questType
+  nameWithType: QuestManager.Quest.questType
+- uid: ToolkitEngine.Quest.QuestManager.Quest.questType*
+  name: questType
+  href: api/ToolkitEngine.Quest.QuestManager.Quest.html#ToolkitEngine_Quest_QuestManager_Quest_questType_
+  commentId: Overload:ToolkitEngine.Quest.QuestManager.Quest.questType
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.QuestManager.Quest.questType
+  nameWithType: QuestManager.Quest.questType
+- uid: ToolkitEngine.Quest.QuestManager.Quest.state
+  name: state
+  href: api/ToolkitEngine.Quest.QuestManager.Quest.html#ToolkitEngine_Quest_QuestManager_Quest_state
+  commentId: P:ToolkitEngine.Quest.QuestManager.Quest.state
+  fullName: ToolkitEngine.Quest.QuestManager.Quest.state
+  nameWithType: QuestManager.Quest.state
+- uid: ToolkitEngine.Quest.QuestManager.Quest.state*
+  name: state
+  href: api/ToolkitEngine.Quest.QuestManager.Quest.html#ToolkitEngine_Quest_QuestManager_Quest_state_
+  commentId: Overload:ToolkitEngine.Quest.QuestManager.Quest.state
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.QuestManager.Quest.state
+  nameWithType: QuestManager.Quest.state
+- uid: ToolkitEngine.Quest.QuestManager.QuestMap
+  name: QuestManager.QuestMap
+  href: api/ToolkitEngine.Quest.QuestManager.QuestMap.html
+  commentId: T:ToolkitEngine.Quest.QuestManager.QuestMap
+  fullName: ToolkitEngine.Quest.QuestManager.QuestMap
+  nameWithType: QuestManager.QuestMap
+- uid: ToolkitEngine.Quest.QuestManager.QuestStateChanged
+  name: QuestStateChanged
+  href: api/ToolkitEngine.Quest.QuestManager.html#ToolkitEngine_Quest_QuestManager_QuestStateChanged
+  commentId: E:ToolkitEngine.Quest.QuestManager.QuestStateChanged
+  fullName: ToolkitEngine.Quest.QuestManager.QuestStateChanged
+  nameWithType: QuestManager.QuestStateChanged
+- uid: ToolkitEngine.Quest.QuestManager.State
+  name: QuestManager.State
+  href: api/ToolkitEngine.Quest.QuestManager.State.html
+  commentId: T:ToolkitEngine.Quest.QuestManager.State
+  fullName: ToolkitEngine.Quest.QuestManager.State
+  nameWithType: QuestManager.State
+- uid: ToolkitEngine.Quest.QuestManager.State.Active
+  name: Active
+  href: api/ToolkitEngine.Quest.QuestManager.State.html#ToolkitEngine_Quest_QuestManager_State_Active
+  commentId: F:ToolkitEngine.Quest.QuestManager.State.Active
+  fullName: ToolkitEngine.Quest.QuestManager.State.Active
+  nameWithType: QuestManager.State.Active
+- uid: ToolkitEngine.Quest.QuestManager.State.Completed
+  name: Completed
+  href: api/ToolkitEngine.Quest.QuestManager.State.html#ToolkitEngine_Quest_QuestManager_State_Completed
+  commentId: F:ToolkitEngine.Quest.QuestManager.State.Completed
+  fullName: ToolkitEngine.Quest.QuestManager.State.Completed
+  nameWithType: QuestManager.State.Completed
+- uid: ToolkitEngine.Quest.QuestManager.State.Failed
+  name: Failed
+  href: api/ToolkitEngine.Quest.QuestManager.State.html#ToolkitEngine_Quest_QuestManager_State_Failed
+  commentId: F:ToolkitEngine.Quest.QuestManager.State.Failed
+  fullName: ToolkitEngine.Quest.QuestManager.State.Failed
+  nameWithType: QuestManager.State.Failed
+- uid: ToolkitEngine.Quest.QuestManager.State.Inactive
+  name: Inactive
+  href: api/ToolkitEngine.Quest.QuestManager.State.html#ToolkitEngine_Quest_QuestManager_State_Inactive
+  commentId: F:ToolkitEngine.Quest.QuestManager.State.Inactive
+  fullName: ToolkitEngine.Quest.QuestManager.State.Inactive
+  nameWithType: QuestManager.State.Inactive
+- uid: ToolkitEngine.Quest.QuestManager.TASK_VAR_NAME
+  name: TASK_VAR_NAME
+  href: api/ToolkitEngine.Quest.QuestManager.html#ToolkitEngine_Quest_QuestManager_TASK_VAR_NAME
+  commentId: F:ToolkitEngine.Quest.QuestManager.TASK_VAR_NAME
+  fullName: ToolkitEngine.Quest.QuestManager.TASK_VAR_NAME
+  nameWithType: QuestManager.TASK_VAR_NAME
+- uid: ToolkitEngine.Quest.QuestManager.Task
+  name: QuestManager.Task
+  href: api/ToolkitEngine.Quest.QuestManager.Task.html
+  commentId: T:ToolkitEngine.Quest.QuestManager.Task
+  fullName: ToolkitEngine.Quest.QuestManager.Task
+  nameWithType: QuestManager.Task
+- uid: ToolkitEngine.Quest.QuestManager.Task.count
+  name: count
+  href: api/ToolkitEngine.Quest.QuestManager.Task.html#ToolkitEngine_Quest_QuestManager_Task_count
+  commentId: P:ToolkitEngine.Quest.QuestManager.Task.count
+  fullName: ToolkitEngine.Quest.QuestManager.Task.count
+  nameWithType: QuestManager.Task.count
+- uid: ToolkitEngine.Quest.QuestManager.Task.count*
+  name: count
+  href: api/ToolkitEngine.Quest.QuestManager.Task.html#ToolkitEngine_Quest_QuestManager_Task_count_
+  commentId: Overload:ToolkitEngine.Quest.QuestManager.Task.count
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.QuestManager.Task.count
+  nameWithType: QuestManager.Task.count
+- uid: ToolkitEngine.Quest.QuestManager.Task.quest
+  name: quest
+  href: api/ToolkitEngine.Quest.QuestManager.Task.html#ToolkitEngine_Quest_QuestManager_Task_quest
+  commentId: P:ToolkitEngine.Quest.QuestManager.Task.quest
+  fullName: ToolkitEngine.Quest.QuestManager.Task.quest
+  nameWithType: QuestManager.Task.quest
+- uid: ToolkitEngine.Quest.QuestManager.Task.quest*
+  name: quest
+  href: api/ToolkitEngine.Quest.QuestManager.Task.html#ToolkitEngine_Quest_QuestManager_Task_quest_
+  commentId: Overload:ToolkitEngine.Quest.QuestManager.Task.quest
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.QuestManager.Task.quest
+  nameWithType: QuestManager.Task.quest
+- uid: ToolkitEngine.Quest.QuestManager.Task.state
+  name: state
+  href: api/ToolkitEngine.Quest.QuestManager.Task.html#ToolkitEngine_Quest_QuestManager_Task_state
+  commentId: P:ToolkitEngine.Quest.QuestManager.Task.state
+  fullName: ToolkitEngine.Quest.QuestManager.Task.state
+  nameWithType: QuestManager.Task.state
+- uid: ToolkitEngine.Quest.QuestManager.Task.state*
+  name: state
+  href: api/ToolkitEngine.Quest.QuestManager.Task.html#ToolkitEngine_Quest_QuestManager_Task_state_
+  commentId: Overload:ToolkitEngine.Quest.QuestManager.Task.state
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.QuestManager.Task.state
+  nameWithType: QuestManager.Task.state
+- uid: ToolkitEngine.Quest.QuestManager.Task.taskType
+  name: taskType
+  href: api/ToolkitEngine.Quest.QuestManager.Task.html#ToolkitEngine_Quest_QuestManager_Task_taskType
+  commentId: P:ToolkitEngine.Quest.QuestManager.Task.taskType
+  fullName: ToolkitEngine.Quest.QuestManager.Task.taskType
+  nameWithType: QuestManager.Task.taskType
+- uid: ToolkitEngine.Quest.QuestManager.Task.taskType*
+  name: taskType
+  href: api/ToolkitEngine.Quest.QuestManager.Task.html#ToolkitEngine_Quest_QuestManager_Task_taskType_
+  commentId: Overload:ToolkitEngine.Quest.QuestManager.Task.taskType
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.QuestManager.Task.taskType
+  nameWithType: QuestManager.Task.taskType
+- uid: ToolkitEngine.Quest.QuestManager.TaskCountChanged
+  name: TaskCountChanged
+  href: api/ToolkitEngine.Quest.QuestManager.html#ToolkitEngine_Quest_QuestManager_TaskCountChanged
+  commentId: E:ToolkitEngine.Quest.QuestManager.TaskCountChanged
+  fullName: ToolkitEngine.Quest.QuestManager.TaskCountChanged
+  nameWithType: QuestManager.TaskCountChanged
+- uid: ToolkitEngine.Quest.QuestManager.TaskStateChanged
+  name: TaskStateChanged
+  href: api/ToolkitEngine.Quest.QuestManager.html#ToolkitEngine_Quest_QuestManager_TaskStateChanged
+  commentId: E:ToolkitEngine.Quest.QuestManager.TaskStateChanged
+  fullName: ToolkitEngine.Quest.QuestManager.TaskStateChanged
+  nameWithType: QuestManager.TaskStateChanged
+- uid: ToolkitEngine.Quest.QuestManager.activeQuests
+  name: activeQuests
+  href: api/ToolkitEngine.Quest.QuestManager.html#ToolkitEngine_Quest_QuestManager_activeQuests
+  commentId: P:ToolkitEngine.Quest.QuestManager.activeQuests
+  fullName: ToolkitEngine.Quest.QuestManager.activeQuests
+  nameWithType: QuestManager.activeQuests
+- uid: ToolkitEngine.Quest.QuestManager.activeQuests*
+  name: activeQuests
+  href: api/ToolkitEngine.Quest.QuestManager.html#ToolkitEngine_Quest_QuestManager_activeQuests_
+  commentId: Overload:ToolkitEngine.Quest.QuestManager.activeQuests
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.QuestManager.activeQuests
+  nameWithType: QuestManager.activeQuests
+- uid: ToolkitEngine.Quest.QuestManager.finishedQuests
+  name: finishedQuests
+  href: api/ToolkitEngine.Quest.QuestManager.html#ToolkitEngine_Quest_QuestManager_finishedQuests
+  commentId: P:ToolkitEngine.Quest.QuestManager.finishedQuests
+  fullName: ToolkitEngine.Quest.QuestManager.finishedQuests
+  nameWithType: QuestManager.finishedQuests
+- uid: ToolkitEngine.Quest.QuestManager.finishedQuests*
+  name: finishedQuests
+  href: api/ToolkitEngine.Quest.QuestManager.html#ToolkitEngine_Quest_QuestManager_finishedQuests_
+  commentId: Overload:ToolkitEngine.Quest.QuestManager.finishedQuests
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.QuestManager.finishedQuests
+  nameWithType: QuestManager.finishedQuests
+- uid: ToolkitEngine.Quest.QuestManagerConfig
+  name: QuestManagerConfig
+  href: api/ToolkitEngine.Quest.QuestManagerConfig.html
+  commentId: T:ToolkitEngine.Quest.QuestManagerConfig
+  fullName: ToolkitEngine.Quest.QuestManagerConfig
+  nameWithType: QuestManagerConfig
+- uid: ToolkitEngine.Quest.QuestManagerConfig.rewardInventory
+  name: rewardInventory
+  href: api/ToolkitEngine.Quest.QuestManagerConfig.html#ToolkitEngine_Quest_QuestManagerConfig_rewardInventory
+  commentId: P:ToolkitEngine.Quest.QuestManagerConfig.rewardInventory
+  fullName: ToolkitEngine.Quest.QuestManagerConfig.rewardInventory
+  nameWithType: QuestManagerConfig.rewardInventory
+- uid: ToolkitEngine.Quest.QuestManagerConfig.rewardInventory*
+  name: rewardInventory
+  href: api/ToolkitEngine.Quest.QuestManagerConfig.html#ToolkitEngine_Quest_QuestManagerConfig_rewardInventory_
+  commentId: Overload:ToolkitEngine.Quest.QuestManagerConfig.rewardInventory
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.QuestManagerConfig.rewardInventory
+  nameWithType: QuestManagerConfig.rewardInventory
 - uid: ToolkitEngine.Quest.QuestType
   name: QuestType
   href: api/ToolkitEngine.Quest.QuestType.html
   commentId: T:ToolkitEngine.Quest.QuestType
   fullName: ToolkitEngine.Quest.QuestType
   nameWithType: QuestType
-- uid: ToolkitEngine.Quest.QuestType.Abandon(ToolkitEngine.Quest.Journal)
-  name: Abandon(Journal)
-  href: api/ToolkitEngine.Quest.QuestType.html#ToolkitEngine_Quest_QuestType_Abandon_ToolkitEngine_Quest_Journal_
-  commentId: M:ToolkitEngine.Quest.QuestType.Abandon(ToolkitEngine.Quest.Journal)
-  fullName: ToolkitEngine.Quest.QuestType.Abandon(ToolkitEngine.Quest.Journal)
-  nameWithType: QuestType.Abandon(Journal)
+- uid: ToolkitEngine.Quest.QuestType.Abandon(ToolkitEngine.Quest.QuestType)
+  name: Abandon(QuestType)
+  href: api/ToolkitEngine.Quest.QuestType.html#ToolkitEngine_Quest_QuestType_Abandon_ToolkitEngine_Quest_QuestType_
+  commentId: M:ToolkitEngine.Quest.QuestType.Abandon(ToolkitEngine.Quest.QuestType)
+  fullName: ToolkitEngine.Quest.QuestType.Abandon(ToolkitEngine.Quest.QuestType)
+  nameWithType: QuestType.Abandon(QuestType)
 - uid: ToolkitEngine.Quest.QuestType.Abandon*
   name: Abandon
   href: api/ToolkitEngine.Quest.QuestType.html#ToolkitEngine_Quest_QuestType_Abandon_
@@ -908,12 +918,25 @@ references:
   isSpec: "True"
   fullName: ToolkitEngine.Quest.QuestType.Abandon
   nameWithType: QuestType.Abandon
-- uid: ToolkitEngine.Quest.QuestType.Complete(ToolkitEngine.Quest.Journal)
-  name: Complete(Journal)
-  href: api/ToolkitEngine.Quest.QuestType.html#ToolkitEngine_Quest_QuestType_Complete_ToolkitEngine_Quest_Journal_
-  commentId: M:ToolkitEngine.Quest.QuestType.Complete(ToolkitEngine.Quest.Journal)
-  fullName: ToolkitEngine.Quest.QuestType.Complete(ToolkitEngine.Quest.Journal)
-  nameWithType: QuestType.Complete(Journal)
+- uid: ToolkitEngine.Quest.QuestType.Activate(ToolkitEngine.Quest.QuestType)
+  name: Activate(QuestType)
+  href: api/ToolkitEngine.Quest.QuestType.html#ToolkitEngine_Quest_QuestType_Activate_ToolkitEngine_Quest_QuestType_
+  commentId: M:ToolkitEngine.Quest.QuestType.Activate(ToolkitEngine.Quest.QuestType)
+  fullName: ToolkitEngine.Quest.QuestType.Activate(ToolkitEngine.Quest.QuestType)
+  nameWithType: QuestType.Activate(QuestType)
+- uid: ToolkitEngine.Quest.QuestType.Activate*
+  name: Activate
+  href: api/ToolkitEngine.Quest.QuestType.html#ToolkitEngine_Quest_QuestType_Activate_
+  commentId: Overload:ToolkitEngine.Quest.QuestType.Activate
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.QuestType.Activate
+  nameWithType: QuestType.Activate
+- uid: ToolkitEngine.Quest.QuestType.Complete(ToolkitEngine.Quest.QuestType)
+  name: Complete(QuestType)
+  href: api/ToolkitEngine.Quest.QuestType.html#ToolkitEngine_Quest_QuestType_Complete_ToolkitEngine_Quest_QuestType_
+  commentId: M:ToolkitEngine.Quest.QuestType.Complete(ToolkitEngine.Quest.QuestType)
+  fullName: ToolkitEngine.Quest.QuestType.Complete(ToolkitEngine.Quest.QuestType)
+  nameWithType: QuestType.Complete(QuestType)
 - uid: ToolkitEngine.Quest.QuestType.Complete*
   name: Complete
   href: api/ToolkitEngine.Quest.QuestType.html#ToolkitEngine_Quest_QuestType_Complete_
@@ -951,12 +974,12 @@ references:
   commentId: F:ToolkitEngine.Quest.QuestType.Completion.Sequence
   fullName: ToolkitEngine.Quest.QuestType.Completion.Sequence
   nameWithType: QuestType.Completion.Sequence
-- uid: ToolkitEngine.Quest.QuestType.Fail(ToolkitEngine.Quest.Journal)
-  name: Fail(Journal)
-  href: api/ToolkitEngine.Quest.QuestType.html#ToolkitEngine_Quest_QuestType_Fail_ToolkitEngine_Quest_Journal_
-  commentId: M:ToolkitEngine.Quest.QuestType.Fail(ToolkitEngine.Quest.Journal)
-  fullName: ToolkitEngine.Quest.QuestType.Fail(ToolkitEngine.Quest.Journal)
-  nameWithType: QuestType.Fail(Journal)
+- uid: ToolkitEngine.Quest.QuestType.Fail(ToolkitEngine.Quest.QuestType)
+  name: Fail(QuestType)
+  href: api/ToolkitEngine.Quest.QuestType.html#ToolkitEngine_Quest_QuestType_Fail_ToolkitEngine_Quest_QuestType_
+  commentId: M:ToolkitEngine.Quest.QuestType.Fail(ToolkitEngine.Quest.QuestType)
+  fullName: ToolkitEngine.Quest.QuestType.Fail(ToolkitEngine.Quest.QuestType)
+  nameWithType: QuestType.Fail(QuestType)
 - uid: ToolkitEngine.Quest.QuestType.Fail*
   name: Fail
   href: api/ToolkitEngine.Quest.QuestType.html#ToolkitEngine_Quest_QuestType_Fail_
@@ -990,32 +1013,6 @@ references:
   isSpec: "True"
   fullName: ToolkitEngine.Quest.QuestType.completion
   nameWithType: QuestType.completion
-- uid: ToolkitEngine.Quest.QuestType.description
-  name: description
-  href: api/ToolkitEngine.Quest.QuestType.html#ToolkitEngine_Quest_QuestType_description
-  commentId: P:ToolkitEngine.Quest.QuestType.description
-  fullName: ToolkitEngine.Quest.QuestType.description
-  nameWithType: QuestType.description
-- uid: ToolkitEngine.Quest.QuestType.description*
-  name: description
-  href: api/ToolkitEngine.Quest.QuestType.html#ToolkitEngine_Quest_QuestType_description_
-  commentId: Overload:ToolkitEngine.Quest.QuestType.description
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.QuestType.description
-  nameWithType: QuestType.description
-- uid: ToolkitEngine.Quest.QuestType.id
-  name: id
-  href: api/ToolkitEngine.Quest.QuestType.html#ToolkitEngine_Quest_QuestType_id
-  commentId: P:ToolkitEngine.Quest.QuestType.id
-  fullName: ToolkitEngine.Quest.QuestType.id
-  nameWithType: QuestType.id
-- uid: ToolkitEngine.Quest.QuestType.id*
-  name: id
-  href: api/ToolkitEngine.Quest.QuestType.html#ToolkitEngine_Quest_QuestType_id_
-  commentId: Overload:ToolkitEngine.Quest.QuestType.id
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.QuestType.id
-  nameWithType: QuestType.id
 - uid: ToolkitEngine.Quest.QuestType.order
   name: order
   href: api/ToolkitEngine.Quest.QuestType.html#ToolkitEngine_Quest_QuestType_order
@@ -1029,19 +1026,6 @@ references:
   isSpec: "True"
   fullName: ToolkitEngine.Quest.QuestType.order
   nameWithType: QuestType.order
-- uid: ToolkitEngine.Quest.QuestType.script
-  name: script
-  href: api/ToolkitEngine.Quest.QuestType.html#ToolkitEngine_Quest_QuestType_script
-  commentId: P:ToolkitEngine.Quest.QuestType.script
-  fullName: ToolkitEngine.Quest.QuestType.script
-  nameWithType: QuestType.script
-- uid: ToolkitEngine.Quest.QuestType.script*
-  name: script
-  href: api/ToolkitEngine.Quest.QuestType.html#ToolkitEngine_Quest_QuestType_script_
-  commentId: Overload:ToolkitEngine.Quest.QuestType.script
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.QuestType.script
-  nameWithType: QuestType.script
 - uid: ToolkitEngine.Quest.QuestType.tasks
   name: tasks
   href: api/ToolkitEngine.Quest.QuestType.html#ToolkitEngine_Quest_QuestType_tasks
@@ -1055,19 +1039,6 @@ references:
   isSpec: "True"
   fullName: ToolkitEngine.Quest.QuestType.tasks
   nameWithType: QuestType.tasks
-- uid: ToolkitEngine.Quest.QuestType.title
-  name: title
-  href: api/ToolkitEngine.Quest.QuestType.html#ToolkitEngine_Quest_QuestType_title
-  commentId: P:ToolkitEngine.Quest.QuestType.title
-  fullName: ToolkitEngine.Quest.QuestType.title
-  nameWithType: QuestType.title
-- uid: ToolkitEngine.Quest.QuestType.title*
-  name: title
-  href: api/ToolkitEngine.Quest.QuestType.html#ToolkitEngine_Quest_QuestType_title_
-  commentId: Overload:ToolkitEngine.Quest.QuestType.title
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.QuestType.title
-  nameWithType: QuestType.title
 - uid: ToolkitEngine.Quest.TaskType
   name: TaskType
   href: api/ToolkitEngine.Quest.TaskType.html
@@ -1087,32 +1058,6 @@ references:
   isSpec: "True"
   fullName: ToolkitEngine.Quest.TaskType.count
   nameWithType: TaskType.count
-- uid: ToolkitEngine.Quest.TaskType.description
-  name: description
-  href: api/ToolkitEngine.Quest.TaskType.html#ToolkitEngine_Quest_TaskType_description
-  commentId: P:ToolkitEngine.Quest.TaskType.description
-  fullName: ToolkitEngine.Quest.TaskType.description
-  nameWithType: TaskType.description
-- uid: ToolkitEngine.Quest.TaskType.description*
-  name: description
-  href: api/ToolkitEngine.Quest.TaskType.html#ToolkitEngine_Quest_TaskType_description_
-  commentId: Overload:ToolkitEngine.Quest.TaskType.description
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.TaskType.description
-  nameWithType: TaskType.description
-- uid: ToolkitEngine.Quest.TaskType.id
-  name: id
-  href: api/ToolkitEngine.Quest.TaskType.html#ToolkitEngine_Quest_TaskType_id
-  commentId: P:ToolkitEngine.Quest.TaskType.id
-  fullName: ToolkitEngine.Quest.TaskType.id
-  nameWithType: TaskType.id
-- uid: ToolkitEngine.Quest.TaskType.id*
-  name: id
-  href: api/ToolkitEngine.Quest.TaskType.html#ToolkitEngine_Quest_TaskType_id_
-  commentId: Overload:ToolkitEngine.Quest.TaskType.id
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.TaskType.id
-  nameWithType: TaskType.id
 - uid: ToolkitEngine.Quest.TaskType.questType
   name: questType
   href: api/ToolkitEngine.Quest.TaskType.html#ToolkitEngine_Quest_TaskType_questType
@@ -1126,32 +1071,6 @@ references:
   isSpec: "True"
   fullName: ToolkitEngine.Quest.TaskType.questType
   nameWithType: TaskType.questType
-- uid: ToolkitEngine.Quest.TaskType.script
-  name: script
-  href: api/ToolkitEngine.Quest.TaskType.html#ToolkitEngine_Quest_TaskType_script
-  commentId: P:ToolkitEngine.Quest.TaskType.script
-  fullName: ToolkitEngine.Quest.TaskType.script
-  nameWithType: TaskType.script
-- uid: ToolkitEngine.Quest.TaskType.script*
-  name: script
-  href: api/ToolkitEngine.Quest.TaskType.html#ToolkitEngine_Quest_TaskType_script_
-  commentId: Overload:ToolkitEngine.Quest.TaskType.script
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.TaskType.script
-  nameWithType: TaskType.script
-- uid: ToolkitEngine.Quest.TaskType.title
-  name: title
-  href: api/ToolkitEngine.Quest.TaskType.html#ToolkitEngine_Quest_TaskType_title
-  commentId: P:ToolkitEngine.Quest.TaskType.title
-  fullName: ToolkitEngine.Quest.TaskType.title
-  nameWithType: TaskType.title
-- uid: ToolkitEngine.Quest.TaskType.title*
-  name: title
-  href: api/ToolkitEngine.Quest.TaskType.html#ToolkitEngine_Quest_TaskType_title_
-  commentId: Overload:ToolkitEngine.Quest.TaskType.title
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.TaskType.title
-  nameWithType: TaskType.title
 - uid: ToolkitEngine.Quest.TaskType.useCounter
   name: useCounter
   href: api/ToolkitEngine.Quest.TaskType.html#ToolkitEngine_Quest_TaskType_useCounter
@@ -1171,6 +1090,141 @@ references:
   commentId: N:ToolkitEngine.Quest.VisualScripting
   fullName: ToolkitEngine.Quest.VisualScripting
   nameWithType: ToolkitEngine.Quest.VisualScripting
+- uid: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2
+  name: BaseFinishUnit<T, TRuntime>
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html
+  commentId: T:ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2
+  name.vb: BaseFinishUnit(Of T, TRuntime)
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit<T, TRuntime>
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit(Of T, TRuntime)
+  nameWithType: BaseFinishUnit<T, TRuntime>
+  nameWithType.vb: BaseFinishUnit(Of T, TRuntime)
+- uid: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.Definition
+  name: Definition()
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_Definition
+  commentId: M:ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.Definition
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit<T, TRuntime>.Definition()
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit(Of T, TRuntime).Definition()
+  nameWithType: BaseFinishUnit<T, TRuntime>.Definition()
+  nameWithType.vb: BaseFinishUnit(Of T, TRuntime).Definition()
+- uid: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.Definition*
+  name: Definition
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_Definition_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.Definition
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit<T, TRuntime>.Definition
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit(Of T, TRuntime).Definition
+  nameWithType: BaseFinishUnit<T, TRuntime>.Definition
+  nameWithType.vb: BaseFinishUnit(Of T, TRuntime).Definition
+- uid: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.Finish(`1,ToolkitEngine.Quest.QuestManager.FinishMode)
+  name: Finish(TRuntime, FinishMode)
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_Finish__1_ToolkitEngine_Quest_QuestManager_FinishMode_
+  commentId: M:ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.Finish(`1,ToolkitEngine.Quest.QuestManager.FinishMode)
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit<T, TRuntime>.Finish(TRuntime, ToolkitEngine.Quest.QuestManager.FinishMode)
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit(Of T, TRuntime).Finish(TRuntime, ToolkitEngine.Quest.QuestManager.FinishMode)
+  nameWithType: BaseFinishUnit<T, TRuntime>.Finish(TRuntime, QuestManager.FinishMode)
+  nameWithType.vb: BaseFinishUnit(Of T, TRuntime).Finish(TRuntime, QuestManager.FinishMode)
+- uid: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.Finish*
+  name: Finish
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_Finish_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.Finish
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit<T, TRuntime>.Finish
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit(Of T, TRuntime).Finish
+  nameWithType: BaseFinishUnit<T, TRuntime>.Finish
+  nameWithType.vb: BaseFinishUnit(Of T, TRuntime).Finish
+- uid: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.GetRuntimeTarget(`0)
+  name: GetRuntimeTarget(T)
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_GetRuntimeTarget__0_
+  commentId: M:ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.GetRuntimeTarget(`0)
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit<T, TRuntime>.GetRuntimeTarget(T)
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit(Of T, TRuntime).GetRuntimeTarget(T)
+  nameWithType: BaseFinishUnit<T, TRuntime>.GetRuntimeTarget(T)
+  nameWithType.vb: BaseFinishUnit(Of T, TRuntime).GetRuntimeTarget(T)
+- uid: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.GetRuntimeTarget*
+  name: GetRuntimeTarget
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_GetRuntimeTarget_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.GetRuntimeTarget
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit<T, TRuntime>.GetRuntimeTarget
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit(Of T, TRuntime).GetRuntimeTarget
+  nameWithType: BaseFinishUnit<T, TRuntime>.GetRuntimeTarget
+  nameWithType.vb: BaseFinishUnit(Of T, TRuntime).GetRuntimeTarget
+- uid: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.VariableName
+  name: VariableName
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_VariableName
+  commentId: P:ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.VariableName
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit<T, TRuntime>.VariableName
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit(Of T, TRuntime).VariableName
+  nameWithType: BaseFinishUnit<T, TRuntime>.VariableName
+  nameWithType.vb: BaseFinishUnit(Of T, TRuntime).VariableName
+- uid: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.VariableName*
+  name: VariableName
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_VariableName_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.VariableName
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit<T, TRuntime>.VariableName
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit(Of T, TRuntime).VariableName
+  nameWithType: BaseFinishUnit<T, TRuntime>.VariableName
+  nameWithType.vb: BaseFinishUnit(Of T, TRuntime).VariableName
+- uid: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.finish
+  name: finish
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_finish
+  commentId: F:ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.finish
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit<T, TRuntime>.finish
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit(Of T, TRuntime).finish
+  nameWithType: BaseFinishUnit<T, TRuntime>.finish
+  nameWithType.vb: BaseFinishUnit(Of T, TRuntime).finish
+- uid: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.inputTrigger
+  name: inputTrigger
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_inputTrigger
+  commentId: P:ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.inputTrigger
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit<T, TRuntime>.inputTrigger
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit(Of T, TRuntime).inputTrigger
+  nameWithType: BaseFinishUnit<T, TRuntime>.inputTrigger
+  nameWithType.vb: BaseFinishUnit(Of T, TRuntime).inputTrigger
+- uid: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.inputTrigger*
+  name: inputTrigger
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_inputTrigger_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.inputTrigger
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit<T, TRuntime>.inputTrigger
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit(Of T, TRuntime).inputTrigger
+  nameWithType: BaseFinishUnit<T, TRuntime>.inputTrigger
+  nameWithType.vb: BaseFinishUnit(Of T, TRuntime).inputTrigger
+- uid: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.outputTrigger
+  name: outputTrigger
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_outputTrigger
+  commentId: P:ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.outputTrigger
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit<T, TRuntime>.outputTrigger
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit(Of T, TRuntime).outputTrigger
+  nameWithType: BaseFinishUnit<T, TRuntime>.outputTrigger
+  nameWithType.vb: BaseFinishUnit(Of T, TRuntime).outputTrigger
+- uid: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.outputTrigger*
+  name: outputTrigger
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_outputTrigger_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.outputTrigger
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit<T, TRuntime>.outputTrigger
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit(Of T, TRuntime).outputTrigger
+  nameWithType: BaseFinishUnit<T, TRuntime>.outputTrigger
+  nameWithType.vb: BaseFinishUnit(Of T, TRuntime).outputTrigger
+- uid: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.target
+  name: target
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_target
+  commentId: F:ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.target
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit<T, TRuntime>.target
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit(Of T, TRuntime).target
+  nameWithType: BaseFinishUnit<T, TRuntime>.target
+  nameWithType.vb: BaseFinishUnit(Of T, TRuntime).target
+- uid: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.useTarget
+  name: useTarget
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_useTarget
+  commentId: F:ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.useTarget
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit<T, TRuntime>.useTarget
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit(Of T, TRuntime).useTarget
+  nameWithType: BaseFinishUnit<T, TRuntime>.useTarget
+  nameWithType.vb: BaseFinishUnit(Of T, TRuntime).useTarget
 - uid: ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit`1
   name: BaseQuestEventUnit<T>
   href: api/ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit-1.html
@@ -1319,76 +1373,90 @@ references:
   commentId: T:ToolkitEngine.Quest.VisualScripting.FinishQuest
   fullName: ToolkitEngine.Quest.VisualScripting.FinishQuest
   nameWithType: FinishQuest
-- uid: ToolkitEngine.Quest.VisualScripting.FinishQuest.Definition
-  name: Definition()
-  href: api/ToolkitEngine.Quest.VisualScripting.FinishQuest.html#ToolkitEngine_Quest_VisualScripting_FinishQuest_Definition
-  commentId: M:ToolkitEngine.Quest.VisualScripting.FinishQuest.Definition
-  fullName: ToolkitEngine.Quest.VisualScripting.FinishQuest.Definition()
-  nameWithType: FinishQuest.Definition()
-- uid: ToolkitEngine.Quest.VisualScripting.FinishQuest.Definition*
-  name: Definition
-  href: api/ToolkitEngine.Quest.VisualScripting.FinishQuest.html#ToolkitEngine_Quest_VisualScripting_FinishQuest_Definition_
-  commentId: Overload:ToolkitEngine.Quest.VisualScripting.FinishQuest.Definition
+- uid: ToolkitEngine.Quest.VisualScripting.FinishQuest.Finish(ToolkitEngine.Quest.QuestManager.Quest,ToolkitEngine.Quest.QuestManager.FinishMode)
+  name: Finish(Quest, FinishMode)
+  href: api/ToolkitEngine.Quest.VisualScripting.FinishQuest.html#ToolkitEngine_Quest_VisualScripting_FinishQuest_Finish_ToolkitEngine_Quest_QuestManager_Quest_ToolkitEngine_Quest_QuestManager_FinishMode_
+  commentId: M:ToolkitEngine.Quest.VisualScripting.FinishQuest.Finish(ToolkitEngine.Quest.QuestManager.Quest,ToolkitEngine.Quest.QuestManager.FinishMode)
+  fullName: ToolkitEngine.Quest.VisualScripting.FinishQuest.Finish(ToolkitEngine.Quest.QuestManager.Quest, ToolkitEngine.Quest.QuestManager.FinishMode)
+  nameWithType: FinishQuest.Finish(QuestManager.Quest, QuestManager.FinishMode)
+- uid: ToolkitEngine.Quest.VisualScripting.FinishQuest.Finish*
+  name: Finish
+  href: api/ToolkitEngine.Quest.VisualScripting.FinishQuest.html#ToolkitEngine_Quest_VisualScripting_FinishQuest_Finish_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.FinishQuest.Finish
   isSpec: "True"
-  fullName: ToolkitEngine.Quest.VisualScripting.FinishQuest.Definition
-  nameWithType: FinishQuest.Definition
-- uid: ToolkitEngine.Quest.VisualScripting.FinishQuest.finish
-  name: finish
-  href: api/ToolkitEngine.Quest.VisualScripting.FinishQuest.html#ToolkitEngine_Quest_VisualScripting_FinishQuest_finish
-  commentId: F:ToolkitEngine.Quest.VisualScripting.FinishQuest.finish
-  fullName: ToolkitEngine.Quest.VisualScripting.FinishQuest.finish
-  nameWithType: FinishQuest.finish
-- uid: ToolkitEngine.Quest.VisualScripting.FinishQuest.inputTrigger
-  name: inputTrigger
-  href: api/ToolkitEngine.Quest.VisualScripting.FinishQuest.html#ToolkitEngine_Quest_VisualScripting_FinishQuest_inputTrigger
-  commentId: P:ToolkitEngine.Quest.VisualScripting.FinishQuest.inputTrigger
-  fullName: ToolkitEngine.Quest.VisualScripting.FinishQuest.inputTrigger
-  nameWithType: FinishQuest.inputTrigger
-- uid: ToolkitEngine.Quest.VisualScripting.FinishQuest.inputTrigger*
-  name: inputTrigger
-  href: api/ToolkitEngine.Quest.VisualScripting.FinishQuest.html#ToolkitEngine_Quest_VisualScripting_FinishQuest_inputTrigger_
-  commentId: Overload:ToolkitEngine.Quest.VisualScripting.FinishQuest.inputTrigger
+  fullName: ToolkitEngine.Quest.VisualScripting.FinishQuest.Finish
+  nameWithType: FinishQuest.Finish
+- uid: ToolkitEngine.Quest.VisualScripting.FinishQuest.GetRuntimeTarget(ToolkitEngine.Quest.QuestType)
+  name: GetRuntimeTarget(QuestType)
+  href: api/ToolkitEngine.Quest.VisualScripting.FinishQuest.html#ToolkitEngine_Quest_VisualScripting_FinishQuest_GetRuntimeTarget_ToolkitEngine_Quest_QuestType_
+  commentId: M:ToolkitEngine.Quest.VisualScripting.FinishQuest.GetRuntimeTarget(ToolkitEngine.Quest.QuestType)
+  fullName: ToolkitEngine.Quest.VisualScripting.FinishQuest.GetRuntimeTarget(ToolkitEngine.Quest.QuestType)
+  nameWithType: FinishQuest.GetRuntimeTarget(QuestType)
+- uid: ToolkitEngine.Quest.VisualScripting.FinishQuest.GetRuntimeTarget*
+  name: GetRuntimeTarget
+  href: api/ToolkitEngine.Quest.VisualScripting.FinishQuest.html#ToolkitEngine_Quest_VisualScripting_FinishQuest_GetRuntimeTarget_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.FinishQuest.GetRuntimeTarget
   isSpec: "True"
-  fullName: ToolkitEngine.Quest.VisualScripting.FinishQuest.inputTrigger
-  nameWithType: FinishQuest.inputTrigger
+  fullName: ToolkitEngine.Quest.VisualScripting.FinishQuest.GetRuntimeTarget
+  nameWithType: FinishQuest.GetRuntimeTarget
+- uid: ToolkitEngine.Quest.VisualScripting.FinishQuest.VariableName
+  name: VariableName
+  href: api/ToolkitEngine.Quest.VisualScripting.FinishQuest.html#ToolkitEngine_Quest_VisualScripting_FinishQuest_VariableName
+  commentId: P:ToolkitEngine.Quest.VisualScripting.FinishQuest.VariableName
+  fullName: ToolkitEngine.Quest.VisualScripting.FinishQuest.VariableName
+  nameWithType: FinishQuest.VariableName
+- uid: ToolkitEngine.Quest.VisualScripting.FinishQuest.VariableName*
+  name: VariableName
+  href: api/ToolkitEngine.Quest.VisualScripting.FinishQuest.html#ToolkitEngine_Quest_VisualScripting_FinishQuest_VariableName_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.FinishQuest.VariableName
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.VisualScripting.FinishQuest.VariableName
+  nameWithType: FinishQuest.VariableName
 - uid: ToolkitEngine.Quest.VisualScripting.FinishTask
   name: FinishTask
   href: api/ToolkitEngine.Quest.VisualScripting.FinishTask.html
   commentId: T:ToolkitEngine.Quest.VisualScripting.FinishTask
   fullName: ToolkitEngine.Quest.VisualScripting.FinishTask
   nameWithType: FinishTask
-- uid: ToolkitEngine.Quest.VisualScripting.FinishTask.Definition
-  name: Definition()
-  href: api/ToolkitEngine.Quest.VisualScripting.FinishTask.html#ToolkitEngine_Quest_VisualScripting_FinishTask_Definition
-  commentId: M:ToolkitEngine.Quest.VisualScripting.FinishTask.Definition
-  fullName: ToolkitEngine.Quest.VisualScripting.FinishTask.Definition()
-  nameWithType: FinishTask.Definition()
-- uid: ToolkitEngine.Quest.VisualScripting.FinishTask.Definition*
-  name: Definition
-  href: api/ToolkitEngine.Quest.VisualScripting.FinishTask.html#ToolkitEngine_Quest_VisualScripting_FinishTask_Definition_
-  commentId: Overload:ToolkitEngine.Quest.VisualScripting.FinishTask.Definition
+- uid: ToolkitEngine.Quest.VisualScripting.FinishTask.Finish(ToolkitEngine.Quest.QuestManager.Task,ToolkitEngine.Quest.QuestManager.FinishMode)
+  name: Finish(Task, FinishMode)
+  href: api/ToolkitEngine.Quest.VisualScripting.FinishTask.html#ToolkitEngine_Quest_VisualScripting_FinishTask_Finish_ToolkitEngine_Quest_QuestManager_Task_ToolkitEngine_Quest_QuestManager_FinishMode_
+  commentId: M:ToolkitEngine.Quest.VisualScripting.FinishTask.Finish(ToolkitEngine.Quest.QuestManager.Task,ToolkitEngine.Quest.QuestManager.FinishMode)
+  fullName: ToolkitEngine.Quest.VisualScripting.FinishTask.Finish(ToolkitEngine.Quest.QuestManager.Task, ToolkitEngine.Quest.QuestManager.FinishMode)
+  nameWithType: FinishTask.Finish(QuestManager.Task, QuestManager.FinishMode)
+- uid: ToolkitEngine.Quest.VisualScripting.FinishTask.Finish*
+  name: Finish
+  href: api/ToolkitEngine.Quest.VisualScripting.FinishTask.html#ToolkitEngine_Quest_VisualScripting_FinishTask_Finish_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.FinishTask.Finish
   isSpec: "True"
-  fullName: ToolkitEngine.Quest.VisualScripting.FinishTask.Definition
-  nameWithType: FinishTask.Definition
-- uid: ToolkitEngine.Quest.VisualScripting.FinishTask.finish
-  name: finish
-  href: api/ToolkitEngine.Quest.VisualScripting.FinishTask.html#ToolkitEngine_Quest_VisualScripting_FinishTask_finish
-  commentId: F:ToolkitEngine.Quest.VisualScripting.FinishTask.finish
-  fullName: ToolkitEngine.Quest.VisualScripting.FinishTask.finish
-  nameWithType: FinishTask.finish
-- uid: ToolkitEngine.Quest.VisualScripting.FinishTask.inputTrigger
-  name: inputTrigger
-  href: api/ToolkitEngine.Quest.VisualScripting.FinishTask.html#ToolkitEngine_Quest_VisualScripting_FinishTask_inputTrigger
-  commentId: P:ToolkitEngine.Quest.VisualScripting.FinishTask.inputTrigger
-  fullName: ToolkitEngine.Quest.VisualScripting.FinishTask.inputTrigger
-  nameWithType: FinishTask.inputTrigger
-- uid: ToolkitEngine.Quest.VisualScripting.FinishTask.inputTrigger*
-  name: inputTrigger
-  href: api/ToolkitEngine.Quest.VisualScripting.FinishTask.html#ToolkitEngine_Quest_VisualScripting_FinishTask_inputTrigger_
-  commentId: Overload:ToolkitEngine.Quest.VisualScripting.FinishTask.inputTrigger
+  fullName: ToolkitEngine.Quest.VisualScripting.FinishTask.Finish
+  nameWithType: FinishTask.Finish
+- uid: ToolkitEngine.Quest.VisualScripting.FinishTask.GetRuntimeTarget(ToolkitEngine.Quest.TaskType)
+  name: GetRuntimeTarget(TaskType)
+  href: api/ToolkitEngine.Quest.VisualScripting.FinishTask.html#ToolkitEngine_Quest_VisualScripting_FinishTask_GetRuntimeTarget_ToolkitEngine_Quest_TaskType_
+  commentId: M:ToolkitEngine.Quest.VisualScripting.FinishTask.GetRuntimeTarget(ToolkitEngine.Quest.TaskType)
+  fullName: ToolkitEngine.Quest.VisualScripting.FinishTask.GetRuntimeTarget(ToolkitEngine.Quest.TaskType)
+  nameWithType: FinishTask.GetRuntimeTarget(TaskType)
+- uid: ToolkitEngine.Quest.VisualScripting.FinishTask.GetRuntimeTarget*
+  name: GetRuntimeTarget
+  href: api/ToolkitEngine.Quest.VisualScripting.FinishTask.html#ToolkitEngine_Quest_VisualScripting_FinishTask_GetRuntimeTarget_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.FinishTask.GetRuntimeTarget
   isSpec: "True"
-  fullName: ToolkitEngine.Quest.VisualScripting.FinishTask.inputTrigger
-  nameWithType: FinishTask.inputTrigger
+  fullName: ToolkitEngine.Quest.VisualScripting.FinishTask.GetRuntimeTarget
+  nameWithType: FinishTask.GetRuntimeTarget
+- uid: ToolkitEngine.Quest.VisualScripting.FinishTask.VariableName
+  name: VariableName
+  href: api/ToolkitEngine.Quest.VisualScripting.FinishTask.html#ToolkitEngine_Quest_VisualScripting_FinishTask_VariableName
+  commentId: P:ToolkitEngine.Quest.VisualScripting.FinishTask.VariableName
+  fullName: ToolkitEngine.Quest.VisualScripting.FinishTask.VariableName
+  nameWithType: FinishTask.VariableName
+- uid: ToolkitEngine.Quest.VisualScripting.FinishTask.VariableName*
+  name: VariableName
+  href: api/ToolkitEngine.Quest.VisualScripting.FinishTask.html#ToolkitEngine_Quest_VisualScripting_FinishTask_VariableName_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.FinishTask.VariableName
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.VisualScripting.FinishTask.VariableName
+  nameWithType: FinishTask.VariableName
 - uid: ToolkitEngine.Quest.VisualScripting.IncrementTask
   name: IncrementTask
   href: api/ToolkitEngine.Quest.VisualScripting.IncrementTask.html
@@ -1453,19 +1521,6 @@ references:
   isSpec: "True"
   fullName: ToolkitEngine.Quest.VisualScripting.OnQuestStateChanged.MessageListenerType
   nameWithType: OnQuestStateChanged.MessageListenerType
-- uid: ToolkitEngine.Quest.VisualScripting.OnQuestStateChanged.questType
-  name: questType
-  href: api/ToolkitEngine.Quest.VisualScripting.OnQuestStateChanged.html#ToolkitEngine_Quest_VisualScripting_OnQuestStateChanged_questType
-  commentId: P:ToolkitEngine.Quest.VisualScripting.OnQuestStateChanged.questType
-  fullName: ToolkitEngine.Quest.VisualScripting.OnQuestStateChanged.questType
-  nameWithType: OnQuestStateChanged.questType
-- uid: ToolkitEngine.Quest.VisualScripting.OnQuestStateChanged.questType*
-  name: questType
-  href: api/ToolkitEngine.Quest.VisualScripting.OnQuestStateChanged.html#ToolkitEngine_Quest_VisualScripting_OnQuestStateChanged_questType_
-  commentId: Overload:ToolkitEngine.Quest.VisualScripting.OnQuestStateChanged.questType
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.VisualScripting.OnQuestStateChanged.questType
-  nameWithType: OnQuestStateChanged.questType
 - uid: ToolkitEngine.Quest.VisualScripting.OnQuestStateChangedMessageListener
   name: OnQuestStateChangedMessageListener
   href: api/ToolkitEngine.Quest.VisualScripting.OnQuestStateChangedMessageListener.html
@@ -1517,19 +1572,6 @@ references:
   isSpec: "True"
   fullName: ToolkitEngine.Quest.VisualScripting.OnTaskCountChanged.MessageListenerType
   nameWithType: OnTaskCountChanged.MessageListenerType
-- uid: ToolkitEngine.Quest.VisualScripting.OnTaskCountChanged.taskType
-  name: taskType
-  href: api/ToolkitEngine.Quest.VisualScripting.OnTaskCountChanged.html#ToolkitEngine_Quest_VisualScripting_OnTaskCountChanged_taskType
-  commentId: P:ToolkitEngine.Quest.VisualScripting.OnTaskCountChanged.taskType
-  fullName: ToolkitEngine.Quest.VisualScripting.OnTaskCountChanged.taskType
-  nameWithType: OnTaskCountChanged.taskType
-- uid: ToolkitEngine.Quest.VisualScripting.OnTaskCountChanged.taskType*
-  name: taskType
-  href: api/ToolkitEngine.Quest.VisualScripting.OnTaskCountChanged.html#ToolkitEngine_Quest_VisualScripting_OnTaskCountChanged_taskType_
-  commentId: Overload:ToolkitEngine.Quest.VisualScripting.OnTaskCountChanged.taskType
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.VisualScripting.OnTaskCountChanged.taskType
-  nameWithType: OnTaskCountChanged.taskType
 - uid: ToolkitEngine.Quest.VisualScripting.OnTaskCountChangedMessageListener
   name: OnTaskCountChangedMessageListener
   href: api/ToolkitEngine.Quest.VisualScripting.OnTaskCountChangedMessageListener.html
@@ -1581,19 +1623,6 @@ references:
   isSpec: "True"
   fullName: ToolkitEngine.Quest.VisualScripting.OnTaskStateChanged.MessageListenerType
   nameWithType: OnTaskStateChanged.MessageListenerType
-- uid: ToolkitEngine.Quest.VisualScripting.OnTaskStateChanged.taskType
-  name: taskType
-  href: api/ToolkitEngine.Quest.VisualScripting.OnTaskStateChanged.html#ToolkitEngine_Quest_VisualScripting_OnTaskStateChanged_taskType
-  commentId: P:ToolkitEngine.Quest.VisualScripting.OnTaskStateChanged.taskType
-  fullName: ToolkitEngine.Quest.VisualScripting.OnTaskStateChanged.taskType
-  nameWithType: OnTaskStateChanged.taskType
-- uid: ToolkitEngine.Quest.VisualScripting.OnTaskStateChanged.taskType*
-  name: taskType
-  href: api/ToolkitEngine.Quest.VisualScripting.OnTaskStateChanged.html#ToolkitEngine_Quest_VisualScripting_OnTaskStateChanged_taskType_
-  commentId: Overload:ToolkitEngine.Quest.VisualScripting.OnTaskStateChanged.taskType
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.VisualScripting.OnTaskStateChanged.taskType
-  nameWithType: OnTaskStateChanged.taskType
 - uid: ToolkitEngine.Quest.VisualScripting.OnTaskStateChangedMessageListener
   name: OnTaskStateChangedMessageListener
   href: api/ToolkitEngine.Quest.VisualScripting.OnTaskStateChangedMessageListener.html

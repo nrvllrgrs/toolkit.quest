@@ -1,0 +1,769 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class QuestManager | Quest Toolkit | 1.0.0 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class QuestManager | Quest Toolkit | 1.0.0 ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      <meta name="docfx:disablenewtab" content="true">
+      
+      <meta name="docfx:docurl" content="https://github.com/nrvllrgrs/toolkit.quest/new/master/apiSpec/new?filename=ToolkitEngine_Quest_QuestManager.md&amp;value=---%0Auid%3A%20ToolkitEngine.Quest.QuestManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ToolkitEngine.Quest.QuestManager">
+
+
+
+  <h1 id="ToolkitEngine_Quest_QuestManager" data-uid="ToolkitEngine.Quest.QuestManager" class="text-break">
+Class QuestManager  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestManager.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="ToolkitEngine.html">ToolkitEngine</a>.<a class="xref" href="ToolkitEngine.Quest.html">Quest</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class QuestManager : ConfigurableSubsystem&lt;QuestManager, QuestManagerConfig&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">QuestManager</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="ToolkitEngine_Quest_QuestManager_QUEST_VAR_NAME" data-uid="ToolkitEngine.Quest.QuestManager.QUEST_VAR_NAME">
+  QUEST_VAR_NAME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestManager.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string QUEST_VAR_NAME = &quot;$quest&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="ToolkitEngine_Quest_QuestManager_TASK_VAR_NAME" data-uid="ToolkitEngine.Quest.QuestManager.TASK_VAR_NAME">
+  TASK_VAR_NAME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestManager.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string TASK_VAR_NAME = &quot;$task&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="ToolkitEngine_Quest_QuestManager_activeQuests_" data-uid="ToolkitEngine.Quest.QuestManager.activeQuests*"></a>
+
+  <h3 id="ToolkitEngine_Quest_QuestManager_activeQuests" data-uid="ToolkitEngine.Quest.QuestManager.activeQuests">
+  activeQuests
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestManager.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QuestManager.Quest[] activeQuests { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ToolkitEngine.Quest.QuestManager.Quest.html">Quest</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Quest_QuestManager_finishedQuests_" data-uid="ToolkitEngine.Quest.QuestManager.finishedQuests*"></a>
+
+  <h3 id="ToolkitEngine_Quest_QuestManager_finishedQuests" data-uid="ToolkitEngine.Quest.QuestManager.finishedQuests">
+  finishedQuests
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestManager.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QuestType[] finishedQuests { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ToolkitEngine.Quest.QuestType.html">QuestType</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="ToolkitEngine_Quest_QuestManager_Activate_" data-uid="ToolkitEngine.Quest.QuestManager.Activate*"></a>
+
+  <h3 id="ToolkitEngine_Quest_QuestManager_Activate_ToolkitEngine_Quest_QuestType_" data-uid="ToolkitEngine.Quest.QuestManager.Activate(ToolkitEngine.Quest.QuestType)">
+  Activate(QuestType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestManager.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Activate(QuestType questType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>questType</code> <a class="xref" href="ToolkitEngine.Quest.QuestType.html">QuestType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Quest_QuestManager_Activate_" data-uid="ToolkitEngine.Quest.QuestManager.Activate*"></a>
+
+  <h3 id="ToolkitEngine_Quest_QuestManager_Activate_ToolkitEngine_Quest_TaskType_" data-uid="ToolkitEngine.Quest.QuestManager.Activate(ToolkitEngine.Quest.TaskType)">
+  Activate(TaskType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestManager.cs/#L237"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Activate(TaskType taskType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>taskType</code> <a class="xref" href="ToolkitEngine.Quest.TaskType.html">TaskType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Quest_QuestManager_Decrement_" data-uid="ToolkitEngine.Quest.QuestManager.Decrement*"></a>
+
+  <h3 id="ToolkitEngine_Quest_QuestManager_Decrement_ToolkitEngine_Quest_TaskType_" data-uid="ToolkitEngine.Quest.QuestManager.Decrement(ToolkitEngine.Quest.TaskType)">
+  Decrement(TaskType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestManager.cs/#L258"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Decrement(TaskType taskType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>taskType</code> <a class="xref" href="ToolkitEngine.Quest.TaskType.html">TaskType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Quest_QuestManager_Finish_" data-uid="ToolkitEngine.Quest.QuestManager.Finish*"></a>
+
+  <h3 id="ToolkitEngine_Quest_QuestManager_Finish_ToolkitEngine_Quest_QuestType_ToolkitEngine_Quest_QuestManager_FinishMode_" data-uid="ToolkitEngine.Quest.QuestManager.Finish(ToolkitEngine.Quest.QuestType,ToolkitEngine.Quest.QuestManager.FinishMode)">
+  Finish(QuestType, FinishMode)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestManager.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Finish(QuestType questType, QuestManager.FinishMode finish)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>questType</code> <a class="xref" href="ToolkitEngine.Quest.QuestType.html">QuestType</a></dt>
+    <dd></dd>
+    <dt><code>finish</code> <a class="xref" href="ToolkitEngine.Quest.QuestManager.html">QuestManager</a>.<a class="xref" href="ToolkitEngine.Quest.QuestManager.FinishMode.html">FinishMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Quest_QuestManager_Finish_" data-uid="ToolkitEngine.Quest.QuestManager.Finish*"></a>
+
+  <h3 id="ToolkitEngine_Quest_QuestManager_Finish_ToolkitEngine_Quest_TaskType_ToolkitEngine_Quest_QuestManager_FinishMode_" data-uid="ToolkitEngine.Quest.QuestManager.Finish(ToolkitEngine.Quest.TaskType,ToolkitEngine.Quest.QuestManager.FinishMode)">
+  Finish(TaskType, FinishMode)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestManager.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Finish(TaskType taskType, QuestManager.FinishMode finish)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>taskType</code> <a class="xref" href="ToolkitEngine.Quest.TaskType.html">TaskType</a></dt>
+    <dd></dd>
+    <dt><code>finish</code> <a class="xref" href="ToolkitEngine.Quest.QuestManager.html">QuestManager</a>.<a class="xref" href="ToolkitEngine.Quest.QuestManager.FinishMode.html">FinishMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Quest_QuestManager_GetState_" data-uid="ToolkitEngine.Quest.QuestManager.GetState*"></a>
+
+  <h3 id="ToolkitEngine_Quest_QuestManager_GetState_ToolkitEngine_Quest_QuestType_" data-uid="ToolkitEngine.Quest.QuestManager.GetState(ToolkitEngine.Quest.QuestType)">
+  GetState(QuestType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestManager.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QuestManager.State GetState(QuestType questType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>questType</code> <a class="xref" href="ToolkitEngine.Quest.QuestType.html">QuestType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ToolkitEngine.Quest.QuestManager.html">QuestManager</a>.<a class="xref" href="ToolkitEngine.Quest.QuestManager.State.html">State</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Quest_QuestManager_GetState_" data-uid="ToolkitEngine.Quest.QuestManager.GetState*"></a>
+
+  <h3 id="ToolkitEngine_Quest_QuestManager_GetState_ToolkitEngine_Quest_TaskType_" data-uid="ToolkitEngine.Quest.QuestManager.GetState(ToolkitEngine.Quest.TaskType)">
+  GetState(TaskType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestManager.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QuestManager.State GetState(TaskType taskType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>taskType</code> <a class="xref" href="ToolkitEngine.Quest.TaskType.html">TaskType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ToolkitEngine.Quest.QuestManager.html">QuestManager</a>.<a class="xref" href="ToolkitEngine.Quest.QuestManager.State.html">State</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Quest_QuestManager_Increment_" data-uid="ToolkitEngine.Quest.QuestManager.Increment*"></a>
+
+  <h3 id="ToolkitEngine_Quest_QuestManager_Increment_ToolkitEngine_Quest_TaskType_" data-uid="ToolkitEngine.Quest.QuestManager.Increment(ToolkitEngine.Quest.TaskType)">
+  Increment(TaskType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestManager.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Increment(TaskType taskType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>taskType</code> <a class="xref" href="ToolkitEngine.Quest.TaskType.html">TaskType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Quest_QuestManager_Initialize_" data-uid="ToolkitEngine.Quest.QuestManager.Initialize*"></a>
+
+  <h3 id="ToolkitEngine_Quest_QuestManager_Initialize" data-uid="ToolkitEngine.Quest.QuestManager.Initialize">
+  Initialize()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestManager.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Initialize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Quest_QuestManager_IsActive_" data-uid="ToolkitEngine.Quest.QuestManager.IsActive*"></a>
+
+  <h3 id="ToolkitEngine_Quest_QuestManager_IsActive_ToolkitEngine_Quest_QuestType_" data-uid="ToolkitEngine.Quest.QuestManager.IsActive(ToolkitEngine.Quest.QuestType)">
+  IsActive(QuestType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestManager.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsActive(QuestType questType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>questType</code> <a class="xref" href="ToolkitEngine.Quest.QuestType.html">QuestType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Quest_QuestManager_IsFinished_" data-uid="ToolkitEngine.Quest.QuestManager.IsFinished*"></a>
+
+  <h3 id="ToolkitEngine_Quest_QuestManager_IsFinished_ToolkitEngine_Quest_QuestType_" data-uid="ToolkitEngine.Quest.QuestManager.IsFinished(ToolkitEngine.Quest.QuestType)">
+  IsFinished(QuestType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestManager.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFinished(QuestType questType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>questType</code> <a class="xref" href="ToolkitEngine.Quest.QuestType.html">QuestType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Quest_QuestManager_Modify_" data-uid="ToolkitEngine.Quest.QuestManager.Modify*"></a>
+
+  <h3 id="ToolkitEngine_Quest_QuestManager_Modify_ToolkitEngine_Quest_TaskType_System_Int32_" data-uid="ToolkitEngine.Quest.QuestManager.Modify(ToolkitEngine.Quest.TaskType,System.Int32)">
+  Modify(TaskType, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestManager.cs/#L263"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Modify(TaskType taskType, int delta)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>taskType</code> <a class="xref" href="ToolkitEngine.Quest.TaskType.html">TaskType</a></dt>
+    <dd></dd>
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="ToolkitEngine_Quest_QuestManager_QuestStateChanged" data-uid="ToolkitEngine.Quest.QuestManager.QuestStateChanged">
+  QuestStateChanged
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestManager.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;QuestEventArgs&gt; QuestStateChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="ToolkitEngine.Quest.QuestEventArgs.html">QuestEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="ToolkitEngine_Quest_QuestManager_TaskCountChanged" data-uid="ToolkitEngine.Quest.QuestManager.TaskCountChanged">
+  TaskCountChanged
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestManager.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;QuestEventArgs&gt; TaskCountChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="ToolkitEngine.Quest.QuestEventArgs.html">QuestEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="ToolkitEngine_Quest_QuestManager_TaskStateChanged" data-uid="ToolkitEngine.Quest.QuestManager.TaskStateChanged">
+  TaskStateChanged
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestManager.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;QuestEventArgs&gt; TaskStateChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="ToolkitEngine.Quest.QuestEventArgs.html">QuestEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made by <a href="https://github.com/nrvllrgrs" target="_blank">nrvllrgrs</a> using <a href="https://dotnet.github.io/docfx" target="_blank">DocFX</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

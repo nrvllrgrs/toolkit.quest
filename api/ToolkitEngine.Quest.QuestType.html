@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -77,7 +77,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -89,7 +89,7 @@
 
 
   <h1 id="ToolkitEngine_Quest_QuestType" data-uid="ToolkitEngine.Quest.QuestType" class="text-break">
-Class QuestType  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestType.cs/#L9"><i class="bi bi-code-slash"></i></a>
+Class QuestType  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestType.cs/#L8"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -101,7 +101,7 @@ Class QuestType  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class QuestType : ScriptableObject</code></pre>
+    <pre><code class="lang-csharp hljs">public class QuestType : BaseQuestType</code></pre>
   </div>
 
 
@@ -111,12 +111,41 @@ Class QuestType  <a class="header-action link-secondary" title="View source" hre
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="ToolkitEngine.Quest.BaseQuestType.html">BaseQuestType</a></div>
       <div><span class="xref">QuestType</span></div>
     </dd>
   </dl>
 
 
 
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="ToolkitEngine.Quest.BaseQuestType.html#ToolkitEngine_Quest_BaseQuestType_m_id">BaseQuestType.m_id</a>
+    </div>
+    <div>
+      <a class="xref" href="ToolkitEngine.Quest.BaseQuestType.html#ToolkitEngine_Quest_BaseQuestType_m_title">BaseQuestType.m_title</a>
+    </div>
+    <div>
+      <a class="xref" href="ToolkitEngine.Quest.BaseQuestType.html#ToolkitEngine_Quest_BaseQuestType_m_description">BaseQuestType.m_description</a>
+    </div>
+    <div>
+      <a class="xref" href="ToolkitEngine.Quest.BaseQuestType.html#ToolkitEngine_Quest_BaseQuestType_m_script">BaseQuestType.m_script</a>
+    </div>
+    <div>
+      <a class="xref" href="ToolkitEngine.Quest.BaseQuestType.html#ToolkitEngine_Quest_BaseQuestType_id">BaseQuestType.id</a>
+    </div>
+    <div>
+      <a class="xref" href="ToolkitEngine.Quest.BaseQuestType.html#ToolkitEngine_Quest_BaseQuestType_title">BaseQuestType.title</a>
+    </div>
+    <div>
+      <a class="xref" href="ToolkitEngine.Quest.BaseQuestType.html#ToolkitEngine_Quest_BaseQuestType_description">BaseQuestType.description</a>
+    </div>
+    <div>
+      <a class="xref" href="ToolkitEngine.Quest.BaseQuestType.html#ToolkitEngine_Quest_BaseQuestType_script">BaseQuestType.script</a>
+    </div>
+  </dd></dl>
 
 
 
@@ -131,7 +160,7 @@ Class QuestType  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="ToolkitEngine_Quest_QuestType_category" data-uid="ToolkitEngine.Quest.QuestType.category">
   category
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestType.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestType.cs/#L52"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -162,7 +191,7 @@ Class QuestType  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="ToolkitEngine_Quest_QuestType_completion" data-uid="ToolkitEngine.Quest.QuestType.completion">
   completion
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestType.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestType.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -189,73 +218,11 @@ Class QuestType  <a class="header-action link-secondary" title="View source" hre
 
 
 
-  <a id="ToolkitEngine_Quest_QuestType_description_" data-uid="ToolkitEngine.Quest.QuestType.description*"></a>
-
-  <h3 id="ToolkitEngine_Quest_QuestType_description" data-uid="ToolkitEngine.Quest.QuestType.description">
-  description
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestType.cs/#L70"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string description { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="ToolkitEngine_Quest_QuestType_id_" data-uid="ToolkitEngine.Quest.QuestType.id*"></a>
-
-  <h3 id="ToolkitEngine_Quest_QuestType_id" data-uid="ToolkitEngine.Quest.QuestType.id">
-  id
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestType.cs/#L66"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string id { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="ToolkitEngine_Quest_QuestType_order_" data-uid="ToolkitEngine.Quest.QuestType.order*"></a>
 
   <h3 id="ToolkitEngine_Quest_QuestType_order" data-uid="ToolkitEngine.Quest.QuestType.order">
   order
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestType.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestType.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -282,42 +249,11 @@ Class QuestType  <a class="header-action link-secondary" title="View source" hre
 
 
 
-  <a id="ToolkitEngine_Quest_QuestType_script_" data-uid="ToolkitEngine.Quest.QuestType.script*"></a>
-
-  <h3 id="ToolkitEngine_Quest_QuestType_script" data-uid="ToolkitEngine.Quest.QuestType.script">
-  script
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestType.cs/#L73"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptGraphAsset script { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">ScriptGraphAsset</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="ToolkitEngine_Quest_QuestType_tasks_" data-uid="ToolkitEngine.Quest.QuestType.tasks*"></a>
 
   <h3 id="ToolkitEngine_Quest_QuestType_tasks" data-uid="ToolkitEngine.Quest.QuestType.tasks">
   tasks
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestType.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestType.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -344,27 +280,27 @@ Class QuestType  <a class="header-action link-secondary" title="View source" hre
 
 
 
-  <a id="ToolkitEngine_Quest_QuestType_title_" data-uid="ToolkitEngine.Quest.QuestType.title*"></a>
+  <h2 class="section" id="methods">Methods
+</h2>
 
-  <h3 id="ToolkitEngine_Quest_QuestType_title" data-uid="ToolkitEngine.Quest.QuestType.title">
-  title
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestType.cs/#L69"><i class="bi bi-code-slash"></i></a>
+
+  <a id="ToolkitEngine_Quest_QuestType_Abandon_" data-uid="ToolkitEngine.Quest.QuestType.Abandon*"></a>
+
+  <h3 id="ToolkitEngine_Quest_QuestType_Abandon_ToolkitEngine_Quest_QuestType_" data-uid="ToolkitEngine.Quest.QuestType.Abandon(ToolkitEngine.Quest.QuestType)">
+  Abandon(QuestType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestType.cs/#L87"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string title { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Abandon(QuestType questType)</code></pre>
   </div>
 
-
-
-
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>questType</code> <a class="xref" href="ToolkitEngine.Quest.QuestType.html">QuestType</a></dt>
     <dd></dd>
   </dl>
 
@@ -375,27 +311,27 @@ Class QuestType  <a class="header-action link-secondary" title="View source" hre
 
 
 
-  <h2 class="section" id="methods">Methods
-</h2>
 
 
-  <a id="ToolkitEngine_Quest_QuestType_Abandon_" data-uid="ToolkitEngine.Quest.QuestType.Abandon*"></a>
 
-  <h3 id="ToolkitEngine_Quest_QuestType_Abandon_ToolkitEngine_Quest_Journal_" data-uid="ToolkitEngine.Quest.QuestType.Abandon(ToolkitEngine.Quest.Journal)">
-  Abandon(Journal)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestType.cs/#L101"><i class="bi bi-code-slash"></i></a>
+
+  <a id="ToolkitEngine_Quest_QuestType_Activate_" data-uid="ToolkitEngine.Quest.QuestType.Activate*"></a>
+
+  <h3 id="ToolkitEngine_Quest_QuestType_Activate_ToolkitEngine_Quest_QuestType_" data-uid="ToolkitEngine.Quest.QuestType.Activate(ToolkitEngine.Quest.QuestType)">
+  Activate(QuestType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestType.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Abandon(Journal journal)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Activate(QuestType questType)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>journal</code> <a class="xref" href="ToolkitEngine.Quest.Journal.html">Journal</a></dt>
+    <dt><code>questType</code> <a class="xref" href="ToolkitEngine.Quest.QuestType.html">QuestType</a></dt>
     <dd></dd>
   </dl>
 
@@ -412,21 +348,21 @@ Class QuestType  <a class="header-action link-secondary" title="View source" hre
 
   <a id="ToolkitEngine_Quest_QuestType_Complete_" data-uid="ToolkitEngine.Quest.QuestType.Complete*"></a>
 
-  <h3 id="ToolkitEngine_Quest_QuestType_Complete_ToolkitEngine_Quest_Journal_" data-uid="ToolkitEngine.Quest.QuestType.Complete(ToolkitEngine.Quest.Journal)">
-  Complete(Journal)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestType.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  <h3 id="ToolkitEngine_Quest_QuestType_Complete_ToolkitEngine_Quest_QuestType_" data-uid="ToolkitEngine.Quest.QuestType.Complete(ToolkitEngine.Quest.QuestType)">
+  Complete(QuestType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestType.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Complete(Journal journal)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Complete(QuestType questType)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>journal</code> <a class="xref" href="ToolkitEngine.Quest.Journal.html">Journal</a></dt>
+    <dt><code>questType</code> <a class="xref" href="ToolkitEngine.Quest.QuestType.html">QuestType</a></dt>
     <dd></dd>
   </dl>
 
@@ -443,21 +379,21 @@ Class QuestType  <a class="header-action link-secondary" title="View source" hre
 
   <a id="ToolkitEngine_Quest_QuestType_Fail_" data-uid="ToolkitEngine.Quest.QuestType.Fail*"></a>
 
-  <h3 id="ToolkitEngine_Quest_QuestType_Fail_ToolkitEngine_Quest_Journal_" data-uid="ToolkitEngine.Quest.QuestType.Fail(ToolkitEngine.Quest.Journal)">
-  Fail(Journal)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestType.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  <h3 id="ToolkitEngine_Quest_QuestType_Fail_ToolkitEngine_Quest_QuestType_" data-uid="ToolkitEngine.Quest.QuestType.Fail(ToolkitEngine.Quest.QuestType)">
+  Fail(QuestType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/QuestType.cs/#L82"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Fail(Journal journal)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Fail(QuestType questType)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>journal</code> <a class="xref" href="ToolkitEngine.Quest.Journal.html">Journal</a></dt>
+    <dt><code>questType</code> <a class="xref" href="ToolkitEngine.Quest.QuestType.html">QuestType</a></dt>
     <dd></dd>
   </dl>
 

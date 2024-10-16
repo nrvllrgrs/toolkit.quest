@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -77,7 +77,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -101,7 +101,7 @@ Class FinishQuest  <a class="header-action link-secondary" title="View source" h
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class FinishQuest : Unit</code></pre>
+    <pre><code class="lang-csharp hljs">public class FinishQuest : BaseFinishUnit&lt;QuestType, QuestManager.Quest&gt;</code></pre>
   </div>
 
 
@@ -111,46 +111,44 @@ Class FinishQuest  <a class="header-action link-secondary" title="View source" h
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html">BaseFinishUnit</a>&lt;<a class="xref" href="ToolkitEngine.Quest.QuestType.html">QuestType</a>, <a class="xref" href="ToolkitEngine.Quest.QuestManager.html">QuestManager</a>.<a class="xref" href="ToolkitEngine.Quest.QuestManager.Quest.html">Quest</a>&gt;</div>
       <div><span class="xref">FinishQuest</span></div>
     </dd>
   </dl>
 
 
 
-
-
-
-
-
-
-  <h2 class="section" id="fields">Fields
-</h2>
-
-
-
-  <h3 id="ToolkitEngine_Quest_VisualScripting_FinishQuest_finish" data-uid="ToolkitEngine.Quest.VisualScripting.FinishQuest.finish">
-  finish
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/Units/FinishQuest.cs/#L14"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ValueInput finish</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">ValueInput</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_inputTrigger">BaseFinishUnit&lt;QuestType, QuestManager.Quest&gt;.inputTrigger</a>
+    </div>
+    <div>
+      <a class="xref" href="ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_outputTrigger">BaseFinishUnit&lt;QuestType, QuestManager.Quest&gt;.outputTrigger</a>
+    </div>
+    <div>
+      <a class="xref" href="ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_useTarget">BaseFinishUnit&lt;QuestType, QuestManager.Quest&gt;.useTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_target">BaseFinishUnit&lt;QuestType, QuestManager.Quest&gt;.target</a>
+    </div>
+    <div>
+      <a class="xref" href="ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_finish">BaseFinishUnit&lt;QuestType, QuestManager.Quest&gt;.finish</a>
+    </div>
+    <div>
+      <a class="xref" href="ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_VariableName">BaseFinishUnit&lt;QuestType, QuestManager.Quest&gt;.VariableName</a>
+    </div>
+    <div>
+      <a class="xref" href="ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_Definition">BaseFinishUnit&lt;QuestType, QuestManager.Quest&gt;.Definition()</a>
+    </div>
+    <div>
+      <a class="xref" href="ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_GetRuntimeTarget__0_">BaseFinishUnit&lt;QuestType, QuestManager.Quest&gt;.GetRuntimeTarget(QuestType)</a>
+    </div>
+    <div>
+      <a class="xref" href="ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_Finish__1_ToolkitEngine_Quest_QuestManager_FinishMode_">BaseFinishUnit&lt;QuestType, QuestManager.Quest&gt;.Finish(QuestManager.Quest, QuestManager.FinishMode)</a>
+    </div>
+  </dd></dl>
 
 
 
@@ -161,18 +159,18 @@ Class FinishQuest  <a class="header-action link-secondary" title="View source" h
 </h2>
 
 
-  <a id="ToolkitEngine_Quest_VisualScripting_FinishQuest_inputTrigger_" data-uid="ToolkitEngine.Quest.VisualScripting.FinishQuest.inputTrigger*"></a>
+  <a id="ToolkitEngine_Quest_VisualScripting_FinishQuest_VariableName_" data-uid="ToolkitEngine.Quest.VisualScripting.FinishQuest.VariableName*"></a>
 
-  <h3 id="ToolkitEngine_Quest_VisualScripting_FinishQuest_inputTrigger" data-uid="ToolkitEngine.Quest.VisualScripting.FinishQuest.inputTrigger">
-  inputTrigger
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/Units/FinishQuest.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <h3 id="ToolkitEngine_Quest_VisualScripting_FinishQuest_VariableName" data-uid="ToolkitEngine.Quest.VisualScripting.FinishQuest.VariableName">
+  VariableName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/Units/FinishQuest.cs/#L9"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ControlInput inputTrigger { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected override string VariableName { get; }</code></pre>
   </div>
 
 
@@ -181,7 +179,7 @@ Class FinishQuest  <a class="header-action link-secondary" title="View source" h
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><span class="xref">ControlInput</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -196,21 +194,64 @@ Class FinishQuest  <a class="header-action link-secondary" title="View source" h
 </h2>
 
 
-  <a id="ToolkitEngine_Quest_VisualScripting_FinishQuest_Definition_" data-uid="ToolkitEngine.Quest.VisualScripting.FinishQuest.Definition*"></a>
+  <a id="ToolkitEngine_Quest_VisualScripting_FinishQuest_Finish_" data-uid="ToolkitEngine.Quest.VisualScripting.FinishQuest.Finish*"></a>
 
-  <h3 id="ToolkitEngine_Quest_VisualScripting_FinishQuest_Definition" data-uid="ToolkitEngine.Quest.VisualScripting.FinishQuest.Definition">
-  Definition()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/Units/FinishQuest.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <h3 id="ToolkitEngine_Quest_VisualScripting_FinishQuest_Finish_ToolkitEngine_Quest_QuestManager_Quest_ToolkitEngine_Quest_QuestManager_FinishMode_" data-uid="ToolkitEngine.Quest.VisualScripting.FinishQuest.Finish(ToolkitEngine.Quest.QuestManager.Quest,ToolkitEngine.Quest.QuestManager.FinishMode)">
+  Finish(Quest, FinishMode)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/Units/FinishQuest.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void Definition()</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void Finish(QuestManager.Quest runtime, QuestManager.FinishMode finishMode)</code></pre>
   </div>
 
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>runtime</code> <a class="xref" href="ToolkitEngine.Quest.QuestManager.html">QuestManager</a>.<a class="xref" href="ToolkitEngine.Quest.QuestManager.Quest.html">Quest</a></dt>
+    <dd></dd>
+    <dt><code>finishMode</code> <a class="xref" href="ToolkitEngine.Quest.QuestManager.html">QuestManager</a>.<a class="xref" href="ToolkitEngine.Quest.QuestManager.FinishMode.html">FinishMode</a></dt>
+    <dd></dd>
+  </dl>
 
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Quest_VisualScripting_FinishQuest_GetRuntimeTarget_" data-uid="ToolkitEngine.Quest.VisualScripting.FinishQuest.GetRuntimeTarget*"></a>
+
+  <h3 id="ToolkitEngine_Quest_VisualScripting_FinishQuest_GetRuntimeTarget_ToolkitEngine_Quest_QuestType_" data-uid="ToolkitEngine.Quest.VisualScripting.FinishQuest.GetRuntimeTarget(ToolkitEngine.Quest.QuestType)">
+  GetRuntimeTarget(QuestType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/Units/FinishQuest.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override QuestManager.Quest GetRuntimeTarget(QuestType questType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>questType</code> <a class="xref" href="ToolkitEngine.Quest.QuestType.html">QuestType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ToolkitEngine.Quest.QuestManager.html">QuestManager</a>.<a class="xref" href="ToolkitEngine.Quest.QuestManager.Quest.html">Quest</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
