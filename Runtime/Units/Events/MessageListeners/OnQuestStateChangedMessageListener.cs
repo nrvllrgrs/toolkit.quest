@@ -8,7 +8,6 @@ namespace ToolkitEngine.Quest.VisualScripting
 	{
 		#region Fields
 
-		private QuestManager m_journal;
 		private QuestManager.Quest m_quest;
 
 		private const string QUEST_VAR = "$quest";
@@ -44,7 +43,7 @@ namespace ToolkitEngine.Quest.VisualScripting
 			{
 				m_quest.StateChanged -= Quest_StateChanged;
 			}
-			else if (m_journal != null)
+			else
 			{
 				QuestManager.CastInstance.QuestStateChanged -= Quest_StateChanged;
 			}

@@ -201,6 +201,11 @@ namespace ToolkitEditor.Quest
 			list.list = m_questType.taskList;
 			list.index = Mathf.Clamp(list.index, 0, m_questType.taskList.Count - 1);
 
+			if (taskType.script != null)
+			{
+				AssetDatabase.RemoveObjectFromAsset(taskType.script);
+			}
+
 			AssetDatabase.RemoveObjectFromAsset(taskType);
 			AssetDatabase.SaveAssets();
 			AssetDatabase.Refresh();

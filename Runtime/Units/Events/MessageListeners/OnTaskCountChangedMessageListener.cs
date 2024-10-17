@@ -8,7 +8,6 @@ namespace ToolkitEngine.Quest.VisualScripting
 	{
 		#region Fields
 
-		private QuestManager m_journal;
 		private QuestManager.Task m_task;
 		private QuestManager.Quest m_quest;
 
@@ -49,7 +48,7 @@ namespace ToolkitEngine.Quest.VisualScripting
 			{
 				m_quest.TaskCountChanged -= Task_CountChanged;
 			}
-			else if (m_journal != null)
+			else
 			{
 				QuestManager.CastInstance.TaskCountChanged -= Task_CountChanged;
 			}
