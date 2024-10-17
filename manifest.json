@@ -225,6 +225,36 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Quest.VisualScripting.ActivateQuest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Quest.VisualScripting.ActivateQuest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Quest.VisualScripting.ActivateTask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Quest.VisualScripting.ActivateTask.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Quest.VisualScripting.BaseActivateUnit-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Quest.VisualScripting.BaseActivateUnit-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.yml",
       "output": {
         ".html": {

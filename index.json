@@ -104,6 +104,21 @@
     "title": "Class TaskType | Quest Toolkit | 1.0.0",
     "keywords": "Class TaskType Namespace ToolkitEngine.Quest [Serializable] public class TaskType : BaseQuestType Inheritance object BaseQuestType TaskType Inherited Members BaseQuestType.m_id BaseQuestType.m_title BaseQuestType.m_description BaseQuestType.m_script BaseQuestType.id BaseQuestType.title BaseQuestType.description BaseQuestType.script Properties count public int count { get; } Property Value int questType public QuestType questType { get; } Property Value QuestType useCounter public bool useCounter { get; } Property Value bool"
   },
+  "api/ToolkitEngine.Quest.VisualScripting.ActivateQuest.html": {
+    "href": "api/ToolkitEngine.Quest.VisualScripting.ActivateQuest.html",
+    "title": "Class ActivateQuest | Quest Toolkit | 1.0.0",
+    "keywords": "Class ActivateQuest Namespace ToolkitEngine.Quest.VisualScripting public class ActivateQuest : BaseActivateUnit<QuestType> Inheritance object BaseActivateUnit<QuestType> ActivateQuest Inherited Members BaseActivateUnit<QuestType>.inputTrigger BaseActivateUnit<QuestType>.outputTrigger BaseActivateUnit<QuestType>.type BaseActivateUnit<QuestType>.Definition() Methods Activate(QuestType) protected override void Activate(QuestType value) Parameters value QuestType"
+  },
+  "api/ToolkitEngine.Quest.VisualScripting.ActivateTask.html": {
+    "href": "api/ToolkitEngine.Quest.VisualScripting.ActivateTask.html",
+    "title": "Class ActivateTask | Quest Toolkit | 1.0.0",
+    "keywords": "Class ActivateTask Namespace ToolkitEngine.Quest.VisualScripting public class ActivateTask : BaseActivateUnit<TaskType> Inheritance object BaseActivateUnit<TaskType> ActivateTask Inherited Members BaseActivateUnit<TaskType>.inputTrigger BaseActivateUnit<TaskType>.outputTrigger BaseActivateUnit<TaskType>.type BaseActivateUnit<TaskType>.Definition() Methods Activate(TaskType) protected override void Activate(TaskType value) Parameters value TaskType"
+  },
+  "api/ToolkitEngine.Quest.VisualScripting.BaseActivateUnit-1.html": {
+    "href": "api/ToolkitEngine.Quest.VisualScripting.BaseActivateUnit-1.html",
+    "title": "Class BaseActivateUnit<T> | Quest Toolkit | 1.0.0",
+    "keywords": "Class BaseActivateUnit<T> Namespace ToolkitEngine.Quest.VisualScripting public abstract class BaseActivateUnit<T> : Unit where T : BaseQuestType Type Parameters T Inheritance object BaseActivateUnit<T> Derived ActivateQuest ActivateTask Fields type public ValueInput type Field Value ValueInput Properties inputTrigger public ControlInput inputTrigger { get; } Property Value ControlInput outputTrigger public ControlOutput outputTrigger { get; } Property Value ControlOutput Methods Activate(T) protected abstract void Activate(T value) Parameters value T Definition() protected override void Definition()"
+  },
   "api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html": {
     "href": "api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html",
     "title": "Class BaseFinishUnit<T, TRuntime> | Quest Toolkit | 1.0.0",
@@ -167,7 +182,7 @@
   "api/ToolkitEngine.Quest.VisualScripting.html": {
     "href": "api/ToolkitEngine.Quest.VisualScripting.html",
     "title": "Namespace ToolkitEngine.Quest.VisualScripting | Quest Toolkit | 1.0.0",
-    "keywords": "Namespace ToolkitEngine.Quest.VisualScripting Classes BaseFinishUnit<T, TRuntime> BaseQuestEventUnit<T> DecrementTask FinishQuest FinishTask IncrementTask OnQuestStateChanged OnQuestStateChangedMessageListener OnTaskCountChanged OnTaskCountChangedMessageListener OnTaskStateChanged OnTaskStateChangedMessageListener"
+    "keywords": "Namespace ToolkitEngine.Quest.VisualScripting Classes ActivateQuest ActivateTask BaseActivateUnit<T> BaseFinishUnit<T, TRuntime> BaseQuestEventUnit<T> DecrementTask FinishQuest FinishTask IncrementTask OnQuestStateChanged OnQuestStateChangedMessageListener OnTaskCountChanged OnTaskCountChangedMessageListener OnTaskStateChanged OnTaskStateChangedMessageListener"
   },
   "api/ToolkitEngine.Quest.html": {
     "href": "api/ToolkitEngine.Quest.html",

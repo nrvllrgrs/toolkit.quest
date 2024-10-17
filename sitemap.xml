@@ -2,235 +2,253 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEditor.Quest.CategoryTypeEditor.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEditor.Quest.QuestTypeEditor.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEditor.Quest.TaskTypeEditor.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEditor.Quest.VisualScripting.Setup.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEditor.Quest.VisualScripting.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEditor.Quest.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEngine.Quest.BaseQuestType.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEngine.Quest.CategoryType.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEngine.Quest.EventHooks.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEngine.Quest.QuestEventArgs.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEngine.Quest.QuestLayer.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEngine.Quest.QuestManager.FinishMode.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEngine.Quest.QuestManager.Quest.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEngine.Quest.QuestManager.QuestMap.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEngine.Quest.QuestManager.State.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEngine.Quest.QuestManager.Task.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEngine.Quest.QuestManager.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEngine.Quest.QuestManagerConfig.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEngine.Quest.QuestType.Completion.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEngine.Quest.QuestType.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEngine.Quest.TaskType.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEngine.Quest.VisualScripting.ActivateQuest.html</loc>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEngine.Quest.VisualScripting.ActivateTask.html</loc>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEngine.Quest.VisualScripting.BaseActivateUnit-1.html</loc>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit-1.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEngine.Quest.VisualScripting.DecrementTask.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEngine.Quest.VisualScripting.FinishQuest.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEngine.Quest.VisualScripting.FinishTask.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEngine.Quest.VisualScripting.IncrementTask.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEngine.Quest.VisualScripting.OnQuestStateChanged.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEngine.Quest.VisualScripting.OnQuestStateChangedMessageListener.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEngine.Quest.VisualScripting.OnTaskCountChanged.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEngine.Quest.VisualScripting.OnTaskCountChangedMessageListener.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEngine.Quest.VisualScripting.OnTaskStateChanged.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEngine.Quest.VisualScripting.OnTaskStateChangedMessageListener.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEngine.Quest.VisualScripting.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/ToolkitEngine.Quest.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/api/index.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/index.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/license/LICENSE.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nrvllrgrs.github.io/toolkit.quest/manual/index.html</loc>
-    <lastmod>2024-10-16T08:33:43+00:00</lastmod>
+    <lastmod>2024-10-17T05:46:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

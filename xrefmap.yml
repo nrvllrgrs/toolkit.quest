@@ -1090,6 +1090,129 @@ references:
   commentId: N:ToolkitEngine.Quest.VisualScripting
   fullName: ToolkitEngine.Quest.VisualScripting
   nameWithType: ToolkitEngine.Quest.VisualScripting
+- uid: ToolkitEngine.Quest.VisualScripting.ActivateQuest
+  name: ActivateQuest
+  href: api/ToolkitEngine.Quest.VisualScripting.ActivateQuest.html
+  commentId: T:ToolkitEngine.Quest.VisualScripting.ActivateQuest
+  fullName: ToolkitEngine.Quest.VisualScripting.ActivateQuest
+  nameWithType: ActivateQuest
+- uid: ToolkitEngine.Quest.VisualScripting.ActivateQuest.Activate(ToolkitEngine.Quest.QuestType)
+  name: Activate(QuestType)
+  href: api/ToolkitEngine.Quest.VisualScripting.ActivateQuest.html#ToolkitEngine_Quest_VisualScripting_ActivateQuest_Activate_ToolkitEngine_Quest_QuestType_
+  commentId: M:ToolkitEngine.Quest.VisualScripting.ActivateQuest.Activate(ToolkitEngine.Quest.QuestType)
+  fullName: ToolkitEngine.Quest.VisualScripting.ActivateQuest.Activate(ToolkitEngine.Quest.QuestType)
+  nameWithType: ActivateQuest.Activate(QuestType)
+- uid: ToolkitEngine.Quest.VisualScripting.ActivateQuest.Activate*
+  name: Activate
+  href: api/ToolkitEngine.Quest.VisualScripting.ActivateQuest.html#ToolkitEngine_Quest_VisualScripting_ActivateQuest_Activate_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.ActivateQuest.Activate
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.VisualScripting.ActivateQuest.Activate
+  nameWithType: ActivateQuest.Activate
+- uid: ToolkitEngine.Quest.VisualScripting.ActivateTask
+  name: ActivateTask
+  href: api/ToolkitEngine.Quest.VisualScripting.ActivateTask.html
+  commentId: T:ToolkitEngine.Quest.VisualScripting.ActivateTask
+  fullName: ToolkitEngine.Quest.VisualScripting.ActivateTask
+  nameWithType: ActivateTask
+- uid: ToolkitEngine.Quest.VisualScripting.ActivateTask.Activate(ToolkitEngine.Quest.TaskType)
+  name: Activate(TaskType)
+  href: api/ToolkitEngine.Quest.VisualScripting.ActivateTask.html#ToolkitEngine_Quest_VisualScripting_ActivateTask_Activate_ToolkitEngine_Quest_TaskType_
+  commentId: M:ToolkitEngine.Quest.VisualScripting.ActivateTask.Activate(ToolkitEngine.Quest.TaskType)
+  fullName: ToolkitEngine.Quest.VisualScripting.ActivateTask.Activate(ToolkitEngine.Quest.TaskType)
+  nameWithType: ActivateTask.Activate(TaskType)
+- uid: ToolkitEngine.Quest.VisualScripting.ActivateTask.Activate*
+  name: Activate
+  href: api/ToolkitEngine.Quest.VisualScripting.ActivateTask.html#ToolkitEngine_Quest_VisualScripting_ActivateTask_Activate_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.ActivateTask.Activate
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.VisualScripting.ActivateTask.Activate
+  nameWithType: ActivateTask.Activate
+- uid: ToolkitEngine.Quest.VisualScripting.BaseActivateUnit`1
+  name: BaseActivateUnit<T>
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseActivateUnit-1.html
+  commentId: T:ToolkitEngine.Quest.VisualScripting.BaseActivateUnit`1
+  name.vb: BaseActivateUnit(Of T)
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseActivateUnit<T>
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseActivateUnit(Of T)
+  nameWithType: BaseActivateUnit<T>
+  nameWithType.vb: BaseActivateUnit(Of T)
+- uid: ToolkitEngine.Quest.VisualScripting.BaseActivateUnit`1.Activate(`0)
+  name: Activate(T)
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseActivateUnit-1.html#ToolkitEngine_Quest_VisualScripting_BaseActivateUnit_1_Activate__0_
+  commentId: M:ToolkitEngine.Quest.VisualScripting.BaseActivateUnit`1.Activate(`0)
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseActivateUnit<T>.Activate(T)
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseActivateUnit(Of T).Activate(T)
+  nameWithType: BaseActivateUnit<T>.Activate(T)
+  nameWithType.vb: BaseActivateUnit(Of T).Activate(T)
+- uid: ToolkitEngine.Quest.VisualScripting.BaseActivateUnit`1.Activate*
+  name: Activate
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseActivateUnit-1.html#ToolkitEngine_Quest_VisualScripting_BaseActivateUnit_1_Activate_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.BaseActivateUnit`1.Activate
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseActivateUnit<T>.Activate
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseActivateUnit(Of T).Activate
+  nameWithType: BaseActivateUnit<T>.Activate
+  nameWithType.vb: BaseActivateUnit(Of T).Activate
+- uid: ToolkitEngine.Quest.VisualScripting.BaseActivateUnit`1.Definition
+  name: Definition()
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseActivateUnit-1.html#ToolkitEngine_Quest_VisualScripting_BaseActivateUnit_1_Definition
+  commentId: M:ToolkitEngine.Quest.VisualScripting.BaseActivateUnit`1.Definition
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseActivateUnit<T>.Definition()
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseActivateUnit(Of T).Definition()
+  nameWithType: BaseActivateUnit<T>.Definition()
+  nameWithType.vb: BaseActivateUnit(Of T).Definition()
+- uid: ToolkitEngine.Quest.VisualScripting.BaseActivateUnit`1.Definition*
+  name: Definition
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseActivateUnit-1.html#ToolkitEngine_Quest_VisualScripting_BaseActivateUnit_1_Definition_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.BaseActivateUnit`1.Definition
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseActivateUnit<T>.Definition
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseActivateUnit(Of T).Definition
+  nameWithType: BaseActivateUnit<T>.Definition
+  nameWithType.vb: BaseActivateUnit(Of T).Definition
+- uid: ToolkitEngine.Quest.VisualScripting.BaseActivateUnit`1.inputTrigger
+  name: inputTrigger
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseActivateUnit-1.html#ToolkitEngine_Quest_VisualScripting_BaseActivateUnit_1_inputTrigger
+  commentId: P:ToolkitEngine.Quest.VisualScripting.BaseActivateUnit`1.inputTrigger
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseActivateUnit<T>.inputTrigger
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseActivateUnit(Of T).inputTrigger
+  nameWithType: BaseActivateUnit<T>.inputTrigger
+  nameWithType.vb: BaseActivateUnit(Of T).inputTrigger
+- uid: ToolkitEngine.Quest.VisualScripting.BaseActivateUnit`1.inputTrigger*
+  name: inputTrigger
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseActivateUnit-1.html#ToolkitEngine_Quest_VisualScripting_BaseActivateUnit_1_inputTrigger_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.BaseActivateUnit`1.inputTrigger
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseActivateUnit<T>.inputTrigger
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseActivateUnit(Of T).inputTrigger
+  nameWithType: BaseActivateUnit<T>.inputTrigger
+  nameWithType.vb: BaseActivateUnit(Of T).inputTrigger
+- uid: ToolkitEngine.Quest.VisualScripting.BaseActivateUnit`1.outputTrigger
+  name: outputTrigger
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseActivateUnit-1.html#ToolkitEngine_Quest_VisualScripting_BaseActivateUnit_1_outputTrigger
+  commentId: P:ToolkitEngine.Quest.VisualScripting.BaseActivateUnit`1.outputTrigger
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseActivateUnit<T>.outputTrigger
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseActivateUnit(Of T).outputTrigger
+  nameWithType: BaseActivateUnit<T>.outputTrigger
+  nameWithType.vb: BaseActivateUnit(Of T).outputTrigger
+- uid: ToolkitEngine.Quest.VisualScripting.BaseActivateUnit`1.outputTrigger*
+  name: outputTrigger
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseActivateUnit-1.html#ToolkitEngine_Quest_VisualScripting_BaseActivateUnit_1_outputTrigger_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.BaseActivateUnit`1.outputTrigger
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseActivateUnit<T>.outputTrigger
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseActivateUnit(Of T).outputTrigger
+  nameWithType: BaseActivateUnit<T>.outputTrigger
+  nameWithType.vb: BaseActivateUnit(Of T).outputTrigger
+- uid: ToolkitEngine.Quest.VisualScripting.BaseActivateUnit`1.type
+  name: type
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseActivateUnit-1.html#ToolkitEngine_Quest_VisualScripting_BaseActivateUnit_1_type
+  commentId: F:ToolkitEngine.Quest.VisualScripting.BaseActivateUnit`1.type
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseActivateUnit<T>.type
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseActivateUnit(Of T).type
+  nameWithType: BaseActivateUnit<T>.type
+  nameWithType.vb: BaseActivateUnit(Of T).type
 - uid: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2
   name: BaseFinishUnit<T, TRuntime>
   href: api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html
