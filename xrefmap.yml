@@ -1256,40 +1256,23 @@ references:
   fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit(Of T, TRuntime).Finish
   nameWithType: BaseFinishUnit<T, TRuntime>.Finish
   nameWithType.vb: BaseFinishUnit(Of T, TRuntime).Finish
-- uid: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.GetRuntimeTarget(`0)
-  name: GetRuntimeTarget(T)
-  href: api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_GetRuntimeTarget__0_
-  commentId: M:ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.GetRuntimeTarget(`0)
-  fullName: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit<T, TRuntime>.GetRuntimeTarget(T)
-  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit(Of T, TRuntime).GetRuntimeTarget(T)
-  nameWithType: BaseFinishUnit<T, TRuntime>.GetRuntimeTarget(T)
-  nameWithType.vb: BaseFinishUnit(Of T, TRuntime).GetRuntimeTarget(T)
-- uid: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.GetRuntimeTarget*
-  name: GetRuntimeTarget
-  href: api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_GetRuntimeTarget_
-  commentId: Overload:ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.GetRuntimeTarget
+- uid: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.Trigger(Flow,`1)
+  name: Trigger(Flow, TRuntime)
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_Trigger_Flow__1_
+  commentId: M:ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.Trigger(Flow,`1)
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit<T, TRuntime>.Trigger(Flow, TRuntime)
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit(Of T, TRuntime).Trigger(Flow, TRuntime)
+  nameWithType: BaseFinishUnit<T, TRuntime>.Trigger(Flow, TRuntime)
+  nameWithType.vb: BaseFinishUnit(Of T, TRuntime).Trigger(Flow, TRuntime)
+- uid: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.Trigger*
+  name: Trigger
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_Trigger_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.Trigger
   isSpec: "True"
-  fullName: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit<T, TRuntime>.GetRuntimeTarget
-  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit(Of T, TRuntime).GetRuntimeTarget
-  nameWithType: BaseFinishUnit<T, TRuntime>.GetRuntimeTarget
-  nameWithType.vb: BaseFinishUnit(Of T, TRuntime).GetRuntimeTarget
-- uid: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.VariableName
-  name: VariableName
-  href: api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_VariableName
-  commentId: P:ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.VariableName
-  fullName: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit<T, TRuntime>.VariableName
-  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit(Of T, TRuntime).VariableName
-  nameWithType: BaseFinishUnit<T, TRuntime>.VariableName
-  nameWithType.vb: BaseFinishUnit(Of T, TRuntime).VariableName
-- uid: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.VariableName*
-  name: VariableName
-  href: api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_VariableName_
-  commentId: Overload:ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.VariableName
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit<T, TRuntime>.VariableName
-  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit(Of T, TRuntime).VariableName
-  nameWithType: BaseFinishUnit<T, TRuntime>.VariableName
-  nameWithType.vb: BaseFinishUnit(Of T, TRuntime).VariableName
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit<T, TRuntime>.Trigger
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit(Of T, TRuntime).Trigger
+  nameWithType: BaseFinishUnit<T, TRuntime>.Trigger
+  nameWithType.vb: BaseFinishUnit(Of T, TRuntime).Trigger
 - uid: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.finish
   name: finish
   href: api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_finish
@@ -1298,56 +1281,6 @@ references:
   fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit(Of T, TRuntime).finish
   nameWithType: BaseFinishUnit<T, TRuntime>.finish
   nameWithType.vb: BaseFinishUnit(Of T, TRuntime).finish
-- uid: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.inputTrigger
-  name: inputTrigger
-  href: api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_inputTrigger
-  commentId: P:ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.inputTrigger
-  fullName: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit<T, TRuntime>.inputTrigger
-  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit(Of T, TRuntime).inputTrigger
-  nameWithType: BaseFinishUnit<T, TRuntime>.inputTrigger
-  nameWithType.vb: BaseFinishUnit(Of T, TRuntime).inputTrigger
-- uid: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.inputTrigger*
-  name: inputTrigger
-  href: api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_inputTrigger_
-  commentId: Overload:ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.inputTrigger
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit<T, TRuntime>.inputTrigger
-  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit(Of T, TRuntime).inputTrigger
-  nameWithType: BaseFinishUnit<T, TRuntime>.inputTrigger
-  nameWithType.vb: BaseFinishUnit(Of T, TRuntime).inputTrigger
-- uid: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.outputTrigger
-  name: outputTrigger
-  href: api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_outputTrigger
-  commentId: P:ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.outputTrigger
-  fullName: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit<T, TRuntime>.outputTrigger
-  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit(Of T, TRuntime).outputTrigger
-  nameWithType: BaseFinishUnit<T, TRuntime>.outputTrigger
-  nameWithType.vb: BaseFinishUnit(Of T, TRuntime).outputTrigger
-- uid: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.outputTrigger*
-  name: outputTrigger
-  href: api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_outputTrigger_
-  commentId: Overload:ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.outputTrigger
-  isSpec: "True"
-  fullName: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit<T, TRuntime>.outputTrigger
-  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit(Of T, TRuntime).outputTrigger
-  nameWithType: BaseFinishUnit<T, TRuntime>.outputTrigger
-  nameWithType.vb: BaseFinishUnit(Of T, TRuntime).outputTrigger
-- uid: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.target
-  name: target
-  href: api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_target
-  commentId: F:ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.target
-  fullName: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit<T, TRuntime>.target
-  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit(Of T, TRuntime).target
-  nameWithType: BaseFinishUnit<T, TRuntime>.target
-  nameWithType.vb: BaseFinishUnit(Of T, TRuntime).target
-- uid: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.useTarget
-  name: useTarget
-  href: api/ToolkitEngine.Quest.VisualScripting.BaseFinishUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseFinishUnit_2_useTarget
-  commentId: F:ToolkitEngine.Quest.VisualScripting.BaseFinishUnit`2.useTarget
-  fullName: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit<T, TRuntime>.useTarget
-  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseFinishUnit(Of T, TRuntime).useTarget
-  nameWithType: BaseFinishUnit<T, TRuntime>.useTarget
-  nameWithType.vb: BaseFinishUnit(Of T, TRuntime).useTarget
 - uid: ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit`1
   name: BaseQuestEventUnit<T>
   href: api/ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit-1.html
@@ -1458,38 +1391,186 @@ references:
   fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseQuestEventUnit(Of T).state
   nameWithType: BaseQuestEventUnit<T>.state
   nameWithType.vb: BaseQuestEventUnit(Of T).state
+- uid: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit`2
+  name: BaseTargetQuestUnit<T, TRuntime>
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit-2.html
+  commentId: T:ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit`2
+  name.vb: BaseTargetQuestUnit(Of T, TRuntime)
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit<T, TRuntime>
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit(Of T, TRuntime)
+  nameWithType: BaseTargetQuestUnit<T, TRuntime>
+  nameWithType.vb: BaseTargetQuestUnit(Of T, TRuntime)
+- uid: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit`2.Definition
+  name: Definition()
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseTargetQuestUnit_2_Definition
+  commentId: M:ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit`2.Definition
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit<T, TRuntime>.Definition()
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit(Of T, TRuntime).Definition()
+  nameWithType: BaseTargetQuestUnit<T, TRuntime>.Definition()
+  nameWithType.vb: BaseTargetQuestUnit(Of T, TRuntime).Definition()
+- uid: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit`2.Definition*
+  name: Definition
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseTargetQuestUnit_2_Definition_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit`2.Definition
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit<T, TRuntime>.Definition
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit(Of T, TRuntime).Definition
+  nameWithType: BaseTargetQuestUnit<T, TRuntime>.Definition
+  nameWithType.vb: BaseTargetQuestUnit(Of T, TRuntime).Definition
+- uid: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit`2.GetRuntimeTarget(`0)
+  name: GetRuntimeTarget(T)
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseTargetQuestUnit_2_GetRuntimeTarget__0_
+  commentId: M:ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit`2.GetRuntimeTarget(`0)
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit<T, TRuntime>.GetRuntimeTarget(T)
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit(Of T, TRuntime).GetRuntimeTarget(T)
+  nameWithType: BaseTargetQuestUnit<T, TRuntime>.GetRuntimeTarget(T)
+  nameWithType.vb: BaseTargetQuestUnit(Of T, TRuntime).GetRuntimeTarget(T)
+- uid: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit`2.GetRuntimeTarget*
+  name: GetRuntimeTarget
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseTargetQuestUnit_2_GetRuntimeTarget_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit`2.GetRuntimeTarget
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit<T, TRuntime>.GetRuntimeTarget
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit(Of T, TRuntime).GetRuntimeTarget
+  nameWithType: BaseTargetQuestUnit<T, TRuntime>.GetRuntimeTarget
+  nameWithType.vb: BaseTargetQuestUnit(Of T, TRuntime).GetRuntimeTarget
+- uid: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit`2.Trigger(Flow)
+  name: Trigger(Flow)
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseTargetQuestUnit_2_Trigger_Flow_
+  commentId: M:ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit`2.Trigger(Flow)
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit<T, TRuntime>.Trigger(Flow)
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit(Of T, TRuntime).Trigger(Flow)
+  nameWithType: BaseTargetQuestUnit<T, TRuntime>.Trigger(Flow)
+  nameWithType.vb: BaseTargetQuestUnit(Of T, TRuntime).Trigger(Flow)
+- uid: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit`2.Trigger(Flow,`1)
+  name: Trigger(Flow, TRuntime)
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseTargetQuestUnit_2_Trigger_Flow__1_
+  commentId: M:ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit`2.Trigger(Flow,`1)
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit<T, TRuntime>.Trigger(Flow, TRuntime)
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit(Of T, TRuntime).Trigger(Flow, TRuntime)
+  nameWithType: BaseTargetQuestUnit<T, TRuntime>.Trigger(Flow, TRuntime)
+  nameWithType.vb: BaseTargetQuestUnit(Of T, TRuntime).Trigger(Flow, TRuntime)
+- uid: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit`2.Trigger*
+  name: Trigger
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseTargetQuestUnit_2_Trigger_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit`2.Trigger
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit<T, TRuntime>.Trigger
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit(Of T, TRuntime).Trigger
+  nameWithType: BaseTargetQuestUnit<T, TRuntime>.Trigger
+  nameWithType.vb: BaseTargetQuestUnit(Of T, TRuntime).Trigger
+- uid: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit`2.VariableName
+  name: VariableName
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseTargetQuestUnit_2_VariableName
+  commentId: P:ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit`2.VariableName
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit<T, TRuntime>.VariableName
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit(Of T, TRuntime).VariableName
+  nameWithType: BaseTargetQuestUnit<T, TRuntime>.VariableName
+  nameWithType.vb: BaseTargetQuestUnit(Of T, TRuntime).VariableName
+- uid: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit`2.VariableName*
+  name: VariableName
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseTargetQuestUnit_2_VariableName_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit`2.VariableName
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit<T, TRuntime>.VariableName
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit(Of T, TRuntime).VariableName
+  nameWithType: BaseTargetQuestUnit<T, TRuntime>.VariableName
+  nameWithType.vb: BaseTargetQuestUnit(Of T, TRuntime).VariableName
+- uid: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit`2.inputTrigger
+  name: inputTrigger
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseTargetQuestUnit_2_inputTrigger
+  commentId: P:ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit`2.inputTrigger
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit<T, TRuntime>.inputTrigger
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit(Of T, TRuntime).inputTrigger
+  nameWithType: BaseTargetQuestUnit<T, TRuntime>.inputTrigger
+  nameWithType.vb: BaseTargetQuestUnit(Of T, TRuntime).inputTrigger
+- uid: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit`2.inputTrigger*
+  name: inputTrigger
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseTargetQuestUnit_2_inputTrigger_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit`2.inputTrigger
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit<T, TRuntime>.inputTrigger
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit(Of T, TRuntime).inputTrigger
+  nameWithType: BaseTargetQuestUnit<T, TRuntime>.inputTrigger
+  nameWithType.vb: BaseTargetQuestUnit(Of T, TRuntime).inputTrigger
+- uid: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit`2.outputTrigger
+  name: outputTrigger
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseTargetQuestUnit_2_outputTrigger
+  commentId: P:ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit`2.outputTrigger
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit<T, TRuntime>.outputTrigger
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit(Of T, TRuntime).outputTrigger
+  nameWithType: BaseTargetQuestUnit<T, TRuntime>.outputTrigger
+  nameWithType.vb: BaseTargetQuestUnit(Of T, TRuntime).outputTrigger
+- uid: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit`2.outputTrigger*
+  name: outputTrigger
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseTargetQuestUnit_2_outputTrigger_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit`2.outputTrigger
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit<T, TRuntime>.outputTrigger
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit(Of T, TRuntime).outputTrigger
+  nameWithType: BaseTargetQuestUnit<T, TRuntime>.outputTrigger
+  nameWithType.vb: BaseTargetQuestUnit(Of T, TRuntime).outputTrigger
+- uid: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit`2.target
+  name: target
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseTargetQuestUnit_2_target
+  commentId: F:ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit`2.target
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit<T, TRuntime>.target
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit(Of T, TRuntime).target
+  nameWithType: BaseTargetQuestUnit<T, TRuntime>.target
+  nameWithType.vb: BaseTargetQuestUnit(Of T, TRuntime).target
+- uid: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit`2.useTarget
+  name: useTarget
+  href: api/ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseTargetQuestUnit_2_useTarget
+  commentId: F:ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit`2.useTarget
+  fullName: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit<T, TRuntime>.useTarget
+  fullName.vb: ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit(Of T, TRuntime).useTarget
+  nameWithType: BaseTargetQuestUnit<T, TRuntime>.useTarget
+  nameWithType.vb: BaseTargetQuestUnit(Of T, TRuntime).useTarget
 - uid: ToolkitEngine.Quest.VisualScripting.DecrementTask
   name: DecrementTask
   href: api/ToolkitEngine.Quest.VisualScripting.DecrementTask.html
   commentId: T:ToolkitEngine.Quest.VisualScripting.DecrementTask
   fullName: ToolkitEngine.Quest.VisualScripting.DecrementTask
   nameWithType: DecrementTask
-- uid: ToolkitEngine.Quest.VisualScripting.DecrementTask.Definition
-  name: Definition()
-  href: api/ToolkitEngine.Quest.VisualScripting.DecrementTask.html#ToolkitEngine_Quest_VisualScripting_DecrementTask_Definition
-  commentId: M:ToolkitEngine.Quest.VisualScripting.DecrementTask.Definition
-  fullName: ToolkitEngine.Quest.VisualScripting.DecrementTask.Definition()
-  nameWithType: DecrementTask.Definition()
-- uid: ToolkitEngine.Quest.VisualScripting.DecrementTask.Definition*
-  name: Definition
-  href: api/ToolkitEngine.Quest.VisualScripting.DecrementTask.html#ToolkitEngine_Quest_VisualScripting_DecrementTask_Definition_
-  commentId: Overload:ToolkitEngine.Quest.VisualScripting.DecrementTask.Definition
+- uid: ToolkitEngine.Quest.VisualScripting.DecrementTask.GetRuntimeTarget(ToolkitEngine.Quest.TaskType)
+  name: GetRuntimeTarget(TaskType)
+  href: api/ToolkitEngine.Quest.VisualScripting.DecrementTask.html#ToolkitEngine_Quest_VisualScripting_DecrementTask_GetRuntimeTarget_ToolkitEngine_Quest_TaskType_
+  commentId: M:ToolkitEngine.Quest.VisualScripting.DecrementTask.GetRuntimeTarget(ToolkitEngine.Quest.TaskType)
+  fullName: ToolkitEngine.Quest.VisualScripting.DecrementTask.GetRuntimeTarget(ToolkitEngine.Quest.TaskType)
+  nameWithType: DecrementTask.GetRuntimeTarget(TaskType)
+- uid: ToolkitEngine.Quest.VisualScripting.DecrementTask.GetRuntimeTarget*
+  name: GetRuntimeTarget
+  href: api/ToolkitEngine.Quest.VisualScripting.DecrementTask.html#ToolkitEngine_Quest_VisualScripting_DecrementTask_GetRuntimeTarget_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.DecrementTask.GetRuntimeTarget
   isSpec: "True"
-  fullName: ToolkitEngine.Quest.VisualScripting.DecrementTask.Definition
-  nameWithType: DecrementTask.Definition
-- uid: ToolkitEngine.Quest.VisualScripting.DecrementTask.inputTrigger
-  name: inputTrigger
-  href: api/ToolkitEngine.Quest.VisualScripting.DecrementTask.html#ToolkitEngine_Quest_VisualScripting_DecrementTask_inputTrigger
-  commentId: P:ToolkitEngine.Quest.VisualScripting.DecrementTask.inputTrigger
-  fullName: ToolkitEngine.Quest.VisualScripting.DecrementTask.inputTrigger
-  nameWithType: DecrementTask.inputTrigger
-- uid: ToolkitEngine.Quest.VisualScripting.DecrementTask.inputTrigger*
-  name: inputTrigger
-  href: api/ToolkitEngine.Quest.VisualScripting.DecrementTask.html#ToolkitEngine_Quest_VisualScripting_DecrementTask_inputTrigger_
-  commentId: Overload:ToolkitEngine.Quest.VisualScripting.DecrementTask.inputTrigger
+  fullName: ToolkitEngine.Quest.VisualScripting.DecrementTask.GetRuntimeTarget
+  nameWithType: DecrementTask.GetRuntimeTarget
+- uid: ToolkitEngine.Quest.VisualScripting.DecrementTask.Trigger(Flow,ToolkitEngine.Quest.QuestManager.Task)
+  name: Trigger(Flow, Task)
+  href: api/ToolkitEngine.Quest.VisualScripting.DecrementTask.html#ToolkitEngine_Quest_VisualScripting_DecrementTask_Trigger_Flow_ToolkitEngine_Quest_QuestManager_Task_
+  commentId: M:ToolkitEngine.Quest.VisualScripting.DecrementTask.Trigger(Flow,ToolkitEngine.Quest.QuestManager.Task)
+  fullName: ToolkitEngine.Quest.VisualScripting.DecrementTask.Trigger(Flow, ToolkitEngine.Quest.QuestManager.Task)
+  nameWithType: DecrementTask.Trigger(Flow, QuestManager.Task)
+- uid: ToolkitEngine.Quest.VisualScripting.DecrementTask.Trigger*
+  name: Trigger
+  href: api/ToolkitEngine.Quest.VisualScripting.DecrementTask.html#ToolkitEngine_Quest_VisualScripting_DecrementTask_Trigger_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.DecrementTask.Trigger
   isSpec: "True"
-  fullName: ToolkitEngine.Quest.VisualScripting.DecrementTask.inputTrigger
-  nameWithType: DecrementTask.inputTrigger
+  fullName: ToolkitEngine.Quest.VisualScripting.DecrementTask.Trigger
+  nameWithType: DecrementTask.Trigger
+- uid: ToolkitEngine.Quest.VisualScripting.DecrementTask.VariableName
+  name: VariableName
+  href: api/ToolkitEngine.Quest.VisualScripting.DecrementTask.html#ToolkitEngine_Quest_VisualScripting_DecrementTask_VariableName
+  commentId: P:ToolkitEngine.Quest.VisualScripting.DecrementTask.VariableName
+  fullName: ToolkitEngine.Quest.VisualScripting.DecrementTask.VariableName
+  nameWithType: DecrementTask.VariableName
+- uid: ToolkitEngine.Quest.VisualScripting.DecrementTask.VariableName*
+  name: VariableName
+  href: api/ToolkitEngine.Quest.VisualScripting.DecrementTask.html#ToolkitEngine_Quest_VisualScripting_DecrementTask_VariableName_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.DecrementTask.VariableName
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.VisualScripting.DecrementTask.VariableName
+  nameWithType: DecrementTask.VariableName
 - uid: ToolkitEngine.Quest.VisualScripting.FinishQuest
   name: FinishQuest
   href: api/ToolkitEngine.Quest.VisualScripting.FinishQuest.html
@@ -1586,32 +1667,45 @@ references:
   commentId: T:ToolkitEngine.Quest.VisualScripting.IncrementTask
   fullName: ToolkitEngine.Quest.VisualScripting.IncrementTask
   nameWithType: IncrementTask
-- uid: ToolkitEngine.Quest.VisualScripting.IncrementTask.Definition
-  name: Definition()
-  href: api/ToolkitEngine.Quest.VisualScripting.IncrementTask.html#ToolkitEngine_Quest_VisualScripting_IncrementTask_Definition
-  commentId: M:ToolkitEngine.Quest.VisualScripting.IncrementTask.Definition
-  fullName: ToolkitEngine.Quest.VisualScripting.IncrementTask.Definition()
-  nameWithType: IncrementTask.Definition()
-- uid: ToolkitEngine.Quest.VisualScripting.IncrementTask.Definition*
-  name: Definition
-  href: api/ToolkitEngine.Quest.VisualScripting.IncrementTask.html#ToolkitEngine_Quest_VisualScripting_IncrementTask_Definition_
-  commentId: Overload:ToolkitEngine.Quest.VisualScripting.IncrementTask.Definition
+- uid: ToolkitEngine.Quest.VisualScripting.IncrementTask.GetRuntimeTarget(ToolkitEngine.Quest.TaskType)
+  name: GetRuntimeTarget(TaskType)
+  href: api/ToolkitEngine.Quest.VisualScripting.IncrementTask.html#ToolkitEngine_Quest_VisualScripting_IncrementTask_GetRuntimeTarget_ToolkitEngine_Quest_TaskType_
+  commentId: M:ToolkitEngine.Quest.VisualScripting.IncrementTask.GetRuntimeTarget(ToolkitEngine.Quest.TaskType)
+  fullName: ToolkitEngine.Quest.VisualScripting.IncrementTask.GetRuntimeTarget(ToolkitEngine.Quest.TaskType)
+  nameWithType: IncrementTask.GetRuntimeTarget(TaskType)
+- uid: ToolkitEngine.Quest.VisualScripting.IncrementTask.GetRuntimeTarget*
+  name: GetRuntimeTarget
+  href: api/ToolkitEngine.Quest.VisualScripting.IncrementTask.html#ToolkitEngine_Quest_VisualScripting_IncrementTask_GetRuntimeTarget_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.IncrementTask.GetRuntimeTarget
   isSpec: "True"
-  fullName: ToolkitEngine.Quest.VisualScripting.IncrementTask.Definition
-  nameWithType: IncrementTask.Definition
-- uid: ToolkitEngine.Quest.VisualScripting.IncrementTask.inputTrigger
-  name: inputTrigger
-  href: api/ToolkitEngine.Quest.VisualScripting.IncrementTask.html#ToolkitEngine_Quest_VisualScripting_IncrementTask_inputTrigger
-  commentId: P:ToolkitEngine.Quest.VisualScripting.IncrementTask.inputTrigger
-  fullName: ToolkitEngine.Quest.VisualScripting.IncrementTask.inputTrigger
-  nameWithType: IncrementTask.inputTrigger
-- uid: ToolkitEngine.Quest.VisualScripting.IncrementTask.inputTrigger*
-  name: inputTrigger
-  href: api/ToolkitEngine.Quest.VisualScripting.IncrementTask.html#ToolkitEngine_Quest_VisualScripting_IncrementTask_inputTrigger_
-  commentId: Overload:ToolkitEngine.Quest.VisualScripting.IncrementTask.inputTrigger
+  fullName: ToolkitEngine.Quest.VisualScripting.IncrementTask.GetRuntimeTarget
+  nameWithType: IncrementTask.GetRuntimeTarget
+- uid: ToolkitEngine.Quest.VisualScripting.IncrementTask.Trigger(Flow,ToolkitEngine.Quest.QuestManager.Task)
+  name: Trigger(Flow, Task)
+  href: api/ToolkitEngine.Quest.VisualScripting.IncrementTask.html#ToolkitEngine_Quest_VisualScripting_IncrementTask_Trigger_Flow_ToolkitEngine_Quest_QuestManager_Task_
+  commentId: M:ToolkitEngine.Quest.VisualScripting.IncrementTask.Trigger(Flow,ToolkitEngine.Quest.QuestManager.Task)
+  fullName: ToolkitEngine.Quest.VisualScripting.IncrementTask.Trigger(Flow, ToolkitEngine.Quest.QuestManager.Task)
+  nameWithType: IncrementTask.Trigger(Flow, QuestManager.Task)
+- uid: ToolkitEngine.Quest.VisualScripting.IncrementTask.Trigger*
+  name: Trigger
+  href: api/ToolkitEngine.Quest.VisualScripting.IncrementTask.html#ToolkitEngine_Quest_VisualScripting_IncrementTask_Trigger_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.IncrementTask.Trigger
   isSpec: "True"
-  fullName: ToolkitEngine.Quest.VisualScripting.IncrementTask.inputTrigger
-  nameWithType: IncrementTask.inputTrigger
+  fullName: ToolkitEngine.Quest.VisualScripting.IncrementTask.Trigger
+  nameWithType: IncrementTask.Trigger
+- uid: ToolkitEngine.Quest.VisualScripting.IncrementTask.VariableName
+  name: VariableName
+  href: api/ToolkitEngine.Quest.VisualScripting.IncrementTask.html#ToolkitEngine_Quest_VisualScripting_IncrementTask_VariableName
+  commentId: P:ToolkitEngine.Quest.VisualScripting.IncrementTask.VariableName
+  fullName: ToolkitEngine.Quest.VisualScripting.IncrementTask.VariableName
+  nameWithType: IncrementTask.VariableName
+- uid: ToolkitEngine.Quest.VisualScripting.IncrementTask.VariableName*
+  name: VariableName
+  href: api/ToolkitEngine.Quest.VisualScripting.IncrementTask.html#ToolkitEngine_Quest_VisualScripting_IncrementTask_VariableName_
+  commentId: Overload:ToolkitEngine.Quest.VisualScripting.IncrementTask.VariableName
+  isSpec: "True"
+  fullName: ToolkitEngine.Quest.VisualScripting.IncrementTask.VariableName
+  nameWithType: IncrementTask.VariableName
 - uid: ToolkitEngine.Quest.VisualScripting.OnQuestStateChanged
   name: OnQuestStateChanged
   href: api/ToolkitEngine.Quest.VisualScripting.OnQuestStateChanged.html

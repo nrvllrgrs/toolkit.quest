@@ -89,7 +89,7 @@
 
 
   <h1 id="ToolkitEngine_Quest_VisualScripting_IncrementTask" data-uid="ToolkitEngine.Quest.VisualScripting.IncrementTask" class="text-break">
-Class IncrementTask  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/Units/IncrementTask.cs/#L5"><i class="bi bi-code-slash"></i></a>
+Class IncrementTask  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/Units/IncrementTask.cs/#L6"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -101,7 +101,7 @@ Class IncrementTask  <a class="header-action link-secondary" title="View source"
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class IncrementTask : Unit</code></pre>
+    <pre><code class="lang-csharp hljs">public class IncrementTask : BaseTargetQuestUnit&lt;TaskType, QuestManager.Task&gt;</code></pre>
   </div>
 
 
@@ -111,12 +111,44 @@ Class IncrementTask  <a class="header-action link-secondary" title="View source"
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit-2.html">BaseTargetQuestUnit</a>&lt;<a class="xref" href="ToolkitEngine.Quest.TaskType.html">TaskType</a>, <a class="xref" href="ToolkitEngine.Quest.QuestManager.html">QuestManager</a>.<a class="xref" href="ToolkitEngine.Quest.QuestManager.Task.html">Task</a>&gt;</div>
       <div><span class="xref">IncrementTask</span></div>
     </dd>
   </dl>
 
 
 
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseTargetQuestUnit_2_inputTrigger">BaseTargetQuestUnit&lt;TaskType, QuestManager.Task&gt;.inputTrigger</a>
+    </div>
+    <div>
+      <a class="xref" href="ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseTargetQuestUnit_2_outputTrigger">BaseTargetQuestUnit&lt;TaskType, QuestManager.Task&gt;.outputTrigger</a>
+    </div>
+    <div>
+      <a class="xref" href="ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseTargetQuestUnit_2_useTarget">BaseTargetQuestUnit&lt;TaskType, QuestManager.Task&gt;.useTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseTargetQuestUnit_2_target">BaseTargetQuestUnit&lt;TaskType, QuestManager.Task&gt;.target</a>
+    </div>
+    <div>
+      <a class="xref" href="ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseTargetQuestUnit_2_VariableName">BaseTargetQuestUnit&lt;TaskType, QuestManager.Task&gt;.VariableName</a>
+    </div>
+    <div>
+      <a class="xref" href="ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseTargetQuestUnit_2_Definition">BaseTargetQuestUnit&lt;TaskType, QuestManager.Task&gt;.Definition()</a>
+    </div>
+    <div>
+      <a class="xref" href="ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseTargetQuestUnit_2_Trigger_Flow_">BaseTargetQuestUnit&lt;TaskType, QuestManager.Task&gt;.Trigger(Flow)</a>
+    </div>
+    <div>
+      <a class="xref" href="ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseTargetQuestUnit_2_Trigger_Flow__1_">BaseTargetQuestUnit&lt;TaskType, QuestManager.Task&gt;.Trigger(Flow, QuestManager.Task)</a>
+    </div>
+    <div>
+      <a class="xref" href="ToolkitEngine.Quest.VisualScripting.BaseTargetQuestUnit-2.html#ToolkitEngine_Quest_VisualScripting_BaseTargetQuestUnit_2_GetRuntimeTarget__0_">BaseTargetQuestUnit&lt;TaskType, QuestManager.Task&gt;.GetRuntimeTarget(TaskType)</a>
+    </div>
+  </dd></dl>
 
 
 
@@ -127,18 +159,18 @@ Class IncrementTask  <a class="header-action link-secondary" title="View source"
 </h2>
 
 
-  <a id="ToolkitEngine_Quest_VisualScripting_IncrementTask_inputTrigger_" data-uid="ToolkitEngine.Quest.VisualScripting.IncrementTask.inputTrigger*"></a>
+  <a id="ToolkitEngine_Quest_VisualScripting_IncrementTask_VariableName_" data-uid="ToolkitEngine.Quest.VisualScripting.IncrementTask.VariableName*"></a>
 
-  <h3 id="ToolkitEngine_Quest_VisualScripting_IncrementTask_inputTrigger" data-uid="ToolkitEngine.Quest.VisualScripting.IncrementTask.inputTrigger">
-  inputTrigger
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/Units/IncrementTask.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <h3 id="ToolkitEngine_Quest_VisualScripting_IncrementTask_VariableName" data-uid="ToolkitEngine.Quest.VisualScripting.IncrementTask.VariableName">
+  VariableName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/Units/IncrementTask.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ControlInput inputTrigger { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected override string VariableName { get; }</code></pre>
   </div>
 
 
@@ -147,7 +179,7 @@ Class IncrementTask  <a class="header-action link-secondary" title="View source"
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><span class="xref">ControlInput</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -162,10 +194,10 @@ Class IncrementTask  <a class="header-action link-secondary" title="View source"
 </h2>
 
 
-  <a id="ToolkitEngine_Quest_VisualScripting_IncrementTask_Definition_" data-uid="ToolkitEngine.Quest.VisualScripting.IncrementTask.Definition*"></a>
+  <a id="ToolkitEngine_Quest_VisualScripting_IncrementTask_GetRuntimeTarget_" data-uid="ToolkitEngine.Quest.VisualScripting.IncrementTask.GetRuntimeTarget*"></a>
 
-  <h3 id="ToolkitEngine_Quest_VisualScripting_IncrementTask_Definition" data-uid="ToolkitEngine.Quest.VisualScripting.IncrementTask.Definition">
-  Definition()
+  <h3 id="ToolkitEngine_Quest_VisualScripting_IncrementTask_GetRuntimeTarget_ToolkitEngine_Quest_TaskType_" data-uid="ToolkitEngine.Quest.VisualScripting.IncrementTask.GetRuntimeTarget(ToolkitEngine.Quest.TaskType)">
+  GetRuntimeTarget(TaskType)
   <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/Units/IncrementTask.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -173,9 +205,52 @@ Class IncrementTask  <a class="header-action link-secondary" title="View source"
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void Definition()</code></pre>
+    <pre><code class="lang-csharp hljs">protected override QuestManager.Task GetRuntimeTarget(TaskType type)</code></pre>
   </div>
 
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="ToolkitEngine.Quest.TaskType.html">TaskType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ToolkitEngine.Quest.QuestManager.html">QuestManager</a>.<a class="xref" href="ToolkitEngine.Quest.QuestManager.Task.html">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Quest_VisualScripting_IncrementTask_Trigger_" data-uid="ToolkitEngine.Quest.VisualScripting.IncrementTask.Trigger*"></a>
+
+  <h3 id="ToolkitEngine_Quest_VisualScripting_IncrementTask_Trigger_Flow_ToolkitEngine_Quest_QuestManager_Task_" data-uid="ToolkitEngine.Quest.VisualScripting.IncrementTask.Trigger(Flow,ToolkitEngine.Quest.QuestManager.Task)">
+  Trigger(Flow, Task)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.quest/blob/master/Runtime/Units/IncrementTask.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Trigger(Flow flow, QuestManager.Task runtime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>flow</code> <span class="xref">Flow</span></dt>
+    <dd></dd>
+    <dt><code>runtime</code> <a class="xref" href="ToolkitEngine.Quest.QuestManager.html">QuestManager</a>.<a class="xref" href="ToolkitEngine.Quest.QuestManager.Task.html">Task</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
