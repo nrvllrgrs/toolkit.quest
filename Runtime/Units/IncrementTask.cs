@@ -1,34 +1,29 @@
 using Unity.VisualScripting;
+using static ToolkitEngine.Quest.QuestManager;
 
 namespace ToolkitEngine.Quest.VisualScripting
 {
 	[UnitCategory("Quests"), TypeIcon(typeof(Add<>))]
-	public class IncrementTask : Unit
+	public class IncrementTask : BaseTargetQuestUnit<TaskType, Task>
 	{
 		#region Properties
 
-		[DoNotSerialize, PortLabelHidden]
-		public ControlInput inputTrigger { get; private set; }
+		protected override string VariableName => TASK_VAR_NAME;
 
 		#endregion
 
 		#region Methods
 
-		protected override void Definition()
+		protected override Task GetRuntimeTarget(TaskType type)
 		{
-			inputTrigger = ControlInput(nameof(inputTrigger), Trigger);
+			return QuestManager.CastInstance.TryGetTask(type, out var task)
+				? task
+				: null;
 		}
 
-		private ControlOutput Trigger(Flow flow)
+		protected override void Trigger(Flow flow, Task runtime)
 		{
-			// Get object
-			var obj = flow.stack.AsReference().component.gameObject;
-			var task = Variables.Object(obj).Get<QuestManager.Task>("task");
-
-			// Increment task
-			++task.count;
-
-			return null;
+			++runtime.count;
 		}
 
 		#endregion
