@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using NaughtyAttributes;
 
 namespace ToolkitEngine.Quest
 {
@@ -15,10 +16,10 @@ namespace ToolkitEngine.Quest
 		[SerializeField]
 		private QuestManager.State m_state = QuestManager.State.Active;
 
-		[SerializeField, Tooltip("Invoked when ANY quest matches the state.")]
+		[SerializeField, Tooltip("Invoked when ANY quest matches the state."), Foldout("Events")]
 		private UnityEvent m_onStateMatched;
 
-		[SerializeField, Tooltip("Invoked when ALL quests don't match the state.")]
+		[SerializeField, Tooltip("Invoked when ALL quests don't match the state."), Foldout("Events")]
 		private UnityEvent m_onStateMismatched;
 
 		#endregion
