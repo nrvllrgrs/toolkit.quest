@@ -13,14 +13,14 @@ namespace ToolkitEditor.Quest
     {
         #region Fields
 
-        protected QuestType m_questType;
+		protected QuestType m_questType;
 
-        protected SerializedProperty m_id;
-        protected SerializedProperty m_category;
-        protected SerializedProperty m_order;
+		protected SerializedProperty m_id;
+		protected SerializedProperty m_category;
+		protected SerializedProperty m_order;
 
-        protected SerializedProperty m_title;
-        protected SerializedProperty m_description;
+		protected SerializedProperty m_title;
+		protected SerializedProperty m_description;
 		protected SerializedProperty m_rewards;
 		protected SerializedProperty m_script;
 
@@ -33,6 +33,11 @@ namespace ToolkitEditor.Quest
 
         // Used to map reorderable list to evaluator
         private ReorderableList m_reorderableList;
+
+		/// <summary>
+		/// Embedded task editors
+		/// </summary>
+		private Dictionary<TaskType, TaskTypeEditor> m_taskEditors = new();
 
 		#endregion
 
@@ -59,6 +64,7 @@ namespace ToolkitEditor.Quest
 			m_questsOnFailed = serializedObject.FindProperty(nameof(m_questsOnFailed));
 
             m_reorderableList = new ReorderableList(new List<TaskType>(m_questType.taskList), typeof(TaskType), true, false, true, true);
+			m_taskEditors.Clear();
 
 			m_reorderableList.drawElementCallback += (rect, index, isActive, isFocused) =>
 			{
@@ -72,19 +78,17 @@ namespace ToolkitEditor.Quest
 				var serializedTaskType = new SerializedObject(taskProp.objectReferenceValue);
 				var taskType = serializedTaskType.targetObject as TaskType;
 
-				string title = taskType.title;
-				if (string.IsNullOrEmpty(title))
-				{
-					title = string.Format("Task {0}", index + 1);
-				}
+				string name = !Equals(taskType.name, taskType.id)
+					? taskType.name
+					: string.Format("Task {0}", index + 1);
 
 				++EditorGUI.indentLevel;
-				bool expanded = EditorGUIRectLayout.Foldout(ref rect, taskProp, new GUIContent(title));
+				bool expanded = EditorGUIRectLayout.Foldout(ref rect, taskProp, new GUIContent(name));
 				--EditorGUI.indentLevel;
 
 				if (expanded)
 				{
-					var taskEditor = CreateEditor(taskType, typeof(TaskTypeEditor)) as TaskTypeEditor;
+					var taskEditor = GetTaskEditor(taskType);
 					taskEditor.OnEmbeddedGUI(rect);
 				}
 			};
@@ -95,6 +99,14 @@ namespace ToolkitEditor.Quest
 			m_reorderableList.onReorderCallbackWithDetails += OnReorderCallback;
 			m_reorderableList.onCanRemoveCallback += OnCanRemoveCallback;
 			m_reorderableList.onRemoveCallback += OnRemoveCallback;
+		}
+
+		private void OnDisable()
+		{
+			foreach (var taskEditor in m_taskEditors.Values)
+			{
+				taskEditor.RenameAndSave();
+			}
 		}
 
 		public override void OnInspectorGUI()
@@ -133,6 +145,16 @@ namespace ToolkitEditor.Quest
 			serializedObject.ApplyModifiedProperties();
 		}
 
+		private TaskTypeEditor GetTaskEditor(TaskType taskType)
+		{
+			if (!m_taskEditors.TryGetValue(taskType, out var editor))
+			{
+				editor = CreateEditor(taskType, typeof(TaskTypeEditor)) as TaskTypeEditor;
+				m_taskEditors.Add(taskType, editor);
+			}
+			return editor;
+		}
+
 		#endregion
 
 		#region ReorderableList Callbacks
@@ -154,7 +176,7 @@ namespace ToolkitEditor.Quest
 				var serializedTaskType = new SerializedObject(taskProp.objectReferenceValue);
 				var taskType = serializedTaskType.targetObject as TaskType;
 
-				var taskEditor = CreateEditor(taskType, typeof(TaskTypeEditor)) as TaskTypeEditor;
+				var taskEditor = GetTaskEditor(taskType);
 				height += taskEditor.GetEmbeddedHeight();
 			}
 
@@ -196,6 +218,9 @@ namespace ToolkitEditor.Quest
 		private void OnRemoveCallback(ReorderableList list)
 		{
 			var taskType = m_questType.taskList[list.index];
+
+			// Remove from embedded editor map
+			m_taskEditors.Remove(taskType);
 
 			m_questType.taskList.RemoveAt(list.index);
 			list.list = m_questType.taskList;

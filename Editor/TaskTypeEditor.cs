@@ -11,6 +11,7 @@ namespace ToolkitEditor.Quest
 		#region Fields
 
 		protected TaskType m_taskType;
+		protected string m_name;
 
 		protected SerializedProperty m_id;
 		protected SerializedProperty m_title;
@@ -19,6 +20,11 @@ namespace ToolkitEditor.Quest
 
 		protected SerializedProperty m_useCounter;
 		protected SerializedProperty m_count;
+
+		/// <summary>
+		/// Indicates whether title has been changed
+		/// </summary>
+		private bool m_dirty = false;
 
 		#endregion
 
@@ -38,6 +44,39 @@ namespace ToolkitEditor.Quest
 
 			m_useCounter = serializedObject.FindProperty(nameof(m_useCounter));
 			m_count = serializedObject.FindProperty(nameof(m_count));
+			m_dirty = false;
+
+			m_name = !Equals(m_taskType.name, m_id.stringValue)
+				? m_taskType.name
+				: string.Empty;
+		}
+
+		private void OnDisable()
+		{
+			RenameAndSave();
+		}
+
+		internal void RenameAndSave()
+		{
+			if (!m_dirty)
+				return;
+
+			if (AssetDatabase.IsSubAsset(target))
+			{
+				var path = AssetDatabase.GetAssetPath(m_taskType);
+				var assets = AssetDatabase.LoadAllAssetRepresentationsAtPath(path);
+				foreach (var asset in assets)
+				{
+					if (asset != m_taskType)
+						continue;
+
+					// Use either name or ID as asset name
+					asset.name = !string.IsNullOrWhiteSpace(m_name)
+						? m_name
+						: m_id.stringValue;
+					AssetUtil.LoadImporter(m_taskType)?.SaveAndReimport();
+				}
+			}
 		}
 
 		public override void OnInspectorGUI()
@@ -47,6 +86,17 @@ namespace ToolkitEditor.Quest
 			EditorGUI.BeginDisabledGroup(true);
 			EditorGUILayout.PropertyField(m_id, new GUIContent("ID"));
 			EditorGUI.EndDisabledGroup();
+
+			EditorGUI.BeginChangeCheck();
+			{
+				m_name = EditorGUILayout.TextField("Name", m_name);
+			}
+			if (EditorGUI.EndChangeCheck())
+			{
+				m_dirty = true;
+			}
+
+			EditorGUILayout.Space();
 
 			EditorGUILayout.PropertyField(m_title);
 			EditorGUILayout.PropertyField(m_description);
@@ -70,8 +120,21 @@ namespace ToolkitEditor.Quest
 			serializedObject.Update();
 
 			EditorGUI.BeginDisabledGroup(true);
-			EditorGUIRectLayout.PropertyField(ref position, m_id, new GUIContent("ID"));
+			{
+				EditorGUIRectLayout.PropertyField(ref position, m_id, new GUIContent("ID"));
+			}
 			EditorGUI.EndDisabledGroup();
+
+			EditorGUI.BeginChangeCheck();
+			{
+				m_name = EditorGUIRectLayout.TextField(ref position, "Name", m_name);
+			}
+			if (EditorGUI.EndChangeCheck())
+			{
+				m_dirty = true;
+			}
+
+			EditorGUIRectLayout.Space(ref position);
 
 			EditorGUIRectLayout.PropertyField(ref position, m_title);
 			EditorGUIRectLayout.PropertyField(ref position, m_description);
@@ -97,8 +160,9 @@ namespace ToolkitEditor.Quest
 				+ EditorGUI.GetPropertyHeight(m_description)
 				+ EditorGUI.GetPropertyHeight(m_script)
 				+ EditorGUI.GetPropertyHeight(m_useCounter)
-				+ EditorGUIRectLayout.GetSpaceHeight()
-				+ (EditorGUIUtility.standardVerticalSpacing * 5);
+				+ (EditorGUIRectLayout.GetSpaceHeight() * 2)
+				+ EditorGUIUtility.singleLineHeight // Name
+				+ (EditorGUIUtility.standardVerticalSpacing * 6);
 
 			if (m_useCounter.boolValue)
 			{
