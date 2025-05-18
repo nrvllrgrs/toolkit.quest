@@ -81,38 +81,7 @@ namespace ToolkitEditor.Quest
 
 		public override void OnInspectorGUI()
 		{
-			serializedObject.Update();
-
-			EditorGUI.BeginDisabledGroup(true);
-			EditorGUILayout.PropertyField(m_id, new GUIContent("ID"));
-			EditorGUI.EndDisabledGroup();
-
-			EditorGUI.BeginChangeCheck();
-			{
-				m_name = EditorGUILayout.TextField("Name", m_name);
-			}
-			if (EditorGUI.EndChangeCheck())
-			{
-				m_dirty = true;
-			}
-
-			EditorGUILayout.Space();
-
-			EditorGUILayout.PropertyField(m_title);
-			EditorGUILayout.PropertyField(m_description);
-			EditorGUILayoutUtility.ScriptableObjectField<ScriptGraphAsset>(m_script, m_taskType);
-
-			EditorGUILayout.Space();
-
-			EditorGUILayout.PropertyField(m_useCounter);
-			if (m_useCounter.boolValue)
-			{
-				++EditorGUI.indentLevel;
-				EditorGUILayout.PropertyField(m_count);
-				--EditorGUI.indentLevel;
-			}
-
-			serializedObject.ApplyModifiedProperties();
+			EditorGUILayout.HelpBox("Use associated Quest to modify Task date.", MessageType.None);
 		}
 
 		public void OnEmbeddedGUI(Rect position)
@@ -150,6 +119,42 @@ namespace ToolkitEditor.Quest
 				--EditorGUI.indentLevel;
 			}
 
+			if (Application.isPlaying)
+			{
+				EditorGUIRectLayout.Space(ref position);
+
+				bool isQuestActive = QuestManager.CastInstance.IsActive(m_taskType.questType);
+				bool isTaskActive = QuestManager.CastInstance.IsActive(m_taskType);
+
+				EditorGUI.BeginDisabledGroup(!isQuestActive || isTaskActive);
+				{
+					if (EditorGUIRectLayout.Button(ref position, "Activate"))
+					{
+						QuestManager.CastInstance.Activate(m_taskType);
+					}
+				}
+				EditorGUI.EndDisabledGroup();
+
+				EditorGUI.BeginDisabledGroup(!isQuestActive || !isTaskActive);
+				{
+					if (EditorGUIRectLayout.Button(ref position, "Complete"))
+					{
+						QuestManager.CastInstance.Finish(m_taskType, QuestManager.FinishMode.Complete);
+					}
+
+					if (EditorGUIRectLayout.Button(ref position, "Fail"))
+					{
+						QuestManager.CastInstance.Finish(m_taskType, QuestManager.FinishMode.Fail);
+					}
+
+					if (EditorGUIRectLayout.Button(ref position, "Abandon"))
+					{
+						QuestManager.CastInstance.Finish(m_taskType, QuestManager.FinishMode.Abandon);
+					}
+				}
+				EditorGUI.EndDisabledGroup();
+			}
+
 			serializedObject.ApplyModifiedProperties();
 		}
 
@@ -168,6 +173,13 @@ namespace ToolkitEditor.Quest
 			{
 				height += EditorGUI.GetPropertyHeight(m_count)
 					+ EditorGUIUtility.standardVerticalSpacing;
+			}
+
+			if (Application.isPlaying)
+			{
+				height += EditorGUIRectLayout.GetSpaceHeight()
+					+ EditorGUIUtility.singleLineHeight * 4
+					+ EditorGUIUtility.standardVerticalSpacing * 4;
 			}
 
 			return height;

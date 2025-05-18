@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace ToolkitEngine.Quest
@@ -26,7 +27,7 @@ namespace ToolkitEngine.Quest
 
 		private void Start()
 		{
-			UpdateLayer<QuestType>(null, CheckQuest, m_toggleOnStart);
+			UpdateLayer<QuestType>(null, IsAnyMatch(), m_toggleOnStart);
 		}
 
 		private void OnEnable()
@@ -43,15 +44,15 @@ namespace ToolkitEngine.Quest
 
 		private void QuestStateChanged(object sender, QuestEventArgs e)
 		{
-			UpdateLayer(e.quest.questType, CheckQuest);
+			UpdateLayer(e.quest.questType, IsMatch(e), true);
 		}
 
 		private void TaskStateChanged(object sender, QuestEventArgs e)
 		{
-			UpdateLayer(e.task.taskType, CheckTask);
+			UpdateLayer(e.task.taskType, IsMatch(e), true);
 		}
 
-		private void UpdateLayer<T>(T type, Func<T, bool> checkFunc, bool allowInvert = false)
+		private void UpdateLayer<T>(T type, bool isMatch, bool allowInvert = false)
 			where T : BaseQuestType
 		{
 			if (type == null)
@@ -61,12 +62,12 @@ namespace ToolkitEngine.Quest
 				{
 					if (baseType is QuestType questType)
 					{
-						SetObjects(CheckQuest(questType), allowInvert);
+						SetObjects(isMatch, allowInvert);
 						break;
 					}
 					else if (baseType is TaskType taskType)
 					{
-						SetObjects(CheckTask(taskType), allowInvert);
+						SetObjects(isMatch, allowInvert);
 						break;
 					}
 				}
@@ -76,7 +77,7 @@ namespace ToolkitEngine.Quest
 				if (!m_quests.Contains(type))
 					return;
 
-				SetObjects(checkFunc(type), allowInvert);
+				SetObjects(isMatch, allowInvert);
 			}
 		}
 
@@ -108,8 +109,9 @@ namespace ToolkitEngine.Quest
 			}
 		}
 
-		private bool CheckQuest(QuestType questType) => QuestManager.CastInstance.GetState(questType) == m_state;
-		private bool CheckTask(TaskType taskType) => QuestManager.CastInstance.GetState(taskType) == m_state;
+		private bool IsMatch(QuestEventArgs e) => Equals(e.state, m_state);
+
+		private bool IsAnyMatch() => m_quests.Any(x => Equals(QuestManager.CastInstance.GetState(x), m_state));
 
 		#endregion
 	}

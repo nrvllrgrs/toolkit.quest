@@ -68,7 +68,23 @@ namespace ToolkitEngine.Quest
 
 		public static void Complete(QuestType questType)
 		{
-			Finish(questType, FinishMode.Complete, questType.m_questsOnCompleted);
+			QuestManager.CastInstance.Finish(questType, FinishMode.Complete);
+		}
+
+		public static void Fail(QuestType questType)
+		{
+			QuestManager.CastInstance.Finish(questType, FinishMode.Fail);
+		}
+
+		public static void Abandon(QuestType questType)
+		{
+			QuestManager.CastInstance.Finish(questType, FinishMode.Abandon);
+		}
+
+		internal static void Award(QuestType questType)
+		{
+			if (questType.m_rewards.Count == 0)
+				return;
 
 			if (InventoryManager.CastInstance.TryGetInventory(QuestManager.CastInstance.Config.rewardInventory, out var inventory))
 			{
@@ -79,22 +95,26 @@ namespace ToolkitEngine.Quest
 			}
 		}
 
-		public static void Fail(QuestType questType)
+		internal static void ActiveNextQuests(QuestType questType, State state)
 		{
-			Finish(questType, FinishMode.Fail, questType.m_questsOnFailed);
-		}
+			List<QuestType> nextQuests = null;
+			switch (state)
+			{
+				case State.Completed:
+					nextQuests = questType.m_questsOnCompleted;
+					break;
 
-		public static void Abandon(QuestType questType)
-		{
-			Finish(questType, FinishMode.Abandon, questType.m_questsOnAbandoned);
-		}
+				case State.Failed:
+					nextQuests = questType.m_questsOnFailed;
+					break;
 
-		private static void Finish(QuestType questType, FinishMode finishMode, IEnumerable<QuestType> nextQuests)
-		{
+				case State.Inactive:
+					nextQuests = questType.m_questsOnAbandoned;
+					break;
+			}
+
 			if (nextQuests == null)
 				return;
-
-			QuestManager.CastInstance.Finish(questType, finishMode);
 
 			foreach (var quest in nextQuests)
 			{

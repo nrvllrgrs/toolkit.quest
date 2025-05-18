@@ -1,3 +1,4 @@
+using Codice.CM.Client.Differences;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -175,7 +176,7 @@ namespace ToolkitEngine.Quest
 			TaskCountChanged?.Invoke(sender, e);
 		}
 
-		public void Finish(QuestType questType, FinishMode finish)
+		internal void Finish(QuestType questType, FinishMode finish)
 		{
 			if (!TryGetQuest(questType, out Quest quest))
 				return;
@@ -212,17 +213,16 @@ namespace ToolkitEngine.Quest
 			return State.Inactive;
 		}
 
-		public State GetState(TaskType taskType)
+		public State GetState(BaseQuestType baseType)
 		{
-			if (m_activeQuests.TryGetValue(taskType.questType, out var quest)
-				&& quest.TryGetTask(taskType, out var task))
+			if (baseType is QuestType questType)
 			{
-				return task.state;
+				return GetState(questType);
 			}
-
-			if (m_finishedQuests.TryGetValue(taskType.questType, out State state))
-				return state;
-
+			else if (baseType is TaskType taskType)
+			{
+				return GetState(taskType);
+			}
 			return State.Inactive;
 		}
 
@@ -300,6 +300,32 @@ namespace ToolkitEngine.Quest
 			}
 
 			return quest.TryGetTask(taskType, out task);
+		}
+
+		public State GetState(TaskType taskType)
+		{
+			if (m_activeQuests.TryGetValue(taskType.questType, out var quest)
+				&& quest.TryGetTask(taskType, out var task))
+			{
+				return task.state;
+			}
+
+			if (m_finishedQuests.TryGetValue(taskType.questType, out State state))
+				return state;
+
+			return State.Inactive;
+		}
+
+		public bool IsActive(TaskType taskType) => taskType != null && GetState(taskType) == State.Active;
+
+		public bool IsFinished(TaskType taskType)
+		{
+			if (taskType == null)
+				return false;
+
+			var state = GetState(taskType);
+			return state == State.Completed
+				|| state == State.Failed;
 		}
 
 		#endregion
@@ -409,6 +435,13 @@ namespace ToolkitEngine.Quest
 						{
 							Cleanup(task);
 						}
+
+						if (state == State.Completed)
+						{
+							QuestType.Award(questType);
+						}
+
+						QuestType.ActiveNextQuests(questType, state);
 					}
 				}
 			}
@@ -434,7 +467,8 @@ namespace ToolkitEngine.Quest
 				if (questType.completion != QuestType.Completion.Custom)
 					return;
 
-				CreateTask(taskType);
+				var task = CreateTask(taskType);
+				task.StateChanged += CustomTask_StateChanged;
 			}
 
 			private Task CreateTask(TaskType taskType)
@@ -543,6 +577,15 @@ namespace ToolkitEngine.Quest
 				}
 
 				state = task.state;
+			}
+
+			private void CustomTask_StateChanged(object sender, QuestEventArgs e)
+			{
+				var task = sender as Task;
+				if (task.state == State.Active)
+					return;
+
+				Cleanup(task);
 			}
 
 			private bool AttemptComplete(Task task)

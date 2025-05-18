@@ -77,6 +77,7 @@ namespace ToolkitEditor.Quest
 
 				var serializedTaskType = new SerializedObject(taskProp.objectReferenceValue);
 				var taskType = serializedTaskType.targetObject as TaskType;
+				taskType.questType = m_questType;
 
 				string name = !Equals(taskType.name, taskType.id)
 					? taskType.name
@@ -127,6 +128,40 @@ namespace ToolkitEditor.Quest
             EditorGUILayout.PropertyField(m_description);
 			EditorGUILayout.PropertyField(m_rewards);
 			EditorGUILayoutUtility.ScriptableObjectField<ScriptGraphAsset>(m_script, m_questType);
+
+			if (Application.isPlaying)
+			{
+				EditorGUILayout.Separator();
+
+				bool isQuestActive = QuestManager.CastInstance.IsActive(m_questType);
+				EditorGUI.BeginDisabledGroup(isQuestActive || QuestManager.CastInstance.IsFinished(m_questType));
+				{
+					if (GUILayout.Button("Activate"))
+					{
+						QuestType.Activate(m_questType);
+					}
+				}
+				EditorGUI.EndDisabledGroup();
+
+				EditorGUI.BeginDisabledGroup(!isQuestActive);
+				{
+					if (GUILayout.Button("Complete"))
+					{
+						QuestType.Complete(m_questType);
+					}
+
+					if (GUILayout.Button("Fail"))
+					{
+						QuestType.Fail(m_questType);
+					}
+
+					if (GUILayout.Button("Abandon"))
+					{
+						QuestType.Abandon(m_questType);
+					}
+				}
+				EditorGUI.EndDisabledGroup();
+			}
 
 			EditorGUILayout.Separator();
 
