@@ -9,6 +9,9 @@ namespace ToolkitEngine.Quest
 		#region Fields
 
 		[SerializeField]
+		private QuestType m_questType;
+
+		[SerializeField]
 		private bool m_useCounter;
 
 		[SerializeField]
@@ -18,7 +21,7 @@ namespace ToolkitEngine.Quest
 
 		#region Properties
 
-		public QuestType questType { get; internal set; }
+		public QuestType questType { get => m_questType; internal set => m_questType = value; }
 		public bool useCounter => m_useCounter;
 		public int count => m_count;
 

@@ -77,7 +77,6 @@ namespace ToolkitEditor.Quest
 
 				var serializedTaskType = new SerializedObject(taskProp.objectReferenceValue);
 				var taskType = serializedTaskType.targetObject as TaskType;
-				taskType.questType = m_questType;
 
 				string name = !Equals(taskType.name, taskType.id)
 					? taskType.name
@@ -100,6 +99,27 @@ namespace ToolkitEditor.Quest
 			m_reorderableList.onReorderCallbackWithDetails += OnReorderCallback;
 			m_reorderableList.onCanRemoveCallback += OnCanRemoveCallback;
 			m_reorderableList.onRemoveCallback += OnRemoveCallback;
+
+			bool isDirty = false;
+			for (int i = 0; i < m_tasks.arraySize; ++i)
+			{
+				var taskProp = m_tasks.GetArrayElementAtIndex(i);
+				if (taskProp == null)
+					continue;
+
+				var serializedTaskType = new SerializedObject(taskProp.objectReferenceValue);
+				var taskType = serializedTaskType.targetObject as TaskType;
+				if (taskType.questType != m_questType)
+				{
+					taskType.questType = m_questType;
+					isDirty = true;
+				}
+			}
+
+			if (isDirty)
+			{
+				serializedObject.ApplyModifiedProperties();
+			}
 		}
 
 		private void OnDisable()

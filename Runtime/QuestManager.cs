@@ -304,6 +304,9 @@ namespace ToolkitEngine.Quest
 
 		public State GetState(TaskType taskType)
 		{
+			if (taskType?.questType == null)
+				return State.Inactive;
+
 			if (m_activeQuests.TryGetValue(taskType.questType, out var quest)
 				&& quest.TryGetTask(taskType, out var task))
 			{
